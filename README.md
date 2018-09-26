@@ -85,6 +85,11 @@ int main(char** argv, int argc){
 }
 //end of .text section 
 ```
+Représentation de la pile avant l'appel à la fonction `hello()` :
+|Some values| ESP |
+|--|--|
+| XXXXXXX |  |
+|XXXXXXX
 
 
 ## Create files and folders
@@ -222,6 +227,6 @@ B --> D{Rhombus}
 C --> D
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTQ5NTE2NTgwNCwtNzUxMDQyOTI2LC0xMT
-Q5Nzk0MzA4XX0=
+eyJoaXN0b3J5IjpbLTEzNTcxMTc3ODgsLTc1MTA0MjkyNiwtMT
+E0OTc5NDMwOF19
 -->
