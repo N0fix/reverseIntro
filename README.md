@@ -85,6 +85,16 @@ int main(char** argv, int argc){
 }
 //end of .text section 
 ```
+
+## Les appels de fonction
+
+Reprenons notre fonction `hello()` d'exemple : 
+
+    #include <stdio.h>
+    void hello(char* str){
+	    printf("%s\n", str);
+    }
+
 Représentation de la pile avant l'appel à la fonction `hello()` :
 |Some values| ESP |
 |--|--|
@@ -240,6 +250,6 @@ B --> D{Rhombus}
 C --> D
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbOTgwMDcxMDk2LC03NTEwNDI5MjYsLTExND
-k3OTQzMDhdfQ==
+eyJoaXN0b3J5IjpbLTc3MjAyNzYzMCw5ODAwNzEwOTYsLTc1MT
+A0MjkyNiwtMTE0OTc5NDMwOF19
 -->
