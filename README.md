@@ -102,7 +102,7 @@ int main(void){
     return 0;
 }
 ```
-Et analysons ce qu'il se passe lors de
+Et analysons ce qu'il se passe lors de l'appel de la foncton `hello()`.
 
 Représentation de la pile avant l'appel à la fonction `hello()` :
 |Some values| ESP |
@@ -259,6 +259,6 @@ B --> D{Rhombus}
 C --> D
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTk3OTM5MjAwOSw5ODAwNzEwOTYsLTc1MT
-A0MjkyNiwtMTE0OTc5NDMwOF19
+eyJoaXN0b3J5IjpbNDEwMjQxMzMwLDk4MDA3MTA5NiwtNzUxMD
+QyOTI2LC0xMTQ5Nzk0MzA4XX0=
 -->
