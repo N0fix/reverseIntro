@@ -130,32 +130,8 @@ A la ligne `hello(str);` :
 
 
 
-## SmartyPants
-
-SmartyPants converts ASCII punctuation characters into "smart" typographic punctuation HTML entities. For example:
-
-|                |ASCII                          |HTML                         |
-|----------------|-------------------------------|-----------------------------|
-|Single backticks|`'Isn't this fun?'`            |'Isn't this fun?'            |
-|Quotes          |`"Isn't this fun?"`            |"Isn't this fun?"            |
-|Dashes          |`-- is en-dash, --- is em-dash`|-- is en-dash, --- is em-dash|
-
-
-## KaTeX
-
-You can render LaTeX mathematical expressions using [KaTeX](https://khan.github.io/KaTeX/):
-
-The *Gamma function* satisfying $\Gamma(n) = (n-1)!\quad\forall n\in\mathbb N$ is via the Euler integral
-
-$$
-\Gamma(z) = \int_0^\infty t^{z-1}e^{-t}dt\,.
-$$
-
-> You can find more information about **LaTeX** mathematical expressions [here](http://meta.math.stackexchange.com/questions/5020/mathjax-basic-tutorial-and-quick-reference).
-
-
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjEzNTA0MzkxNSwzODkwMTI2MzQsLTc3Mj
-A4OTA4Myw0MTAyNDEzMzAsOTgwMDcxMDk2LC03NTEwNDI5MjYs
-LTExNDk3OTQzMDhdfQ==
+eyJoaXN0b3J5IjpbLTEwNjk4ODk4NzgsMjEzNTA0MzkxNSwzOD
+kwMTI2MzQsLTc3MjA4OTA4Myw0MTAyNDEzMzAsOTgwMDcxMDk2
+LC03NTEwNDI5MjYsLTExNDk3OTQzMDhdfQ==
 -->
