@@ -168,15 +168,17 @@ Voici l'état actuel de la pile (je rappelle que l'adresse `0x000005e6` a été 
 
 |Values| Stack states |
 |-----|------|
-|__char* str__| __ESP__ |
+|0x000005e6 (value of next post function instruction)| __ESP__ |
 |Some values||
 |Some value||
 |Some value||
 |...||
 |Some value||
 |**Bottom of the stack**|**EBP**|
+
+Le programme va executer deux instructions afin d'avoir une pile "
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTg2NDExNTU1MiwtMTA2OTg4OTg3OCwyMT
+eyJoaXN0b3J5IjpbLTc4Njg3NDk4MSwtMTA2OTg4OTg3OCwyMT
 M1MDQzOTE1LDM4OTAxMjYzNCwtNzcyMDg5MDgzLDQxMDI0MTMz
 MCw5ODAwNzEwOTYsLTc1MTA0MjkyNiwtMTE0OTc5NDMwOF19
 -->
