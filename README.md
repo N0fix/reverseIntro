@@ -129,11 +129,15 @@ A la ligne `hello(str);` :
 |Some value||
 |**Bottom of the stack**|**EBP**|
 
-
-Une fois dans la fonction ``he
+Afin d'analyser ce qu'il se passe lors de l'appel d'une fonction, nous allons examiner le code assembleur du programme.
+```
+$ gcc hello.c -o hello -m32
+$ gdb 
+```
+Une fois dans la fonction `hello()`, le programme va "sauvegarder" l'état de la pile.
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTYxMjEzODUzMywtMTA2OTg4OTg3OCwyMT
+eyJoaXN0b3J5IjpbLTQxNDI4OTQ4OSwtMTA2OTg4OTg3OCwyMT
 M1MDQzOTE1LDM4OTAxMjYzNCwtNzcyMDg5MDgzLDQxMDI0MTMz
 MCw5ODAwNzEwOTYsLTc1MTA0MjkyNiwtMTE0OTc5NDMwOF19
 -->
