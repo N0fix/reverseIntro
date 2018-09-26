@@ -163,10 +163,10 @@ gdb-peda$ disas hello
    0x000005b6 <+38>:	ret    
 ```
 
-Une fois dans la fonction `hello()`, le programme va "sauvegarder" l'état de la pile.
+Une fois dans la fonction `hello()`, les premières instruction auront pou but de "sauvegarder" l'état de la pile, afin de la restaurer à posteriori dans l'état dans lequel elle était avant l'appel à la fonction.
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTk4NjIxNTQxMCwtMTA2OTg4OTg3OCwyMT
+eyJoaXN0b3J5IjpbMTM0NzgzNzkzNywtMTA2OTg4OTg3OCwyMT
 M1MDQzOTE1LDM4OTAxMjYzNCwtNzcyMDg5MDgzLDQxMDI0MTMz
 MCw5ODAwNzEwOTYsLTc1MTA0MjkyNiwtMTE0OTc5NDMwOF19
 -->
