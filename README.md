@@ -59,7 +59,7 @@ Dans le heap seront stockées toutes les variables allouées dynamiquement par d
 
 ### La Stack
 
-Lors de l'execution du progamme, les arguments seront "push" sur la stack, c'est à dire qu'il seront placé en haut de la pile, au dessus du dernier élément (la pile est dite "LIFO", Last In First Out). On va donc empiler des éléments sur la stack, et les dépiler lorsque l'on en aura besoin.
+Lors de l'execution de fonctions dans le programme, les arguments seront "push" sur la stack, c'est à dire qu'il seront placé en haut de la pile, au dessus du dernier élément (la pile est dite "LIFO", Last In First Out). On va donc empiler des éléments sur la stack, et les dépiler lorsque l'on en aura besoin.
 
 ### En bref
 Voici un schéma qui résume bien la mémoire dans un programme en plus de donner la localisation de chaque segment dans la mémoire  :
@@ -96,11 +96,14 @@ Représentation de la pile avant l'appel à la fonction `hello()` :
 A la ligne `hello(str);` :
 |char* str| ESP |
 |--|--|
+|Some values|
 | XXXXXXX |  |
 |XXXXXXX
 |   ...
 |XXXXXXX |
 |__Bottom of the stack__ | __EBP__
+
+
 
 ## Create files and folders
 
@@ -237,6 +240,6 @@ B --> D{Rhombus}
 C --> D
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTI4NDEwMzc3NSwtNzUxMDQyOTI2LC0xMT
+eyJoaXN0b3J5IjpbMTQ0NjY5NTA1NywtNzUxMDQyOTI2LC0xMT
 Q5Nzk0MzA4XX0=
 -->
