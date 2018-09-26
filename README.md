@@ -61,7 +61,7 @@ Dans le heap seront stockées toutes les variables allouées dynamiquement par d
 
 Lors de l'execution de fonctions dans le programme, les arguments seront "push" sur la stack, c'est à dire qu'il seront placé en haut de la pile, au dessus du dernier élément (la pile est dite "LIFO", Last In First Out). On va donc empiler des éléments sur la stack, et les dépiler lorsque l'on en aura besoin.
 
-### En bref
+### Récap de la mémore avec un schéma + code
 Voici un schéma qui résume bien la mémoire dans un programme en plus de donner la localisation de chaque segment dans la mémoire  :
 ![enter image description here](https://azeria-labs.com/wp-content/uploads/2017/07/stack-part2-1.png)
 ```C
@@ -240,6 +240,6 @@ B --> D{Rhombus}
 C --> D
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTQ0NjY5NTA1NywtNzUxMDQyOTI2LC0xMT
-Q5Nzk0MzA4XX0=
+eyJoaXN0b3J5IjpbOTgwMDcxMDk2LC03NTEwNDI5MjYsLTExND
+k3OTQzMDhdfQ==
 -->
