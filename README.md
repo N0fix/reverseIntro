@@ -1,7 +1,7 @@
 
 # Table of Contents
-1. [Example](#example)
-2. [Les appels de fonction](#Les appels de fonction)
+1. [Example](#REVERSE)
+2. [Les appels de fonction](#Composition)
 3. [Third Example](#introduction)
 
 
@@ -93,7 +93,7 @@ int main(char** argv, int argc){
 //end of .text section 
 ```
 
-## Les appels de fonction <a name="introduction"></a>
+## Les appels de fonction
 
 
 Reprenons notre fonction `hello()` d'exemple : 
@@ -139,8 +139,7 @@ A la ligne `hello(str);` :
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEzMjYxMzAzMjYsLTEwNjk4ODk4NzgsMj
-EzNTA0MzkxNSwzODkwMTI2MzQsLTc3MjA4OTA4Myw0MTAyNDEz
-MzAsOTgwMDcxMDk2LC03NTEwNDI5MjYsLTExNDk3OTQzMDhdfQ
-==
+eyJoaXN0b3J5IjpbLTcyNTg2MDE3OSwtMTA2OTg4OTg3OCwyMT
+M1MDQzOTE1LDM4OTAxMjYzNCwtNzcyMDg5MDgzLDQxMDI0MTMz
+MCw5ODAwNzEwOTYsLTc1MTA0MjkyNiwtMTE0OTc5NDMwOF19
 -->
