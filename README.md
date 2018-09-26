@@ -137,15 +137,16 @@ $ disas main
 ...
    0x000005de <+39>:	push   DWORD PTR [ebp-0xc]
    0x000005e1 <+42>:	call   0x590 <hello>
-     0x000005e6 <+47>:	add    esp,0x10
+   0x000005e6 <+47>:	add    esp,0x10
 ...
 ```
 On remarque l'instruction `call` qui aura pour but d'appeler notre fonction `hello()`. 
-Cette instruction va avoir plusieurs effets. Premièrement, elle va push l'adresse 
+Cette instruction va avoir plusieurs effets. Premièrement, elle va push l'adresse de l'instruction qui suit l'appel de la fonction (`0x000005e6` ici). Cela permettra au programme de savoir où revenir dans le code une fois la fonction `hello()` terminée.
+Ensuite, elle change la valeur de l'EIP (le pointeur d'instruction) pou le
 Une fois dans la fonction `hello()`, le programme va "sauvegarder" l'état de la pile.
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTgyMzg0MjIwMiwtMTA2OTg4OTg3OCwyMT
-M1MDQzOTE1LDM4OTAxMjYzNCwtNzcyMDg5MDgzLDQxMDI0MTMz
-MCw5ODAwNzEwOTYsLTc1MTA0MjkyNiwtMTE0OTc5NDMwOF19
+eyJoaXN0b3J5IjpbMzM4MDE1NjI3LC0xMDY5ODg5ODc4LDIxMz
+UwNDM5MTUsMzg5MDEyNjM0LC03NzIwODkwODMsNDEwMjQxMzMw
+LDk4MDA3MTA5NiwtNzUxMDQyOTI2LC0xMTQ5Nzk0MzA4XX0=
 -->
