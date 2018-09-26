@@ -216,12 +216,12 @@ Récap :
 ```
 |Values| Stack states |
 |-----|------|
-|old EBP adress (`0x0800050a`)|__ESP__|
+|old EBP value (`0x0800050a`)|__ESP__|
 |0x000005e6 (value of next post function instruction)|  |
-|Some values||
 |Some value||
 |Some value||
 |...||
+|Some value||
 |Some value|**EBP**|
 
 ```C
@@ -229,9 +229,9 @@ Récap :
 ```
 |Values| Stack states |
 |-----|------|
-|old EBP adress (`0x0800050a`)|__ESP__ et __EBP__|
+|old EBP value (`0x0800050a`)|__ESP__ et __EBP__|
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNjQzMzcwMjU2LC0xMDY5ODg5ODc4LDIxMz
+eyJoaXN0b3J5IjpbNTUxMTA4ODk3LC0xMDY5ODg5ODc4LDIxMz
 UwNDM5MTUsMzg5MDEyNjM0LC03NzIwODkwODMsNDEwMjQxMzMw
 LDk4MDA3MTA5NiwtNzUxMDQyOTI2LC0xMTQ5Nzk0MzA4XX0=
 -->
