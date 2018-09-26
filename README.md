@@ -122,7 +122,9 @@ A la ligne `hello(str);` :
 |XXXXXXX |
 |__Bottom of the stack__ | __EBP__
 
-
+|qwe|qw|
+|-----|------|
+|qwe|qwe| 
 
 
 
@@ -177,6 +179,7 @@ B --> D{Rhombus}
 C --> D
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTc3MjA4OTA4Myw0MTAyNDEzMzAsOTgwMD
-cxMDk2LC03NTEwNDI5MjYsLTExNDk3OTQzMDhdfQ==
+eyJoaXN0b3J5IjpbNTk5MTIxNTQ1LC03NzIwODkwODMsNDEwMj
+QxMzMwLDk4MDA3MTA5NiwtNzUxMDQyOTI2LC0xMTQ5Nzk0MzA4
+XX0=
 -->
