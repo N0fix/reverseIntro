@@ -28,7 +28,7 @@ Voici un example avec un programme tout simple expliquant les différentes secti
 #include <stdio.h>
 #include <stdlib.h>
 //.text section from here    
-char* strBss = "Hello from bss!"; //initialised -> .data section
+char* strBss = "Hello from data!"; //initialised -> .data section
 int variable; //Not initialised -> .bss section
     
 void hello(char* str){
@@ -155,7 +155,7 @@ $$
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNzgyNTAyODYxLDM4OTAxMjYzNCwtNzcyMD
-g5MDgzLDQxMDI0MTMzMCw5ODAwNzEwOTYsLTc1MTA0MjkyNiwt
-MTE0OTc5NDMwOF19
+eyJoaXN0b3J5IjpbMjEzNTA0MzkxNSwzODkwMTI2MzQsLTc3Mj
+A4OTA4Myw0MTAyNDEzMzAsOTgwMDcxMDk2LC03NTEwNDI5MjYs
+LTExNDk3OTQzMDhdfQ==
 -->
