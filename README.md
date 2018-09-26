@@ -203,9 +203,14 @@ Pour palier à ce problème, on va juste garder en mémoire l'ancienne valeur d'
 |Old EBP adress (`0x0800050a`)|__ESP__ et __EBP__|
 Ainsi, lorsque la fonction sera terminée il suffira de mettre l'ancienne adresse d'`EBP` dans `EBP`.
 
-C'e
+Tout ce qui vient d'être présenté est exactement le fonctionnement du début de la fonction `hello()` : 
+```C
+   0x00000590 <+0>:	push   ebp
+   0x00000591 <+1>:	mov    ebp,esp
+```
+On observe qu'on `push ebp` afin de se souvenir de sa valeur pour la restaurer à la fin de la fonction, et enfin on dit 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTgzNjEzMzIzMiwtMTA2OTg4OTg3OCwyMT
+eyJoaXN0b3J5IjpbMTYwNzE4NDMxOCwtMTA2OTg4OTg3OCwyMT
 M1MDQzOTE1LDM4OTAxMjYzNCwtNzcyMDg5MDgzLDQxMDI0MTMz
 MCw5ODAwNzEwOTYsLTc1MTA0MjkyNiwtMTE0OTc5NDMwOF19
 -->
