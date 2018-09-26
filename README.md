@@ -176,9 +176,10 @@ Voici l'état actuel de la pile (je rappelle que l'adresse `0x000005e6` a été 
 |Some value||
 |**Bottom of the stack**|**EBP**|
 
-Le programme va executer deux instructions afin d'avoir une pile "
+Le programme va executer deux instructions afin d'avoir une pile "réservée" à la fonction. C'est à dire que l'on va simuler une pile vide, qui sera utilisée pour cette fonction uniquement.
+Pour simuler ça, si l'on regarde l'état de la pile, il faudrait que le bas de la pile (`EBP`) soit au même niveau que le haut de la pile (`ESP`).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTc4Njg3NDk4MSwtMTA2OTg4OTg3OCwyMT
-M1MDQzOTE1LDM4OTAxMjYzNCwtNzcyMDg5MDgzLDQxMDI0MTMz
-MCw5ODAwNzEwOTYsLTc1MTA0MjkyNiwtMTE0OTc5NDMwOF19
+eyJoaXN0b3J5IjpbNjA2NDM2Mjk4LC0xMDY5ODg5ODc4LDIxMz
+UwNDM5MTUsMzg5MDEyNjM0LC03NzIwODkwODMsNDEwMjQxMzMw
+LDk4MDA3MTA5NiwtNzUxMDQyOTI2LC0xMTQ5Nzk0MzA4XX0=
 -->
