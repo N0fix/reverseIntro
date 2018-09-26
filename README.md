@@ -214,8 +214,24 @@ Récap :
 ```C
    0x00000590 <+0>:	push   ebp
 ```
+|Values| Stack states |
+|-----|------|
+|old EBP adress (`0x0800050a`)|__ESP__|
+|0x000005e6 (value of next post function instruction)|  |
+|Some values||
+|Some value||
+|Some value||
+|...||
+|Some value|**EBP**|
+
+```C
+   0x00000591 <+1>:	mov    ebp,esp
+```
+|Values| Stack states |
+|-----|------|
+|old EBP adress (`0x0800050a`)|__ESP__ et __EBP__|
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbODAwMTUzMTYzLC0xMDY5ODg5ODc4LDIxMz
+eyJoaXN0b3J5IjpbNjQzMzcwMjU2LC0xMDY5ODg5ODc4LDIxMz
 UwNDM5MTUsMzg5MDEyNjM0LC03NzIwODkwODMsNDEwMjQxMzMw
 LDk4MDA3MTA5NiwtNzUxMDQyOTI2LC0xMTQ5Nzk0MzA4XX0=
 -->
