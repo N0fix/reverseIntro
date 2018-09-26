@@ -188,12 +188,17 @@ Pour simuler ça, si l'on regarde l'état de la pile, il faudrait que le bas de 
 |Some value||
 |...||
 |Some value||
-|**Bottom of the stack**|**EBP**|
 
-Aux yeux du progra
+
+Aux yeux du programme, la pile ressemble désormais à cela :
+
+|Values| Stack states |
+|-----|------|
+|Valeur qui trainait dans la mémoire à cette adresse|__ESP__ et __EBP__|
+On a réussis notre coup, on a une pile neuve, vide. Le problème c'est qu'une fois la fonction `hello()` terminée, il faudra restaurer l'état de la pile avant l'exe
+
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE3OTQ5MzA5NzAsLTEwNjk4ODk4NzgsMj
-EzNTA0MzkxNSwzODkwMTI2MzQsLTc3MjA4OTA4Myw0MTAyNDEz
-MzAsOTgwMDcxMDk2LC03NTEwNDI5MjYsLTExNDk3OTQzMDhdfQ
-==
+eyJoaXN0b3J5IjpbLTUxMzI2Mjc4NCwtMTA2OTg4OTg3OCwyMT
+M1MDQzOTE1LDM4OTAxMjYzNCwtNzcyMDg5MDgzLDQxMDI0MTMz
+MCw5ODAwNzEwOTYsLTc1MTA0MjkyNiwtMTE0OTc5NDMwOF19
 -->
