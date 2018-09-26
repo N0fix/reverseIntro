@@ -93,7 +93,14 @@ Représentation de la pile avant l'appel à la fonction `hello()` :
 |   ...
 |XXXXXXX |
 |__Bottom of the stack__ | __EBP__
-Lorsque la fonction `hello()` est appelé 
+A la ligne `hello(str);` :
+|char* str| ESP |
+|--|--|
+| XXXXXXX |  |
+|XXXXXXX
+|   ...
+|XXXXXXX |
+|__Bottom of the stack__ | __EBP__
 
 ## Create files and folders
 
@@ -230,6 +237,6 @@ B --> D{Rhombus}
 C --> D
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTExNzE1NDY4MDgsLTc1MTA0MjkyNiwtMT
-E0OTc5NDMwOF19
+eyJoaXN0b3J5IjpbLTI4NDEwMzc3NSwtNzUxMDQyOTI2LC0xMT
+Q5Nzk0MzA4XX0=
 -->
