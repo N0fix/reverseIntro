@@ -105,8 +105,8 @@ int main(void){
 Et analysons ce qu'il se passe lors de l'appel de la foncton `hello()`.
 
 Représentation de la pile avant l'appel à la fonction `hello()` :
-|Some values| ESP |
-|--|--|
+|Some values|ESP|
+|----|----|
 | XXXXXXX |  |
 |XXXXXXX
 |   ...
@@ -124,6 +124,7 @@ A la ligne `hello(str);` :
 
 |qwe|qw|
 |-----|------|
+|qe||
 |qwe|qwe| 
 
 
@@ -179,7 +180,7 @@ B --> D{Rhombus}
 C --> D
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNTk5MTIxNTQ1LC03NzIwODkwODMsNDEwMj
-QxMzMwLDk4MDA3MTA5NiwtNzUxMDQyOTI2LC0xMTQ5Nzk0MzA4
-XX0=
+eyJoaXN0b3J5IjpbLTI2OTIwNjAxOSwtNzcyMDg5MDgzLDQxMD
+I0MTMzMCw5ODAwNzEwOTYsLTc1MTA0MjkyNiwtMTE0OTc5NDMw
+OF19
 -->
