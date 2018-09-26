@@ -108,19 +108,19 @@ Représentation de la pile avant l'appel à la fonction `hello()` :
 |Some values|ESP|
 |----|----|
 | XXXXXXX |  |
-|XXXXXXX
-|   ...
-|XXXXXXX |
-|__Bottom of the stack__ | __EBP__
+|XXXXXXX | |
+|   ... | |
+|XXXXXXX | |
+|__Bottom of the stack__ | __EBP__ |
 A la ligne `hello(str);` :
 |char* str| ESP |
 |--|--|
-|Some values|
+|Some values| |
 | XXXXXXX |  |
-|XXXXXXX
-|   ...
-|XXXXXXX |
-|__Bottom of the stack__ | __EBP__
+|XXXXXXX | |
+|   ...  | |
+|XXXXXXX | |
+|__Bottom of the stack__ | __EBP__ |
 
 |qwe|qw|
 |-----|------|
@@ -180,7 +180,7 @@ B --> D{Rhombus}
 C --> D
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTI2OTIwNjAxOSwtNzcyMDg5MDgzLDQxMD
+eyJoaXN0b3J5IjpbMTk4NTk1NzkzMSwtNzcyMDg5MDgzLDQxMD
 I0MTMzMCw5ODAwNzEwOTYsLTc1MTA0MjkyNiwtMTE0OTc5NDMw
 OF19
 -->
