@@ -177,12 +177,23 @@ Voici l'état actuel de la pile (je rappelle que l'adresse `0x000005e6` a été 
 |**Bottom of the stack**|**EBP**|
 
 Le programme va executer deux instructions afin d'avoir une pile "réservée" à la fonction. C'est à dire que l'on va simuler une pile vide, qui sera utilisée pour cette fonction uniquement.
-Pour simuler ça, si l'on regarde l'état de la pile, il faudrait que le bas de la pile (`EBP`) soit au même niveau que le haut de la pile (`ESP`). Pour arriver à ce résultat, une solutions est de déplacer les deux pointeurs `ESP` et `EBP` pour qu'ils pointent au même endroit.  
+Pour simuler ça, si l'on regarde l'état de la pile, il faudrait que le bas de la pile (`EBP`) soit au même niveau que le haut de la pile (`ESP`). Pour arriver à ce résultat, une solutions est de déplacer les deux pointeurs `ESP` et `EBP` pour qu'ils pointent au même endroit. Pour un soucis pratique, on va simplement les déplacer juste au dessus de la position actuelle d'`ESP` : 
+
 |Values| Stack states |
 |-----|------|
-|| __ESP__ et __EBP__ |
+|Valeur qui trainait dans la mémoire à cette adresse|__ESP__ et __EBP__|
+|0x000005e6 (value of next post function instruction)|  |
+|Some values||
+|Some value||
+|Some value||
+|...||
+|Some value||
+|**Bottom of the stack**|**EBP**|
+
+Aux yeux du progra
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNjMzOTkzNjI0LC0xMDY5ODg5ODc4LDIxMz
-UwNDM5MTUsMzg5MDEyNjM0LC03NzIwODkwODMsNDEwMjQxMzMw
-LDk4MDA3MTA5NiwtNzUxMDQyOTI2LC0xMTQ5Nzk0MzA4XX0=
+eyJoaXN0b3J5IjpbLTE3OTQ5MzA5NzAsLTEwNjk4ODk4NzgsMj
+EzNTA0MzkxNSwzODkwMTI2MzQsLTc3MjA4OTA4Myw0MTAyNDEz
+MzAsOTgwMDcxMDk2LC03NTEwNDI5MjYsLTExNDk3OTQzMDhdfQ
+==
 -->
