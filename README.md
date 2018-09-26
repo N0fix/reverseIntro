@@ -164,9 +164,19 @@ gdb-peda$ disas hello
 ```
 
 Une fois dans la fonction `hello()`, les premières instruction auront pou but de "sauvegarder" l'état de la pile, afin de la restaurer à posteriori dans l'état dans lequel elle était avant l'appel à la fonction.
+Voici l'état actuel de la pile (je rappelle que l'adresse `0x000005e6` a été push grâce à l'instruction `call` comme expliqué plus haut) :
 
+|Values| Stack states |
+|-----|------|
+|__char* str__| __ESP__ |
+|Some values||
+|Some value||
+|Some value||
+|...||
+|Some value||
+|**Bottom of the stack**|**EBP**|
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTM0NzgzNzkzNywtMTA2OTg4OTg3OCwyMT
+eyJoaXN0b3J5IjpbMTg2NDExNTU1MiwtMTA2OTg4OTg3OCwyMT
 M1MDQzOTE1LDM4OTAxMjYzNCwtNzcyMDg5MDgzLDQxMDI0MTMz
 MCw5ODAwNzEwOTYsLTc1MTA0MjkyNiwtMTE0OTc5NDMwOF19
 -->
