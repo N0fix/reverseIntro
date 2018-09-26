@@ -64,7 +64,27 @@ Lors de l'execution du progamme, les arguments seront "push" sur la stack, c'est
 ### En bref
 Voici un schéma qui résume bien la mémoire dans un programme en plus de donner la localisation de chaque segment dans la mémoire  :
 ![enter image description here](https://azeria-labs.com/wp-content/uploads/2017/07/stack-part2-1.png)
-
+```C
+#include <stdio.h>
+#include <stdlib.h>
+//.text section from here    
+char* strBss = "Hello from bss!"; //initialised -> .data section
+int variable; //Not initialised -> .bss section
+    
+void hello(char* str){
+    printf("%s\n", str);
+}
+    
+int main(char** argv, int argc){
+    char* str = "Hello from the stack!"; //Will be pushed to Stack
+    char* strFromHeap = malloc(sizeof(char) * 21); //Allocated on Heap
+    sprintf(strFromHeap, "Hello from the Heap!");
+    hello(str); //sr is beeing pushed to the stack
+    free(strFromHeap); //Always free() dynamically allocated var
+    return 1;
+}
+//end of .text section 
+```
 
 
 ## Create files and folders
@@ -202,5 +222,6 @@ B --> D{Rhombus}
 C --> D
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTc1MTA0MjkyNiwtMTE0OTc5NDMwOF19
+eyJoaXN0b3J5IjpbMTQ5NTE2NTgwNCwtNzUxMDQyOTI2LC0xMT
+Q5Nzk0MzA4XX0=
 -->
