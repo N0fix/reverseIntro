@@ -90,10 +90,19 @@ int main(char** argv, int argc){
 
 Reprenons notre fonction `hello()` d'exemple : 
 
-    #include <stdio.h>
-    void hello(char* str){
-	    printf("%s\n", str);
-    }
+```C
+#include <stdio.h>
+void hello(char* str){
+    printf("%s\n", str);
+}
+
+int main(void){
+    char* str = "Hello";
+    hello(str);
+    return 0;
+}
+```
+Et analysons ce qu'il se passe lors de
 
 Représentation de la pile avant l'appel à la fonction `hello()` :
 |Some values| ESP |
@@ -250,6 +259,6 @@ B --> D{Rhombus}
 C --> D
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTc3MjAyNzYzMCw5ODAwNzEwOTYsLTc1MT
+eyJoaXN0b3J5IjpbLTk3OTM5MjAwOSw5ODAwNzEwOTYsLTc1MT
 A0MjkyNiwtMTE0OTc5NDMwOF19
 -->
