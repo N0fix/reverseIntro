@@ -195,12 +195,14 @@ Aux yeux du programme, la pile ressemble désormais à cela :
 |Values| Stack states |
 |-----|------|
 |Valeur qui trainait dans la mémoire à cette adresse|__ESP__ et __EBP__|
+
 On a réussis notre coup, on a une pile neuve, vide. Le problème c'est qu'une fois la fonction `hello()` terminée, il faudra restaurer l'état de la pile avant l'execution de la fonction. 
 Pour palier à ce problème, on va juste garder en mémoire l'ancienne valeur d'`EBP` (le bas de la pile). La pile ressemble alors à cela : 
 
 |Values| Stack states |
 |-----|------|
 |Old EBP adress (`0x0800050a`)|__ESP__ et __EBP__|
+
 Ainsi, lorsque la fonction sera terminée il suffira de mettre l'ancienne adresse d'`EBP` dans `EBP`.
 
 Tout ce qui vient d'être présenté est exactement le fonctionnement du début de la fonction `hello()` : 
@@ -230,8 +232,9 @@ Récap :
 |Values| Stack states |
 |-----|------|
 |old EBP value (`0x0800050a`)|__ESP__ et __EBP__|
+
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNTUxMTA4ODk3LC0xMDY5ODg5ODc4LDIxMz
-UwNDM5MTUsMzg5MDEyNjM0LC03NzIwODkwODMsNDEwMjQxMzMw
-LDk4MDA3MTA5NiwtNzUxMDQyOTI2LC0xMTQ5Nzk0MzA4XX0=
+eyJoaXN0b3J5IjpbMjExOTUwNTUyMywtMTA2OTg4OTg3OCwyMT
+M1MDQzOTE1LDM4OTAxMjYzNCwtNzcyMDg5MDgzLDQxMDI0MTMz
+MCw5ODAwNzEwOTYsLTc1MTA0MjkyNiwtMTE0OTc5NDMwOF19
 -->
