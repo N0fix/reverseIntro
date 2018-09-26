@@ -174,7 +174,7 @@ Voici l'état actuel de la pile (je rappelle que l'adresse `0x000005e6` a été 
 |Some value||
 |...||
 |Some value||
-|**Bottom of the stack**|**EBP**|
+|**Bottom of the stack (`0x0800050a`)**|**EBP**|
 
 Le programme va executer deux instructions afin d'avoir une pile "réservée" à la fonction. C'est à dire que l'on va simuler une pile vide, qui sera utilisée pour cette fonction uniquement.
 Pour simuler ça, si l'on regarde l'état de la pile, il faudrait que le bas de la pile (`EBP`) soit au même niveau que le haut de la pile (`ESP`). Pour arriver à ce résultat, une solutions est de déplacer les deux pointeurs `ESP` et `EBP` pour qu'ils pointent au même endroit. Pour un soucis pratique, on va simplement les déplacer juste au dessus de la position actuelle d'`ESP` : 
@@ -200,11 +200,12 @@ Pour palier à ce problème, on va juste garder en mémoire l'ancienne valeur d'
 
 |Values| Stack states |
 |-----|------|
-|Old EBP adress|__ESP__ et __EBP__|
+|Old EBP adress (`0x0800050a`)|__ESP__ et __EBP__|
 Ainsi, lorsque la fonction sera terminée il suffira de mettre l'ancienne adresse d'`EBP` dans `EBP`.
+
+C'e
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE5MjQ1MTE3MzMsLTEwNjk4ODk4NzgsMj
-EzNTA0MzkxNSwzODkwMTI2MzQsLTc3MjA4OTA4Myw0MTAyNDEz
-MzAsOTgwMDcxMDk2LC03NTEwNDI5MjYsLTExNDk3OTQzMDhdfQ
-==
+eyJoaXN0b3J5IjpbMTgzNjEzMzIzMiwtMTA2OTg4OTg3OCwyMT
+M1MDQzOTE1LDM4OTAxMjYzNCwtNzcyMDg5MDgzLDQxMDI0MTMz
+MCw5ODAwNzEwOTYsLTc1MTA0MjkyNiwtMTE0OTc5NDMwOF19
 -->
