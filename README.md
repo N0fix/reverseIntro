@@ -130,11 +130,10 @@ A la ligne `hello(str);` :
 |**Bottom of the stack**|**EBP**|
 
 
-
+Une fois dans la fonction ``he
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE4NzMyMjkyMDYsLTEwNjk4ODk4NzgsMj
-EzNTA0MzkxNSwzODkwMTI2MzQsLTc3MjA4OTA4Myw0MTAyNDEz
-MzAsOTgwMDcxMDk2LC03NTEwNDI5MjYsLTExNDk3OTQzMDhdfQ
-==
+eyJoaXN0b3J5IjpbMTYxMjEzODUzMywtMTA2OTg4OTg3OCwyMT
+M1MDQzOTE1LDM4OTAxMjYzNCwtNzcyMDg5MDgzLDQxMDI0MTMz
+MCw5ODAwNzEwOTYsLTc1MTA0MjkyNiwtMTE0OTc5NDMwOF19
 -->
