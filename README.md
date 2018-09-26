@@ -148,14 +148,25 @@ Désassemblons notre fonction `hello()` :
 
 ```C
 gdb-peda$ disas hello
-
+   0x00000590 <+0>:	push   ebp
+   0x00000591 <+1>:	mov    ebp,esp
+   0x00000593 <+3>:	push   ebx
+   0x00000594 <+4>:	sub    esp,0x4
+			...
+   0x000005a4 <+20>:	push   DWORD PTR [ebp+0x8]
+   0x000005a7 <+23>:	mov    ebx,eax
+   0x000005a9 <+25>:	call   0x3f0 <puts@plt>
+   0x000005ae <+30>:	add    esp,0x10
+   0x000005b1 <+33>:	nop
+   0x000005b2 <+34>:	mov    ebx,DWORD PTR [ebp-0x4]
+   0x000005b5 <+37>:	leave  
+   0x000005b6 <+38>:	ret    
 ```
 
 Une fois dans la fonction `hello()`, le programme va "sauvegarder" l'état de la pile.
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE2OTQ4NDc0MDEsLTEwNjk4ODk4NzgsMj
-EzNTA0MzkxNSwzODkwMTI2MzQsLTc3MjA4OTA4Myw0MTAyNDEz
-MzAsOTgwMDcxMDk2LC03NTEwNDI5MjYsLTExNDk3OTQzMDhdfQ
-==
+eyJoaXN0b3J5IjpbMTk4NjIxNTQxMCwtMTA2OTg4OTg3OCwyMT
+M1MDQzOTE1LDM4OTAxMjYzNCwtNzcyMDg5MDgzLDQxMDI0MTMz
+MCw5ODAwNzEwOTYsLTc1MTA0MjkyNiwtMTE0OTc5NDMwOF19
 -->
