@@ -133,7 +133,7 @@ Afin d'analyser ce qu'il se passe lors de l'appel d'une fonction, nous allons ex
 ```C
 $ gcc hello.c -o hello -m32
 $ gdb hello
-$ disas main
+gdb-peda$ disas main
 ...
    0x000005de <+39>:	push   DWORD PTR [ebp-0xc]
    0x000005e1 <+42>:	call   0x590 <hello>
@@ -142,11 +142,20 @@ $ disas main
 ```
 On remarque l'instruction `call` qui aura pour but d'appeler notre fonction `hello()`. 
 Cette instruction va avoir plusieurs effets. Premièrement, elle va push l'adresse de l'instruction qui suit l'appel de la fonction (`0x000005e6` ici). Cela permettra au programme de savoir où revenir dans le code une fois la fonction `hello()` terminée.
-Ensuite, elle change la valeur de l'EIP (le pointeur d'instruction) pou le
+Ensuite, elle change la valeur de l'EIP (le pointeur d'instruction) pour le faire pointer vers la première instruction de notre fonction `hello()`.
+
+Désassemblons notre fonction `hello()` :
+
+```C
+gdb-peda$ disas hello
+
+```
+
 Une fois dans la fonction `hello()`, le programme va "sauvegarder" l'état de la pile.
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMzM4MDE1NjI3LC0xMDY5ODg5ODc4LDIxMz
-UwNDM5MTUsMzg5MDEyNjM0LC03NzIwODkwODMsNDEwMjQxMzMw
-LDk4MDA3MTA5NiwtNzUxMDQyOTI2LC0xMTQ5Nzk0MzA4XX0=
+eyJoaXN0b3J5IjpbLTE2OTQ4NDc0MDEsLTEwNjk4ODk4NzgsMj
+EzNTA0MzkxNSwzODkwMTI2MzQsLTc3MjA4OTA4Myw0MTAyNDEz
+MzAsOTgwMDcxMDk2LC03NTEwNDI5MjYsLTExNDk3OTQzMDhdfQ
+==
 -->
