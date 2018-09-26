@@ -130,14 +130,20 @@ A la ligne `hello(str);` :
 |**Bottom of the stack**|**EBP**|
 
 Afin d'analyser ce qu'il se passe lors de l'appel d'une fonction, nous allons examiner le code assembleur du programme.
-```
+```C
 $ gcc hello.c -o hello -m32
-$ gdb 
+$ gdb hello
+$ disas main
+...
+   0x000005de <+39>:	push   DWORD PTR [ebp-0xc]
+   0x000005e1 <+42>:	call   0x590 <hello>
+...
 ```
 Une fois dans la fonction `hello()`, le programme va "sauvegarder" l'état de la pile.
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTQxNDI4OTQ4OSwtMTA2OTg4OTg3OCwyMT
-M1MDQzOTE1LDM4OTAxMjYzNCwtNzcyMDg5MDgzLDQxMDI0MTMz
-MCw5ODAwNzEwOTYsLTc1MTA0MjkyNiwtMTE0OTc5NDMwOF19
+eyJoaXN0b3J5IjpbLTEwNjA3NzAxMTksLTEwNjk4ODk4NzgsMj
+EzNTA0MzkxNSwzODkwMTI2MzQsLTc3MjA4OTA4Myw0MTAyNDEz
+MzAsOTgwMDcxMDk2LC03NTEwNDI5MjYsLTExNDk3OTQzMDhdfQ
+==
 -->
