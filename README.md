@@ -107,11 +107,11 @@ Et analysons ce qu'il se passe lors de l'appel de la foncton `hello()`.
 Représentation de la pile avant l'appel à la fonction `hello()` :
 |Some values|ESP|
 |----|----|
-| XXXXXXX |  |
-|XXXXXXX | |
-|   ... | |
-|XXXXXXX | |
-|__Bottom of the stack__ | __EBP__ |
+|XXXXXXX||
+|XXXXXXX||
+|...||
+|XXXXXXX||
+|**Bottom of the stack**|**EBP**|
 
 A la ligne `hello(str);` :
 
@@ -182,7 +182,7 @@ B --> D{Rhombus}
 C --> D
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTExMjUwMjY1MDksLTc3MjA4OTA4Myw0MT
+eyJoaXN0b3J5IjpbLTE2ODUyNTMyNTcsLTc3MjA4OTA4Myw0MT
 AyNDEzMzAsOTgwMDcxMDk2LC03NTEwNDI5MjYsLTExNDk3OTQz
 MDhdfQ==
 -->
