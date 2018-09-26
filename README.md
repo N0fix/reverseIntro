@@ -1,10 +1,4 @@
 
-# Table of Contents
-1. [Example](#REVERSE)
-2. [Les appels de fonction](#Composition)
-3. [Third Example](#introduction)
-
-
 # Présentation du sujet
 Mon nom est Victorien Blanchard et voici mon rapport de veille cyber concernant le reverse engineering, et probablement à posteriori l'exploitation de binaire via l'étude de failles du type Buffer Overflow.
 Mon premier sujet d'étude sera donc naturellement le reverse et l'analyse de code assembleur, afin d'avoir les bases nécessaires pour attaquer l'exploitation de binaire.
@@ -139,7 +133,8 @@ A la ligne `hello(str);` :
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTcyNTg2MDE3OSwtMTA2OTg4OTg3OCwyMT
-M1MDQzOTE1LDM4OTAxMjYzNCwtNzcyMDg5MDgzLDQxMDI0MTMz
-MCw5ODAwNzEwOTYsLTc1MTA0MjkyNiwtMTE0OTc5NDMwOF19
+eyJoaXN0b3J5IjpbLTE4NzMyMjkyMDYsLTEwNjk4ODk4NzgsMj
+EzNTA0MzkxNSwzODkwMTI2MzQsLTc3MjA4OTA4Myw0MTAyNDEz
+MzAsOTgwMDcxMDk2LC03NTEwNDI5MjYsLTExNDk3OTQzMDhdfQ
+==
 -->
