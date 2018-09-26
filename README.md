@@ -106,8 +106,9 @@ Et analysons ce qu'il se passe lors de l'appel de la foncton `hello()`.
 
 Représentation de la pile avant l'appel à la fonction `hello()` :
 
-|Some values| ESP |
+|Valus| Stack states |
 |-----|------|
+|Some values| ESP |
 |XXXXXXX||
 |XXXXXXX||
 |...||
@@ -178,7 +179,7 @@ B --> D{Rhombus}
 C --> D
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNjc0NDQ4MzMsLTc3MjA4OTA4Myw0MTAyND
-EzMzAsOTgwMDcxMDk2LC03NTEwNDI5MjYsLTExNDk3OTQzMDhd
-fQ==
+eyJoaXN0b3J5IjpbMjg2MTM4MTU2LC03NzIwODkwODMsNDEwMj
+QxMzMwLDk4MDA3MTA5NiwtNzUxMDQyOTI2LC0xMTQ5Nzk0MzA4
+XX0=
 -->
