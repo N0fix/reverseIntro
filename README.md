@@ -208,9 +208,14 @@ Tout ce qui vient d'être présenté est exactement le fonctionnement du début 
    0x00000590 <+0>:	push   ebp
    0x00000591 <+1>:	mov    ebp,esp
 ```
-On observe qu'on `push ebp` afin de se souvenir de sa valeur pour la restaurer à la fin de la fonction, et enfin on dit 
+On observe qu'on `push ebp` afin de se souvenir de sa valeur pour la restaurer à la fin de la fonction, et enfin on dit que la nouvelle valeur du bas de la pile (EBP) est désormais le haut de la pile (ESP) (via l'instruction `mov ebp,esp` qui déplace la valeur de `ESP` dans `EBP`).
+
+Récap : 
+```C
+   0x00000590 <+0>:	push   ebp
+```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTYwNzE4NDMxOCwtMTA2OTg4OTg3OCwyMT
-M1MDQzOTE1LDM4OTAxMjYzNCwtNzcyMDg5MDgzLDQxMDI0MTMz
-MCw5ODAwNzEwOTYsLTc1MTA0MjkyNiwtMTE0OTc5NDMwOF19
+eyJoaXN0b3J5IjpbODAwMTUzMTYzLC0xMDY5ODg5ODc4LDIxMz
+UwNDM5MTUsMzg5MDEyNjM0LC03NzIwODkwODMsNDEwMjQxMzMw
+LDk4MDA3MTA5NiwtNzUxMDQyOTI2LC0xMTQ5Nzk0MzA4XX0=
 -->
