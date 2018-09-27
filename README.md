@@ -160,13 +160,12 @@ Désassemblons notre fonction `hello()` :
 
 ```C
 gdb-peda$ disas hello
-
    0x0804841d <+0>:	push   ebp
    0x0804841e <+1>:	mov    ebp,esp               ;On prépare la pile
    0x08048420 <+3>:	sub    esp,0x18              ;On alloue de la place sur la pile
    0x08048423 <+6>:	mov    eax,DWORD PTR [ebp+0x8]
-   0x08048426 <+9>:	mov    DWORD PTR [esp],eax ;On push le pointeur vers notre chaine
-   0x08048429 <+12>:	call   0x80482f0 <puts@plt>;Appel à la fonction puts de libc
+   0x08048426 <+9>:	mov    DWORD PTR [esp],eax   ;On push le pointeur vers notre chaine
+   0x08048429 <+12>:	call   0x80482f0 <puts@plt>  ;Appel à la fonction puts de libc
    0x0804842e <+17>:	leave  
    0x0804842f <+18>:	ret    
 ```
@@ -242,8 +241,8 @@ Récap :
 |old EBP value (`0x0800050a`)|__ESP__ et __EBP__|
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNTI4OTA4NTMsMTQ4OTIyMTY2NywyMTE5NT
-A1NTIzLC0xMDY5ODg5ODc4LDIxMzUwNDM5MTUsMzg5MDEyNjM0
-LC03NzIwODkwODMsNDEwMjQxMzMwLDk4MDA3MTA5NiwtNzUxMD
-QyOTI2LC0xMTQ5Nzk0MzA4XX0=
+eyJoaXN0b3J5IjpbLTI5NzQwNDI5NywxNDg5MjIxNjY3LDIxMT
+k1MDU1MjMsLTEwNjk4ODk4NzgsMjEzNTA0MzkxNSwzODkwMTI2
+MzQsLTc3MjA4OTA4Myw0MTAyNDEzMzAsOTgwMDcxMDk2LC03NT
+EwNDI5MjYsLTExNDk3OTQzMDhdfQ==
 -->
