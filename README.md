@@ -89,6 +89,10 @@ int main(char** argv, int argc){
 
 ## Les appels de fonction
 
+La première chose à savoir pour les appels aux fonctions en assembleur, c'est qu'elles doivent satisfaire deux contraintes :
+
+ 1. La fonction veut une pile rien que pour elle, elle ne veut pas savoir ce qu'il y avait déjà dans la pile avant
+ 2. L'état de la pile doit être restauré à la sortie de la fonction
 
 Reprenons notre fonction `hello()` d'exemple : 
 
@@ -234,7 +238,8 @@ Récap :
 |old EBP value (`0x0800050a`)|__ESP__ et __EBP__|
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjExOTUwNTUyMywtMTA2OTg4OTg3OCwyMT
-M1MDQzOTE1LDM4OTAxMjYzNCwtNzcyMDg5MDgzLDQxMDI0MTMz
-MCw5ODAwNzEwOTYsLTc1MTA0MjkyNiwtMTE0OTc5NDMwOF19
+eyJoaXN0b3J5IjpbMTA4NTIzMzU4OCwyMTE5NTA1NTIzLC0xMD
+Y5ODg5ODc4LDIxMzUwNDM5MTUsMzg5MDEyNjM0LC03NzIwODkw
+ODMsNDEwMjQxMzMwLDk4MDA3MTA5NiwtNzUxMDQyOTI2LC0xMT
+Q5Nzk0MzA4XX0=
 -->
