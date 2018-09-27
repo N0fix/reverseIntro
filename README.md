@@ -138,7 +138,6 @@ Afin d'analyser ce qu'il se passe lors de l'appel d'une fonction, nous allons ex
 $ gcc hello.c -o hello
 $ gdb hello
 gdb-peda$ disas main
-...
    0x08048430 <+0>:	push   ebp
    0x08048431 <+1>:	mov    ebp,esp
    0x08048433 <+3>:	and    esp,0xfffffff0 ;alignement pour optimisation
@@ -150,7 +149,6 @@ gdb-peda$ disas main
    0x0804844d <+29>:	mov    eax,0x0
    0x08048452 <+34>:	leave  
    0x08048453 <+35>:	ret    
-...
 ```
 On remarque l'instruction `call` qui aura pour but d'appeler notre fonction `hello()`. 
 Cette instruction va avoir plusieurs effets. Premièrement, elle va push l'adresse de l'instruction qui suit l'appel de la fonction (`0x000005e6` ici). Cela permettra au programme de savoir où revenir dans le code une fois la fonction `hello()` terminée.
@@ -241,8 +239,8 @@ Récap :
 |old EBP value (`0x0800050a`)|__ESP__ et __EBP__|
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNjYzMDg5MTQzLDE0ODkyMjE2NjcsMjExOT
-UwNTUyMywtMTA2OTg4OTg3OCwyMTM1MDQzOTE1LDM4OTAxMjYz
-NCwtNzcyMDg5MDgzLDQxMDI0MTMzMCw5ODAwNzEwOTYsLTc1MT
-A0MjkyNiwtMTE0OTc5NDMwOF19
+eyJoaXN0b3J5IjpbLTEyMDY4Mzk2MSwxNDg5MjIxNjY3LDIxMT
+k1MDU1MjMsLTEwNjk4ODk4NzgsMjEzNTA0MzkxNSwzODkwMTI2
+MzQsLTc3MjA4OTA4Myw0MTAyNDEzMzAsOTgwMDcxMDk2LC03NT
+EwNDI5MjYsLTExNDk3OTQzMDhdfQ==
 -->
