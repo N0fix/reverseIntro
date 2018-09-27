@@ -135,13 +135,21 @@ A la ligne `hello(str);` :
 
 Afin d'analyser ce qu'il se passe lors de l'appel d'une fonction, nous allons examiner le code assembleur du programme.
 ```C
-$ gcc hello.c -o hello -m32
+$ gcc hello.c -o hello
 $ gdb hello
 gdb-peda$ disas main
 ...
-   0x000005de <+39>:	push   DWORD PTR [ebp-0xc]
-   0x000005e1 <+42>:	call   0x590 <hello>
-   0x000005e6 <+47>:	add    esp,0x10
+   0x08048430 <+0>:	push   ebp
+   0x08048431 <+1>:	mov    ebp,esp
+   0x08048433 <+3>:	and    esp,0xfffffff0
+   0x08048436 <+6>:	sub    esp,0x20
+   0x08048439 <+9>:	mov    DWORD PTR [esp+0x1c],0x80484f0
+   0x08048441 <+17>:	mov    eax,DWORD PTR [esp+0x1c]
+   0x08048445 <+21>:	mov    DWORD PTR [esp],eax
+   0x08048448 <+24>:	call   0x804841d <hello>
+   0x0804844d <+29>:	mov    eax,0x0
+   0x08048452 <+34>:	leave  
+   0x08048453 <+35>:	ret    
 ...
 ```
 On remarque l'instruction `call` qui aura pour but d'appeler notre fonction `hello()`. 
@@ -238,8 +246,8 @@ Récap :
 |old EBP value (`0x0800050a`)|__ESP__ et __EBP__|
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTQ4OTIyMTY2NywyMTE5NTA1NTIzLC0xMD
-Y5ODg5ODc4LDIxMzUwNDM5MTUsMzg5MDEyNjM0LC03NzIwODkw
-ODMsNDEwMjQxMzMwLDk4MDA3MTA5NiwtNzUxMDQyOTI2LC0xMT
-Q5Nzk0MzA4XX0=
+eyJoaXN0b3J5IjpbMjA1ODkyMzgyMCwxNDg5MjIxNjY3LDIxMT
+k1MDU1MjMsLTEwNjk4ODk4NzgsMjEzNTA0MzkxNSwzODkwMTI2
+MzQsLTc3MjA4OTA4Myw0MTAyNDEzMzAsOTgwMDcxMDk2LC03NT
+EwNDI5MjYsLTExNDk3OTQzMDhdfQ==
 -->
