@@ -214,14 +214,14 @@ Ainsi, lorsque la fonction sera terminée il suffira de mettre l'ancienne adress
 
 Tout ce qui vient d'être présenté est exactement le fonctionnement du début de la fonction `hello()` : 
 ```C
-   0x00000590 <+0>:	push   ebp
-   0x00000591 <+1>:	mov    ebp,esp
+   0x0804841d <+0>:	push   ebp
+   0x0804841e <+1>:	mov    ebp,esp
 ```
 On observe qu'on `push ebp` afin de se souvenir de sa valeur pour la restaurer à la fin de la fonction, et enfin on dit que la nouvelle valeur du bas de la pile (EBP) est désormais le haut de la pile (ESP) (via l'instruction `mov ebp,esp` qui déplace la valeur de `ESP` dans `EBP`).
 
 Récap : 
 ```C
-   0x00000590 <+0>:	push   ebp
+   0x0804841d <+0>:	push   ebp
 ```
 |Values| Stack states |
 |-----|------|
@@ -234,15 +234,15 @@ Récap :
 |Some value|**EBP**|
 
 ```C
-   0x00000591 <+1>:	mov    ebp,esp
+   0x0804841e <+1>:	mov    ebp,espsp
 ```
 |Values| Stack states |
 |-----|------|
 |old EBP value (`0x0800050a`)|__ESP__ et __EBP__|
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTI5NzQwNDI5NywxNDg5MjIxNjY3LDIxMT
-k1MDU1MjMsLTEwNjk4ODk4NzgsMjEzNTA0MzkxNSwzODkwMTI2
-MzQsLTc3MjA4OTA4Myw0MTAyNDEzMzAsOTgwMDcxMDk2LC03NT
-EwNDI5MjYsLTExNDk3OTQzMDhdfQ==
+eyJoaXN0b3J5IjpbNzQ5NzAxMzMyLDE0ODkyMjE2NjcsMjExOT
+UwNTUyMywtMTA2OTg4OTg3OCwyMTM1MDQzOTE1LDM4OTAxMjYz
+NCwtNzcyMDg5MDgzLDQxMDI0MTMzMCw5ODAwNzEwOTYsLTc1MT
+A0MjkyNiwtMTE0OTc5NDMwOF19
 -->
