@@ -141,12 +141,12 @@ gdb-peda$ disas main
 ...
    0x08048430 <+0>:	push   ebp
    0x08048431 <+1>:	mov    ebp,esp
-   0x08048433 <+3>:	and    esp,0xfffffff0
-   0x08048436 <+6>:	sub    esp,0x20
+   0x08048433 <+3>:	and    esp,0xfffffff0 ;alignement pour optimisation
+   0x08048436 <+6>:	sub    esp,0x20       ;allocation de mémoire sur la pile 
    0x08048439 <+9>:	mov    DWORD PTR [esp+0x1c],0x80484f0
    0x08048441 <+17>:	mov    eax,DWORD PTR [esp+0x1c]
-   0x08048445 <+21>:	mov    DWORD PTR [esp],eax
-   0x08048448 <+24>:	call   0x804841d <hello>
+   0x08048445 <+21>:	mov    DWORD PTR [esp],eax ;push de l'addr de la string
+   0x08048448 <+24>:	call   0x804841d <hello>   ;call de la fonction hello
    0x0804844d <+29>:	mov    eax,0x0
    0x08048452 <+34>:	leave  
    0x08048453 <+35>:	ret    
@@ -160,19 +160,15 @@ Désassemblons notre fonction `hello()` :
 
 ```C
 gdb-peda$ disas hello
-   0x00000590 <+0>:	push   ebp
-   0x00000591 <+1>:	mov    ebp,esp
-   0x00000593 <+3>:	push   ebx
-   0x00000594 <+4>:	sub    esp,0x4
-			...
-   0x000005a4 <+20>:	push   DWORD PTR [ebp+0x8]
-   0x000005a7 <+23>:	mov    ebx,eax
-   0x000005a9 <+25>:	call   0x3f0 <puts@plt>
-   0x000005ae <+30>:	add    esp,0x10
-   0x000005b1 <+33>:	nop
-   0x000005b2 <+34>:	mov    ebx,DWORD PTR [ebp-0x4]
-   0x000005b5 <+37>:	leave  
-   0x000005b6 <+38>:	ret    
+
+   0x0804841d <+0>:	push   ebp
+   0x0804841e <+1>:	mov    ebp,esp               ;On prépare la pile
+   0x08048420 <+3>:	sub    esp,0x18              ;On alloue de la place sur la pile
+   0x08048423 <+6>:	mov    eax,DWORD PTR [ebp+0x8]
+   0x08048426 <+9>:	mov    DWORD PTR [esp],eax ;On push le pointeur vers notre chaine
+   0x08048429 <+12>:	call   0x80482f0 <puts@plt>;Appel à la fonction puts de libc
+   0x0804842e <+17>:	leave  
+   0x0804842f <+18>:	ret    
 ```
 
 Une fois dans la fonction `hello()`, les premières instruction auront pou but de "sauvegarder" l'état de la pile, afin de la restaurer à posteriori dans l'état dans lequel elle était avant l'appel à la fonction.
@@ -246,8 +242,8 @@ Récap :
 |old EBP value (`0x0800050a`)|__ESP__ et __EBP__|
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjA1ODkyMzgyMCwxNDg5MjIxNjY3LDIxMT
-k1MDU1MjMsLTEwNjk4ODk4NzgsMjEzNTA0MzkxNSwzODkwMTI2
-MzQsLTc3MjA4OTA4Myw0MTAyNDEzMzAsOTgwMDcxMDk2LC03NT
-EwNDI5MjYsLTExNDk3OTQzMDhdfQ==
+eyJoaXN0b3J5IjpbNTI4OTA4NTMsMTQ4OTIyMTY2NywyMTE5NT
+A1NTIzLC0xMDY5ODg5ODc4LDIxMzUwNDM5MTUsMzg5MDEyNjM0
+LC03NzIwODkwODMsNDEwMjQxMzMwLDk4MDA3MTA5NiwtNzUxMD
+QyOTI2LC0xMTQ5Nzk0MzA4XX0=
 -->
