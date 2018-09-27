@@ -234,14 +234,14 @@ Récap :
 |Some value|**EBP**|
 
 ```C
-   0x0804841e <+1>:	mov    ebp,espsp
+   0x0804841e <+1>:	mov    ebp,esp
 ```
 |Values| Stack states |
 |-----|------|
 |old EBP value (`0x0800050a`)|__ESP__ et __EBP__|
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNzQ5NzAxMzMyLDE0ODkyMjE2NjcsMjExOT
+eyJoaXN0b3J5IjpbNjYzMDg5MTQzLDE0ODkyMjE2NjcsMjExOT
 UwNTUyMywtMTA2OTg4OTg3OCwyMTM1MDQzOTE1LDM4OTAxMjYz
 NCwtNzcyMDg5MDgzLDQxMDI0MTMzMCw5ODAwNzEwOTYsLTc1MT
 A0MjkyNiwtMTE0OTc5NDMwOF19
