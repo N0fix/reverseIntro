@@ -94,6 +94,9 @@ La première chose à savoir pour les appels aux fonctions en assembleur, c'est 
  1. La fonction veut une pile rien que pour elle, elle ne veut pas savoir ce qu'il y avait déjà dans la pile avant
  2. L'état de la pile avant la fonction doit être restauré à la sortie de la fonction
 
+Afin de répondre à la première contrainte, le programme va simuler l'idée d'une pile neuve. 
+Pour faire une nouelle pile dans notre situation, il suffirait de dire que le bas de la pile si situe désormais 
+
 Reprenons notre fonction `hello()` d'exemple : 
 
 ```C
@@ -239,8 +242,8 @@ Récap :
 |old EBP value (`0x0800050a`)|__ESP__ et __EBP__|
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEyMDY4Mzk2MSwxNDg5MjIxNjY3LDIxMT
-k1MDU1MjMsLTEwNjk4ODk4NzgsMjEzNTA0MzkxNSwzODkwMTI2
-MzQsLTc3MjA4OTA4Myw0MTAyNDEzMzAsOTgwMDcxMDk2LC03NT
-EwNDI5MjYsLTExNDk3OTQzMDhdfQ==
+eyJoaXN0b3J5IjpbLTI5NzgzMDk2OSwtMTIwNjgzOTYxLDE0OD
+kyMjE2NjcsMjExOTUwNTUyMywtMTA2OTg4OTg3OCwyMTM1MDQz
+OTE1LDM4OTAxMjYzNCwtNzcyMDg5MDgzLDQxMDI0MTMzMCw5OD
+AwNzEwOTYsLTc1MTA0MjkyNiwtMTE0OTc5NDMwOF19
 -->
