@@ -91,11 +91,29 @@ int main(char** argv, int argc){
 
 ### Passage des arguments et appel de la fonction
 
+Afin de comprendre comment sont passé les arguments et comment est appelée une fonction, je vais prendre pour exemple le programme suivant :
+
 ```C
+#include <stdio.h>
+void hello(char* str){
+    printf("%s\n", str);
+}
+
+int main(void){
+    char* str = "Hello";
+    hello(str);
+    return 0;
+}
+```
+Une fois désassemblé avec `GDB` via la commande ``
+
+```C
+	...
    0x08048439 <+9>:	mov    DWORD PTR [esp+0x1c],0x80484f0
    0x08048441 <+17>:	mov    eax,DWORD PTR [esp+0x1c]
    0x08048445 <+21>:	mov    DWORD PTR [esp],eax ;push de l'addr de la string
    0x08048448 <+24>:	call   0x804841d <hello>   ;call de la fonction hello
+	...
 ```
 
 La première chose à savoir pour les appels aux fonctions en assembleur, c'est qu'elles doivent satisfaire deux contraintes :
@@ -267,8 +285,8 @@ Récap :
 |old EBP value (`0x0800050a`)|__ESP__ et __EBP__|
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTUyMzY2NjUxOCwtMTIwNjgzOTYxLDE0OD
-kyMjE2NjcsMjExOTUwNTUyMywtMTA2OTg4OTg3OCwyMTM1MDQz
-OTE1LDM4OTAxMjYzNCwtNzcyMDg5MDgzLDQxMDI0MTMzMCw5OD
-AwNzEwOTYsLTc1MTA0MjkyNiwtMTE0OTc5NDMwOF19
+eyJoaXN0b3J5IjpbLTIwNDg3NTc5ODcsLTEyMDY4Mzk2MSwxND
+g5MjIxNjY3LDIxMTk1MDU1MjMsLTEwNjk4ODk4NzgsMjEzNTA0
+MzkxNSwzODkwMTI2MzQsLTc3MjA4OTA4Myw0MTAyNDEzMzAsOT
+gwMDcxMDk2LC03NTEwNDI5MjYsLTExNDk3OTQzMDhdfQ==
 -->
