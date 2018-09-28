@@ -89,6 +89,15 @@ int main(char** argv, int argc){
 
 ## Les appels de fonction
 
+### Passage des arguments et appel de la fonction
+
+```C
+   0x08048439 <+9>:	mov    DWORD PTR [esp+0x1c],0x80484f0
+   0x08048441 <+17>:	mov    eax,DWORD PTR [esp+0x1c]
+   0x08048445 <+21>:	mov    DWORD PTR [esp],eax ;push de l'addr de la string
+   0x08048448 <+24>:	call   0x804841d <hello>   ;call de la fonction hello
+```
+
 La première chose à savoir pour les appels aux fonctions en assembleur, c'est qu'elles doivent satisfaire deux contraintes :
 
  1. La fonction veut une pile rien que pour elle, elle ne veut pas savoir ce qu'il y avait déjà dans la pile avant
@@ -103,6 +112,7 @@ Ceci est accompli par ces deux lignes d'assembleur que je vais détailler, et qu
    0x0804841e <+1>:	mov    ebp,esp
 ```
 ### L'appel à la fonction
+
 
 
 
@@ -257,7 +267,7 @@ Récap :
 |old EBP value (`0x0800050a`)|__ESP__ et __EBP__|
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTMzNTUxMTA5MiwtMTIwNjgzOTYxLDE0OD
+eyJoaXN0b3J5IjpbLTUyMzY2NjUxOCwtMTIwNjgzOTYxLDE0OD
 kyMjE2NjcsMjExOTUwNTUyMywtMTA2OTg4OTg3OCwyMTM1MDQz
 OTE1LDM4OTAxMjYzNCwtNzcyMDg5MDgzLDQxMDI0MTMzMCw5OD
 AwNzEwOTYsLTc1MTA0MjkyNiwtMTE0OTc5NDMwOF19
