@@ -105,7 +105,7 @@ int main(void){
     return 0;
 }
 ```
-Une fois désassemblé avec `GDB` via la commande ``
+Une fois la fonction `main()` désassemblé avec `GDB` via la commande `disas main`, on obtient ceci :
 
 ```C
 	...
@@ -116,7 +116,11 @@ Une fois désassemblé avec `GDB` via la commande ``
 	...
 ```
 
-La première chose à savoir pour les appels aux fonctions en assembleur, c'est qu'elles doivent satisfaire deux contraintes :
+
+
+### Après l'appel
+
+Une chose à savoir pour les appels aux fonctions en assembleur, c'est qu'elles doivent satisfaire deux contraintes :
 
  1. La fonction veut une pile rien que pour elle, elle ne veut pas savoir ce qu'il y avait déjà dans la pile avant
  2. L'état de la pile avant la fonction doit être restauré à la sortie de la fonction
@@ -285,8 +289,8 @@ Récap :
 |old EBP value (`0x0800050a`)|__ESP__ et __EBP__|
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIwNDg3NTc5ODcsLTEyMDY4Mzk2MSwxND
-g5MjIxNjY3LDIxMTk1MDU1MjMsLTEwNjk4ODk4NzgsMjEzNTA0
-MzkxNSwzODkwMTI2MzQsLTc3MjA4OTA4Myw0MTAyNDEzMzAsOT
-gwMDcxMDk2LC03NTEwNDI5MjYsLTExNDk3OTQzMDhdfQ==
+eyJoaXN0b3J5IjpbNDk0NzE2NzQyLC0xMjA2ODM5NjEsMTQ4OT
+IyMTY2NywyMTE5NTA1NTIzLC0xMDY5ODg5ODc4LDIxMzUwNDM5
+MTUsMzg5MDEyNjM0LC03NzIwODkwODMsNDEwMjQxMzMwLDk4MD
+A3MTA5NiwtNzUxMDQyOTI2LC0xMTQ5Nzk0MzA4XX0=
 -->
