@@ -95,7 +95,15 @@ La première chose à savoir pour les appels aux fonctions en assembleur, c'est 
  2. L'état de la pile avant la fonction doit être restauré à la sortie de la fonction
 
 Afin de répondre à la première contrainte, le programme va simuler l'idée d'une pile neuve. 
-Pour faire une nouelle pile dans notre situation, il suffirait de dire que le bas de la pile si situe désormais en haut de la pile. Ainsi, le bas et le haut de la pile étant au même niveau, on obtient une nouvelle pile vide. Afin d'être en mesure de restaurer la pile dans son état avant la fonction, on gardera juste en mémoire l'ancienne position du bas de la pile avant de 
+Pour faire une nouelle pile dans notre situation, il suffirait de dire que le bas de la pile si situe désormais en haut de la pile. Ainsi, le bas et le haut de la pile étant au même niveau, on obtient une nouvelle pile vide. Afin d'être en mesure de restaurer la pile dans son état avant la fonction, on gardera juste en mémoire l'ancienne position du bas de la pile avant de dire que le bas de la pile est au même niveau que le haut de la pile.
+Ceci est accompli par ces deux lignes d'assembleur que je vais détailler, et qui sont systématiquement présentes à chaque début de fonction :
+
+```C
+   0x0804841d <+0>:	push   ebp
+   0x0804841e <+1>:	mov    ebp,esp
+```
+Afin de bien comprendre ces lignes, je vais 
+
 
 Reprenons notre fonction `hello()` d'exemple : 
 
@@ -242,7 +250,7 @@ Récap :
 |old EBP value (`0x0800050a`)|__ESP__ et __EBP__|
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNjE3MTE2NzgwLC0xMjA2ODM5NjEsMTQ4OT
+eyJoaXN0b3J5IjpbNzYyNjA4OTUxLC0xMjA2ODM5NjEsMTQ4OT
 IyMTY2NywyMTE5NTA1NTIzLC0xMDY5ODg5ODc4LDIxMzUwNDM5
 MTUsMzg5MDEyNjM0LC03NzIwODkwODMsNDEwMjQxMzMwLDk4MD
 A3MTA5NiwtNzUxMDQyOTI2LC0xMTQ5Nzk0MzA4XX0=
