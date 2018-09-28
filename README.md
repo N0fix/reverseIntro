@@ -102,7 +102,14 @@ Ceci est accompli par ces deux lignes d'assembleur que je vais détailler, et qu
    0x0804841d <+0>:	push   ebp
    0x0804841e <+1>:	mov    ebp,esp
 ```
-Afin de bien comprendre ces lignes, je vais 
+### L'appel à la fonction
+
+
+
+Afin de bien comprendre ces lignes, voici l'état réel de la pile, et l'état de la pile vu par le programme à chaque instant :
+
+
+
 
 
 Reprenons notre fonction `hello()` d'exemple : 
@@ -250,8 +257,8 @@ Récap :
 |old EBP value (`0x0800050a`)|__ESP__ et __EBP__|
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNzYyNjA4OTUxLC0xMjA2ODM5NjEsMTQ4OT
-IyMTY2NywyMTE5NTA1NTIzLC0xMDY5ODg5ODc4LDIxMzUwNDM5
-MTUsMzg5MDEyNjM0LC03NzIwODkwODMsNDEwMjQxMzMwLDk4MD
-A3MTA5NiwtNzUxMDQyOTI2LC0xMTQ5Nzk0MzA4XX0=
+eyJoaXN0b3J5IjpbLTMzNTUxMTA5MiwtMTIwNjgzOTYxLDE0OD
+kyMjE2NjcsMjExOTUwNTUyMywtMTA2OTg4OTg3OCwyMTM1MDQz
+OTE1LDM4OTAxMjYzNCwtNzcyMDg5MDgzLDQxMDI0MTMzMCw5OD
+AwNzEwOTYsLTc1MTA0MjkyNiwtMTE0OTc5NDMwOF19
 -->
