@@ -122,7 +122,9 @@ Trois instructions ici vont permettrent de 'push' le pointeur vers notre chaine 
  3. On "push" `EAX` en déplacant son contenu sur le haut de la stack 
 
 Un simple `push 0x80484f0` aurai pu suffire, mais le code assembleur n'est pas toujours parfaitement optimisé. 
-Maintenant que notre pointeur `char* str` a bien été push sur la stack, on va pouvoi appeler la fonction
+Voici le nouvel état de la pile : 
+
+Maintenant que notre pointeur `char* str` a bien été push sur la stack, on sait que les arguments sont prêts, on va pouvoir appeler la fonction grâce à l'instruction `call`.
 
 
 ### Après l'appel
@@ -296,9 +298,9 @@ Récap :
 |old EBP value (`0x0800050a`)|__ESP__ et __EBP__|
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbODUxMTI0MDExLDIxMTU2NDQ4NTksOTU4OT
-AxMjU1LDQ5NDcxNjc0MiwtMTIwNjgzOTYxLDE0ODkyMjE2Njcs
-MjExOTUwNTUyMywtMTA2OTg4OTg3OCwyMTM1MDQzOTE1LDM4OT
-AxMjYzNCwtNzcyMDg5MDgzLDQxMDI0MTMzMCw5ODAwNzEwOTYs
-LTc1MTA0MjkyNiwtMTE0OTc5NDMwOF19
+eyJoaXN0b3J5IjpbLTE1NzQ1MzQ1NzEsMjExNTY0NDg1OSw5NT
+g5MDEyNTUsNDk0NzE2NzQyLC0xMjA2ODM5NjEsMTQ4OTIyMTY2
+NywyMTE5NTA1NTIzLC0xMDY5ODg5ODc4LDIxMzUwNDM5MTUsMz
+g5MDEyNjM0LC03NzIwODkwODMsNDEwMjQxMzMwLDk4MDA3MTA5
+NiwtNzUxMDQyOTI2LC0xMTQ5Nzk0MzA4XX0=
 -->
