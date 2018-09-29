@@ -129,9 +129,12 @@ L'instruction `call` est un peu particulière, car avant d'appeler la fonction, 
 Dans notre cas on avait : 
 ```C
 	...
-   0x08048448 <+24>:	call   0x804841d <hello>   ;call de la fonction hello
+   0x08048448 <+24>:	call   0x804841d <hello>
+   0x0804844d <+29>:	mov    eax,0x0
 	...
 ```
+L'adresse `0x0804844d` va donc être push sur la stack. On obtient : 
+
 
 ### Après l'appel
 
@@ -304,10 +307,10 @@ Récap :
 |old EBP value (`0x0800050a`)|__ESP__ et __EBP__|
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTExODA2MTk2NSwtMTU3NDUzNDU3MSwyMT
-E1NjQ0ODU5LDk1ODkwMTI1NSw0OTQ3MTY3NDIsLTEyMDY4Mzk2
-MSwxNDg5MjIxNjY3LDIxMTk1MDU1MjMsLTEwNjk4ODk4NzgsMj
-EzNTA0MzkxNSwzODkwMTI2MzQsLTc3MjA4OTA4Myw0MTAyNDEz
-MzAsOTgwMDcxMDk2LC03NTEwNDI5MjYsLTExNDk3OTQzMDhdfQ
-==
+eyJoaXN0b3J5IjpbMTAwMTM2ODA2MSwxMTE4MDYxOTY1LC0xNT
+c0NTM0NTcxLDIxMTU2NDQ4NTksOTU4OTAxMjU1LDQ5NDcxNjc0
+MiwtMTIwNjgzOTYxLDE0ODkyMjE2NjcsMjExOTUwNTUyMywtMT
+A2OTg4OTg3OCwyMTM1MDQzOTE1LDM4OTAxMjYzNCwtNzcyMDg5
+MDgzLDQxMDI0MTMzMCw5ODAwNzEwOTYsLTc1MTA0MjkyNiwtMT
+E0OTc5NDMwOF19
 -->
