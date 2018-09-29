@@ -125,7 +125,13 @@ Un simple `push 0x80484f0` aurai pu suffire, mais le code assembleur n'est pas t
 Voici le nouvel état de la pile : 
 ![Stack first ptr str](https://raw.githubusercontent.com/N0fix/reverseIntro/master/img/stack1.png)
 Maintenant que notre pointeur `char* str` a bien été push sur la stack, on sait que les arguments sont prêts, on va pouvoir appeler la fonction grâce à l'instruction `call`.
-L'instruction `call` est un peu particulière, car avant d'appeler la fonction, elle va push l'instruction à executer quand la fonction sera
+L'instruction `call` est un peu particulière, car avant d'appeler la fonction, elle va push l'instruction à executer quand la fonction appelée sera terminée. 
+Dans notre cas on avait : 
+```C
+	...
+   0x08048448 <+24>:	call   0x804841d <hello>   ;call de la fonction hello
+	...
+```
 
 ### Après l'appel
 
@@ -298,10 +304,10 @@ Récap :
 |old EBP value (`0x0800050a`)|__ESP__ et __EBP__|
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE2OTU3MjEwODEsLTE1NzQ1MzQ1NzEsMj
-ExNTY0NDg1OSw5NTg5MDEyNTUsNDk0NzE2NzQyLC0xMjA2ODM5
-NjEsMTQ4OTIyMTY2NywyMTE5NTA1NTIzLC0xMDY5ODg5ODc4LD
-IxMzUwNDM5MTUsMzg5MDEyNjM0LC03NzIwODkwODMsNDEwMjQx
-MzMwLDk4MDA3MTA5NiwtNzUxMDQyOTI2LC0xMTQ5Nzk0MzA4XX
-0=
+eyJoaXN0b3J5IjpbMTExODA2MTk2NSwtMTU3NDUzNDU3MSwyMT
+E1NjQ0ODU5LDk1ODkwMTI1NSw0OTQ3MTY3NDIsLTEyMDY4Mzk2
+MSwxNDg5MjIxNjY3LDIxMTk1MDU1MjMsLTEwNjk4ODk4NzgsMj
+EzNTA0MzkxNSwzODkwMTI2MzQsLTc3MjA4OTA4Myw0MTAyNDEz
+MzAsOTgwMDcxMDk2LC03NTEwNDI5MjYsLTExNDk3OTQzMDhdfQ
+==
 -->
