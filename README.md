@@ -118,10 +118,11 @@ Une fois la fonction `main()` désassemblé avec `GDB` via la commande `disas ma
 Trois instructions ici vont permettrent de 'push' le pointeur vers notre chaine de caractères "Hello" sur la pile.
 
  1. Le pointeur est placé dans la pile à l'adresse `esp+0x1c`
- 2. On copi
+ 2. On copie le pointeur dans `EAX`
+ 3. On "push" `EAX` en déplacant son contenu sur le haut de la stack 
 
-est push chargée dans la pile à l'adresse `esp+0x1c`, pour être placée dans le registre EAX, qui permettra de mettre le pointeur pile sur le haut de la pile.
 Un simple `push 0x80484f0` aurai pu suffire, mais le code assembleur n'est pas toujours parfaitement optimisé. 
+Maintenant que notre pointeur `char* str` a bien été push sur la stack, on va pouvoi appeler la fonction
 
 
 ### Après l'appel
@@ -295,9 +296,9 @@ Récap :
 |old EBP value (`0x0800050a`)|__ESP__ et __EBP__|
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEwMzcwOTcyNDksMjExNTY0NDg1OSw5NT
-g5MDEyNTUsNDk0NzE2NzQyLC0xMjA2ODM5NjEsMTQ4OTIyMTY2
-NywyMTE5NTA1NTIzLC0xMDY5ODg5ODc4LDIxMzUwNDM5MTUsMz
-g5MDEyNjM0LC03NzIwODkwODMsNDEwMjQxMzMwLDk4MDA3MTA5
-NiwtNzUxMDQyOTI2LC0xMTQ5Nzk0MzA4XX0=
+eyJoaXN0b3J5IjpbODUxMTI0MDExLDIxMTU2NDQ4NTksOTU4OT
+AxMjU1LDQ5NDcxNjc0MiwtMTIwNjgzOTYxLDE0ODkyMjE2Njcs
+MjExOTUwNTUyMywtMTA2OTg4OTg3OCwyMTM1MDQzOTE1LDM4OT
+AxMjYzNCwtNzcyMDg5MDgzLDQxMDI0MTMzMCw5ODAwNzEwOTYs
+LTc1MTA0MjkyNiwtMTE0OTc5NDMwOF19
 -->
