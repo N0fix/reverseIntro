@@ -91,7 +91,7 @@ int main(char** argv, int argc){
 
 ### Passage des arguments et appel de la fonction
 
-Afin de comprendre comment sont passé les arguments et comment est appelée une fonction, je vais prendre pour exemple le programme suivant :
+Afin de comprendre comment sont passés les arguments et comment est appelée une fonction, je vais prendre pour exemple le programme suivant :
 
 ```C
 #include <stdio.h>
@@ -115,7 +115,7 @@ Une fois la fonction `main()` désassemblé avec `GDB` via la commande `disas ma
    0x08048448 <+24>:	call   0x804841d <hello>   ;call de la fonction hello
 	...
 ```
-
+Le pointeur vers notre chaine de caractères "Hello" est push chargée da
 
 
 ### Après l'appel
@@ -289,9 +289,9 @@ Récap :
 |old EBP value (`0x0800050a`)|__ESP__ et __EBP__|
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjExNTY0NDg1OSw5NTg5MDEyNTUsNDk0Nz
-E2NzQyLC0xMjA2ODM5NjEsMTQ4OTIyMTY2NywyMTE5NTA1NTIz
-LC0xMDY5ODg5ODc4LDIxMzUwNDM5MTUsMzg5MDEyNjM0LC03Nz
-IwODkwODMsNDEwMjQxMzMwLDk4MDA3MTA5NiwtNzUxMDQyOTI2
-LC0xMTQ5Nzk0MzA4XX0=
+eyJoaXN0b3J5IjpbLTUzOTA5NDg2OCwyMTE1NjQ0ODU5LDk1OD
+kwMTI1NSw0OTQ3MTY3NDIsLTEyMDY4Mzk2MSwxNDg5MjIxNjY3
+LDIxMTk1MDU1MjMsLTEwNjk4ODk4NzgsMjEzNTA0MzkxNSwzOD
+kwMTI2MzQsLTc3MjA4OTA4Myw0MTAyNDEzMzAsOTgwMDcxMDk2
+LC03NTEwNDI5MjYsLTExNDk3OTQzMDhdfQ==
 -->
