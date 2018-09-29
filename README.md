@@ -115,8 +115,13 @@ Une fois la fonction `main()` désassemblé avec `GDB` via la commande `disas ma
    0x08048448 <+24>:	call   0x804841d <hello>   ;call de la fonction hello
 	...
 ```
-Le pointeur vers notre chaine de caractères "Hello" est push chargée dans la pile à l'adresse `esp+0x1c`, pour être placée dans le registre EAX, qui permettra de mettre le pointeur pile sur le haut de la pile.
-Un simple `push 0x80484f0` aurai pu suffire, mais le code 
+Trois instructions ici vont permettrent de 'push' le pointeur vers notre chaine de caractères "Hello" sur la pile.
+
+ 1. Le pointeur est placé dans la pile à l'adresse `esp+0x1c`
+ 2. On copi
+
+est push chargée dans la pile à l'adresse `esp+0x1c`, pour être placée dans le registre EAX, qui permettra de mettre le pointeur pile sur le haut de la pile.
+Un simple `push 0x80484f0` aurai pu suffire, mais le code assembleur n'est pas toujours parfaitement optimisé. 
 
 
 ### Après l'appel
@@ -290,7 +295,7 @@ Récap :
 |old EBP value (`0x0800050a`)|__ESP__ et __EBP__|
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTExMzAzMTYyMDUsMjExNTY0NDg1OSw5NT
+eyJoaXN0b3J5IjpbLTEwMzcwOTcyNDksMjExNTY0NDg1OSw5NT
 g5MDEyNTUsNDk0NzE2NzQyLC0xMjA2ODM5NjEsMTQ4OTIyMTY2
 NywyMTE5NTA1NTIzLC0xMDY5ODg5ODc4LDIxMzUwNDM5MTUsMz
 g5MDEyNjM0LC03NzIwODkwODMsNDEwMjQxMzMwLDk4MDA3MTA5
