@@ -136,7 +136,7 @@ Dans notre cas on avait :
 L'adresse `0x0804844d` va donc être push sur la stack. On obtient : 
 ![Stack first ptr str](https://raw.githubusercontent.com/N0fix/reverseIntro/master/img/stack2.png)
 
-Ensuite, le programme execute un `jmp 0x804841d`, donc un 
+Ensuite, le programme execute un `jmp 0x804841d`, donc un jump à l'adresse de notre fonction `hello()`.
 
 ### Après l'appel
 
@@ -309,7 +309,7 @@ Récap :
 |old EBP value (`0x0800050a`)|__ESP__ et __EBP__|
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTk0NTAxMDU2NCwxMTE4MDYxOTY1LC0xNT
+eyJoaXN0b3J5IjpbMTIyNjA1OTI3NiwxMTE4MDYxOTY1LC0xNT
 c0NTM0NTcxLDIxMTU2NDQ4NTksOTU4OTAxMjU1LDQ5NDcxNjc0
 MiwtMTIwNjgzOTYxLDE0ODkyMjE2NjcsMjExOTUwNTUyMywtMT
 A2OTg4OTg3OCwyMTM1MDQzOTE1LDM4OTAxMjYzNCwtNzcyMDg5
