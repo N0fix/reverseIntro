@@ -162,7 +162,7 @@ Et analysons ce qu'il se passe lors de l'appel de la foncton `hello()`.
 
 Représentation de la pile avant l'appel à la fonction `hello()` :
 
-|Valus| Stack states |
+|Values| Stack states |
 |-----|------|
 |__Some values__| __ESP__ |
 |Some value||
@@ -289,8 +289,9 @@ Récap :
 |old EBP value (`0x0800050a`)|__ESP__ et __EBP__|
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNDk0NzE2NzQyLC0xMjA2ODM5NjEsMTQ4OT
-IyMTY2NywyMTE5NTA1NTIzLC0xMDY5ODg5ODc4LDIxMzUwNDM5
-MTUsMzg5MDEyNjM0LC03NzIwODkwODMsNDEwMjQxMzMwLDk4MD
-A3MTA5NiwtNzUxMDQyOTI2LC0xMTQ5Nzk0MzA4XX0=
+eyJoaXN0b3J5IjpbOTU4OTAxMjU1LDQ5NDcxNjc0MiwtMTIwNj
+gzOTYxLDE0ODkyMjE2NjcsMjExOTUwNTUyMywtMTA2OTg4OTg3
+OCwyMTM1MDQzOTE1LDM4OTAxMjYzNCwtNzcyMDg5MDgzLDQxMD
+I0MTMzMCw5ODAwNzEwOTYsLTc1MTA0MjkyNiwtMTE0OTc5NDMw
+OF19
 -->
