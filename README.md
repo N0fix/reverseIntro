@@ -179,6 +179,9 @@ Même chose que pour l'instruction `add`, mais en soustrayant.
 #### PUSH
 L'instruction `push <source>` empile la valeur source sur la pile. Exemple si la `eax` vaut 15 : la valeur 15 sera placée en haut de la pile. La valeur du registre `esp` sera également modifiée puisque la taille de la pile augmente.
 >Rappel : le registre `ESP` pointe systématiquement vers le haut de la pile. 
+
+
+
 #### POP
 L'instruction `pop <destination>` dépile la dernière valeur sur la pile et place cette valeur dans la destination. Exemple si la valeur 15 est présente sur la pile : `pop eax` aura pour effet de retirer 15 de la pile et de placer 15 dans `eax`. La valeur du registre `esp` sera également modifiée puisque la taille de la pile réduit.
 
@@ -326,11 +329,11 @@ Le programme reprends donc son cours normal.
 ret2libc
 ropchain
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTQ3MjcyNDg2LDEzNjQxOTYzMDMsLTE1Mj
-IyNTQ1OTcsLTExNDkwODAwOCwxMTU1Nzg0MDE2LDE2MzU1MzYz
-MzYsLTQzODc3MzMwNiwtMjA2NDE4NzU0MSwxMDUwNTMwMzQyLD
-gwNDUxNjk2NywxOTIxMjQzNjU0LDEzODE3NDc4ODgsMTIyNjA1
-OTI3NiwxMTE4MDYxOTY1LC0xNTc0NTM0NTcxLDIxMTU2NDQ4NT
-ksOTU4OTAxMjU1LDQ5NDcxNjc0MiwtMTIwNjgzOTYxLDE0ODky
-MjE2NjddfQ==
+eyJoaXN0b3J5IjpbLTIwOTA0NjQxNiwxNDcyNzI0ODYsMTM2ND
+E5NjMwMywtMTUyMjI1NDU5NywtMTE0OTA4MDA4LDExNTU3ODQw
+MTYsMTYzNTUzNjMzNiwtNDM4NzczMzA2LC0yMDY0MTg3NTQxLD
+EwNTA1MzAzNDIsODA0NTE2OTY3LDE5MjEyNDM2NTQsMTM4MTc0
+Nzg4OCwxMjI2MDU5Mjc2LDExMTgwNjE5NjUsLTE1NzQ1MzQ1Nz
+EsMjExNTY0NDg1OSw5NTg5MDEyNTUsNDk0NzE2NzQyLC0xMjA2
+ODM5NjFdfQ==
 -->
