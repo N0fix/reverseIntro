@@ -166,7 +166,8 @@ On commence par le `push ebp`
 ```C
    0x0804841d <+0>:	push   ebp
 ```
-Ici, on va garder sur le haut de la stack la valeur de ``
+Ici, on va garder sur le haut de la stack la valeur de `ebp` avant que la fonction commence. Cela nous permettra de restaurer l'ancienne valeur d'`ebp` à la sortie de la fonction.
+
 
 
 
@@ -319,10 +320,10 @@ Récap :
 |old EBP value (`0x0800050a`)|__ESP__ et __EBP__|
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEzMDc2MzY2ODQsMTIyNjA1OTI3NiwxMT
-E4MDYxOTY1LC0xNTc0NTM0NTcxLDIxMTU2NDQ4NTksOTU4OTAx
-MjU1LDQ5NDcxNjc0MiwtMTIwNjgzOTYxLDE0ODkyMjE2NjcsMj
-ExOTUwNTUyMywtMTA2OTg4OTg3OCwyMTM1MDQzOTE1LDM4OTAx
-MjYzNCwtNzcyMDg5MDgzLDQxMDI0MTMzMCw5ODAwNzEwOTYsLT
-c1MTA0MjkyNiwtMTE0OTc5NDMwOF19
+eyJoaXN0b3J5IjpbMTM4MTc0Nzg4OCwxMjI2MDU5Mjc2LDExMT
+gwNjE5NjUsLTE1NzQ1MzQ1NzEsMjExNTY0NDg1OSw5NTg5MDEy
+NTUsNDk0NzE2NzQyLC0xMjA2ODM5NjEsMTQ4OTIyMTY2NywyMT
+E5NTA1NTIzLC0xMDY5ODg5ODc4LDIxMzUwNDM5MTUsMzg5MDEy
+NjM0LC03NzIwODkwODMsNDEwMjQxMzMwLDk4MDA3MTA5NiwtNz
+UxMDQyOTI2LC0xMTQ5Nzk0MzA4XX0=
 -->
