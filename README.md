@@ -129,7 +129,7 @@ Tandis que la syntaxe A&AT fonctionne en : `opération <source> <destination>`
 |:----------:|--------------|
 | mov eax, 1 | mov $1, %eax |
 
-Une autre différence majeure entre les deux syntaxes 
+Une autre différence majeure entre les deux syntaxes est qu'en A&AT les
 
 ### Les instruction essentielles
 
@@ -262,11 +262,11 @@ Le programme reprends donc son cours normal.
 ret2libc
 ropchain
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTYzNTUzNjMzNiwtNDM4NzczMzA2LC0yMD
-Y0MTg3NTQxLDEwNTA1MzAzNDIsODA0NTE2OTY3LDE5MjEyNDM2
-NTQsMTM4MTc0Nzg4OCwxMjI2MDU5Mjc2LDExMTgwNjE5NjUsLT
-E1NzQ1MzQ1NzEsMjExNTY0NDg1OSw5NTg5MDEyNTUsNDk0NzE2
-NzQyLC0xMjA2ODM5NjEsMTQ4OTIyMTY2NywyMTE5NTA1NTIzLC
-0xMDY5ODg5ODc4LDIxMzUwNDM5MTUsMzg5MDEyNjM0LC03NzIw
-ODkwODNdfQ==
+eyJoaXN0b3J5IjpbLTExNzI1OTExNTIsMTYzNTUzNjMzNiwtND
+M4NzczMzA2LC0yMDY0MTg3NTQxLDEwNTA1MzAzNDIsODA0NTE2
+OTY3LDE5MjEyNDM2NTQsMTM4MTc0Nzg4OCwxMjI2MDU5Mjc2LD
+ExMTgwNjE5NjUsLTE1NzQ1MzQ1NzEsMjExNTY0NDg1OSw5NTg5
+MDEyNTUsNDk0NzE2NzQyLC0xMjA2ODM5NjEsMTQ4OTIyMTY2Ny
+wyMTE5NTA1NTIzLC0xMDY5ODg5ODc4LDIxMzUwNDM5MTUsMzg5
+MDEyNjM0XX0=
 -->
