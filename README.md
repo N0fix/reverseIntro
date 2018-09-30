@@ -104,7 +104,6 @@ int main(char** argv, int argc){
 En x86 on va considérer les registres suivants : 
 
 -   EAX, ECX, EDX, EBX 
-
 >EAX (Accumulator) est utilisé pour stocker des valeurs en général, mais également pour stocker les valeurs de retour des fonctions.
 >ECX (Counter) est généralement le compteur que l'on incrémente (compteur souvent appelé `i` dans les boucles `for` en langage `C`).
 >EDX (Data) Utilisé pour les opérations d'entrée/sortie.
@@ -337,7 +336,7 @@ Tandis que l'instruction `ret`  rend la main à la fonction appelante (dans notr
 Le programme lira l'instruction pointée par `eip`, et donc l'instruction qui suivait l'appel de notre fonction. 
 Le programme reprends donc son cours normal.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTcwNzY4NDc0OSw3MzA0MDE0NTAsMTk0Mz
+eyJoaXN0b3J5IjpbMTQzNDc0ODYxMyw3MzA0MDE0NTAsMTk0Mz
 gzMTkwMCwtNzI5MDAzNTc1LDEwODg5ODk4MzYsLTc1ODgyNDUy
 NCw3NDk1NDU3MDAsMTAwOTMyNTEyMyw5NDI1Mzk2MDIsMTA2MD
 k1MDQzMywxNDcyNzI0ODYsMTM2NDE5NjMwMywtMTUyMjI1NDU5
