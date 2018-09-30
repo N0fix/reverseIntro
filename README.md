@@ -160,9 +160,14 @@ INTEL fait un déplacement vers les 5 premiers bits du registre `eax` en appelan
 
 Lorsque l'opération ne porte pas sur un registre mais sur une adresse, **INTEL** utilisera la syntaxe suivante :
 
-|    INTEL   | AT&T         |
-|:----------:|--------------|
-| mov DWORD PTR [addresse], 5 | movb $5, %eax|
+|    INTEL   | 
+|:----------:|
+| mov \<size\>WORD PTR [addresse], 5 |
+Avec __size__ qui sera remplacé par : 
+ -  b = byte (8 bits)
+-   s = short (16 bits)
+-   w = word (16 bits)
+-   l = long (32 bits)
 
 Pour le reste de ce rendu, j'utiliserai la syntaxe **INTEL**, le format `opération <destination> <source>` étant bien plus instinctif pour moi, car très proche de ce qui est fait pour assigner des valeurs à des variables dans des langages de programmation de plus haut niveau.
 
@@ -312,7 +317,7 @@ Le programme reprends donc son cours normal.
 ret2libc
 ropchain
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMzYzOTgxMjMxLDEzNjQxOTYzMDMsLTE1Mj
+eyJoaXN0b3J5IjpbNDYyMjc5MTEwLDEzNjQxOTYzMDMsLTE1Mj
 IyNTQ1OTcsLTExNDkwODAwOCwxMTU1Nzg0MDE2LDE2MzU1MzYz
 MzYsLTQzODc3MzMwNiwtMjA2NDE4NzU0MSwxMDUwNTMwMzQyLD
 gwNDUxNjk2NywxOTIxMjQzNjU0LDEzODE3NDc4ODgsMTIyNjA1
