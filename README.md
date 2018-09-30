@@ -131,7 +131,12 @@ Tandis que la syntaxe A&AT fonctionne en : `opération <source> <destination>`
 
 Une autre différence majeure entre les deux syntaxes est visible sur l'exemple si dessus : en **A&AT** un `%` doit être placé devant le nom des registres, et un `$` sera placé avant les valeurs.
 Aussi, il est possible en assembleur de ne manipuler qu'une partie d'un registre plutôt que l’entièreté d'un registre.
-En **A&AT**, désigner la partie du registre dans lequel on veut travailler se fera dans l'instruction, tandis qu'en **INTEL** cela sera défini par 
+En **A&AT**, désigner la partie du registre dans lequel on veut travailler se fera dans l'instruction, tandis qu'en **INTEL** cela sera défini par le nom du registre.
+|    INTEL   | A&AT         |
+|:----------:|--------------|
+| mov al, 5 | movb $5, %eax|
+
+En INTEL, un registre est divisible en sous parties. Par exemple, on peut utiliser le registre `EAX` différemment en l'appelant de différentes façons : 
 
 
 ### Les instruction essentielles
@@ -265,11 +270,11 @@ Le programme reprends donc son cours normal.
 ret2libc
 ropchain
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbOTU4OTI4MjA0LC0xNTIyMjU0NTk3LC0xMT
-Q5MDgwMDgsMTE1NTc4NDAxNiwxNjM1NTM2MzM2LC00Mzg3NzMz
-MDYsLTIwNjQxODc1NDEsMTA1MDUzMDM0Miw4MDQ1MTY5NjcsMT
-kyMTI0MzY1NCwxMzgxNzQ3ODg4LDEyMjYwNTkyNzYsMTExODA2
-MTk2NSwtMTU3NDUzNDU3MSwyMTE1NjQ0ODU5LDk1ODkwMTI1NS
-w0OTQ3MTY3NDIsLTEyMDY4Mzk2MSwxNDg5MjIxNjY3LDIxMTk1
-MDU1MjNdfQ==
+eyJoaXN0b3J5IjpbLTI1ODY4MTg4NiwtMTUyMjI1NDU5NywtMT
+E0OTA4MDA4LDExNTU3ODQwMTYsMTYzNTUzNjMzNiwtNDM4Nzcz
+MzA2LC0yMDY0MTg3NTQxLDEwNTA1MzAzNDIsODA0NTE2OTY3LD
+E5MjEyNDM2NTQsMTM4MTc0Nzg4OCwxMjI2MDU5Mjc2LDExMTgw
+NjE5NjUsLTE1NzQ1MzQ1NzEsMjExNTY0NDg1OSw5NTg5MDEyNT
+UsNDk0NzE2NzQyLC0xMjA2ODM5NjEsMTQ4OTIyMTY2NywyMTE5
+NTA1NTIzXX0=
 -->
