@@ -244,7 +244,7 @@ Trois instructions ici vont permettent de 'push' le pointeur vers notre chaîne 
  2. On copie le pointeur dans `EAX`
  3. On "push" `EAX` en déplaçant son contenu sur le haut de la stack 
 
-Un simple `push 0x80484f0` aurai pu suffire, mais le code assembleur n'est pas toujours parfaitement optimisé. 
+Théoriquement un simple `push 0x80484f0` aurai pu suffire, mais le code assembleur n'est pas toujours parfaitement optimisé. 
 Voici le nouvel état de la pile : 
 
 ![Stack first ptr str](https://raw.githubusercontent.com/N0fix/reverseIntro/master/img/stack1.png)
@@ -339,11 +339,11 @@ Le programme reprends donc son cours normal.
 ret2libc
 ropchain
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTk0MzgzMTkwMCwtNzI5MDAzNTc1LDEwOD
-g5ODk4MzYsLTc1ODgyNDUyNCw3NDk1NDU3MDAsMTAwOTMyNTEy
-Myw5NDI1Mzk2MDIsMTA2MDk1MDQzMywxNDcyNzI0ODYsMTM2ND
-E5NjMwMywtMTUyMjI1NDU5NywtMTE0OTA4MDA4LDExNTU3ODQw
-MTYsMTYzNTUzNjMzNiwtNDM4NzczMzA2LC0yMDY0MTg3NTQxLD
-EwNTA1MzAzNDIsODA0NTE2OTY3LDE5MjEyNDM2NTQsMTM4MTc0
-Nzg4OF19
+eyJoaXN0b3J5IjpbNzMwNDAxNDUwLDE5NDM4MzE5MDAsLTcyOT
+AwMzU3NSwxMDg4OTg5ODM2LC03NTg4MjQ1MjQsNzQ5NTQ1NzAw
+LDEwMDkzMjUxMjMsOTQyNTM5NjAyLDEwNjA5NTA0MzMsMTQ3Mj
+cyNDg2LDEzNjQxOTYzMDMsLTE1MjIyNTQ1OTcsLTExNDkwODAw
+OCwxMTU1Nzg0MDE2LDE2MzU1MzYzMzYsLTQzODc3MzMwNiwtMj
+A2NDE4NzU0MSwxMDUwNTMwMzQyLDgwNDUxNjk2NywxOTIxMjQz
+NjU0XX0=
 -->
