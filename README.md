@@ -65,7 +65,9 @@ Lors de l'execution de fonctions dans le programme, les arguments seront "push" 
 
 ### Récap de la mémore avec un schéma + code
 Voici un schéma qui résume bien la mémoire dans un programme en plus de donner la localisation de chaque segment dans la mémoire  :
+
 ![enter image description here](https://azeria-labs.com/wp-content/uploads/2017/07/stack-part2-1.png)
+
 ```C
 #include <stdio.h>
 #include <stdlib.h>
@@ -365,11 +367,11 @@ Récap :
 |old EBP value (`0x0800050a`)|__ESP__ et __EBP__|
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbOTU2OTI3NzksMTkyMTI0MzY1NCwxMzgxNz
-Q3ODg4LDEyMjYwNTkyNzYsMTExODA2MTk2NSwtMTU3NDUzNDU3
-MSwyMTE1NjQ0ODU5LDk1ODkwMTI1NSw0OTQ3MTY3NDIsLTEyMD
-Y4Mzk2MSwxNDg5MjIxNjY3LDIxMTk1MDU1MjMsLTEwNjk4ODk4
-NzgsMjEzNTA0MzkxNSwzODkwMTI2MzQsLTc3MjA4OTA4Myw0MT
-AyNDEzMzAsOTgwMDcxMDk2LC03NTEwNDI5MjYsLTExNDk3OTQz
-MDhdfQ==
+eyJoaXN0b3J5IjpbMTE4NzY5MTY5MSwxOTIxMjQzNjU0LDEzOD
+E3NDc4ODgsMTIyNjA1OTI3NiwxMTE4MDYxOTY1LC0xNTc0NTM0
+NTcxLDIxMTU2NDQ4NTksOTU4OTAxMjU1LDQ5NDcxNjc0MiwtMT
+IwNjgzOTYxLDE0ODkyMjE2NjcsMjExOTUwNTUyMywtMTA2OTg4
+OTg3OCwyMTM1MDQzOTE1LDM4OTAxMjYzNCwtNzcyMDg5MDgzLD
+QxMDI0MTMzMCw5ODAwNzEwOTYsLTc1MTA0MjkyNiwtMTE0OTc5
+NDMwOF19
 -->
