@@ -182,6 +182,10 @@ L'instruction `push <source>` empile la valeur source sur la pile. Exemple si la
 #### POP
 L'instruction `pop <destination>` dépile la dernière valeur sur la pile et place cette valeur dans la destination. Exemple si la valeur 15 est présente sur la pile : `pop eax` aura pour effet de retirer 15 de la pile et de placer 15 dans `eax`. La valeur du registre `esp` sera également modifiée puisque la taille de la pile réduit.
 
+#### JMP
+L'instruction `jmp <addr>` permettra au programme de sauter directement à l'instruction située à l'adresse donnée. Exemple :
+
+
 
 ## Les appels de fonctions
 
@@ -312,7 +316,7 @@ Le programme reprends donc son cours normal.
 ret2libc
 ropchain
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTIzNjM0MzUwMiwxMzY0MTk2MzAzLC0xNT
+eyJoaXN0b3J5IjpbLTYyNjEyOTAxMiwxMzY0MTk2MzAzLC0xNT
 IyMjU0NTk3LC0xMTQ5MDgwMDgsMTE1NTc4NDAxNiwxNjM1NTM2
 MzM2LC00Mzg3NzMzMDYsLTIwNjQxODc1NDEsMTA1MDUzMDM0Mi
 w4MDQ1MTY5NjcsMTkyMTI0MzY1NCwxMzgxNzQ3ODg4LDEyMjYw
