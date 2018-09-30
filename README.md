@@ -125,8 +125,11 @@ Le mot syntaxe **équivalentes** est important, car il signifie qu'il est possib
 
 La syntaxe INTEL fonctionne en : `opération <destination> <source>`
 Tandis que la syntaxe A&AT fonctionne en : `opération <source> <destination>`
+|    INTEL   | A&AT         |
+|:----------:|--------------|
+| mov eax, 1 | mov $1, %eax |
 
-Voici qu
+Une autre différence majeure entre les deux syntaxes 
 
 ### Les instruction essentielles
 
@@ -259,7 +262,7 @@ Le programme reprends donc son cours normal.
 ret2libc
 ropchain
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTkzNDE1OTE2OSwtNDM4NzczMzA2LC0yMD
+eyJoaXN0b3J5IjpbMTYzNTUzNjMzNiwtNDM4NzczMzA2LC0yMD
 Y0MTg3NTQxLDEwNTA1MzAzNDIsODA0NTE2OTY3LDE5MjEyNDM2
 NTQsMTM4MTc0Nzg4OCwxMjI2MDU5Mjc2LDExMTgwNjE5NjUsLT
 E1NzQ1MzQ1NzEsMjExNTY0NDg1OSw5NTg5MDEyNTUsNDk0NzE2
