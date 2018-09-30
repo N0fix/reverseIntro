@@ -109,13 +109,16 @@ En x86 on va considérer les registres suivants :
 >ECX (Counter) est généralement le compteur que l'on incrémente (compteur souvent appelé `i` dans les boucles `for` en langage `C`).
 >EDX (Data) Utilisé pour les opérations d'entrée/sortie.
 >EBX (Base) Utilisé comme pointeur de données (c'est lui qui va pointer vers l'adresse d'un tableau par exemple).
+
 -   ESP, EBP
 > ESP  (Extended Stack Pointer) pointe toujours vers le haut de la pile.
 > EBP (Extended Base Pointer) est un pointeur qui est censé pointer vers le bas de la pile (on verra que cela n'est en réalité pas le cas).
+
 -   ESI, EDI
 > Lors des chargement de données sur le disque, ce sont ces registres qui sont utilisés pour désigner la source et la destination des opérations.
 > ESI (Extended Source Index) pointeur source.
 > EDI (Extended Destination Index) pointeur destination.
+
 -   EIP (Instruction Pointer)
 > Il s'agit du registre qui pointe systématiquement sur l'instruction à exécuter par le programme. 
 
@@ -333,17 +336,12 @@ Tandis que l'instruction `ret`  rend la main à la fonction appelante (dans notr
 
 Le programme lira l'instruction pointée par `eip`, et donc l'instruction qui suivait l'appel de notre fonction. 
 Le programme reprends donc son cours normal.
-
-
-
-ret2libc
-ropchain
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNzMwNDAxNDUwLDE5NDM4MzE5MDAsLTcyOT
-AwMzU3NSwxMDg4OTg5ODM2LC03NTg4MjQ1MjQsNzQ5NTQ1NzAw
-LDEwMDkzMjUxMjMsOTQyNTM5NjAyLDEwNjA5NTA0MzMsMTQ3Mj
-cyNDg2LDEzNjQxOTYzMDMsLTE1MjIyNTQ1OTcsLTExNDkwODAw
-OCwxMTU1Nzg0MDE2LDE2MzU1MzYzMzYsLTQzODc3MzMwNiwtMj
-A2NDE4NzU0MSwxMDUwNTMwMzQyLDgwNDUxNjk2NywxOTIxMjQz
-NjU0XX0=
+eyJoaXN0b3J5IjpbLTcwNzY4NDc0OSw3MzA0MDE0NTAsMTk0Mz
+gzMTkwMCwtNzI5MDAzNTc1LDEwODg5ODk4MzYsLTc1ODgyNDUy
+NCw3NDk1NDU3MDAsMTAwOTMyNTEyMyw5NDI1Mzk2MDIsMTA2MD
+k1MDQzMywxNDcyNzI0ODYsMTM2NDE5NjMwMywtMTUyMjI1NDU5
+NywtMTE0OTA4MDA4LDExNTU3ODQwMTYsMTYzNTUzNjMzNiwtND
+M4NzczMzA2LC0yMDY0MTg3NTQxLDEwNTA1MzAzNDIsODA0NTE2
+OTY3XX0=
 -->
