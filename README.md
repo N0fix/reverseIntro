@@ -120,30 +120,35 @@ Il existe plusieurs façon équivalentes de représenter des opérations en asse
 Les instructions sont systématiquement formée d'une opération à effectuer, d'une source et d'une destination.
 Par exemple, dans l'instruction `mov eax, 1`, l'opérateur `mov` déplace la valeur 1 (source) dans la destination `eax`. 
 
-Il existe deux syntaxes équivalentes majeures, la **A&AT** et la **INTEL**, chacune comportant leurs caractéristiques.
+Il existe deux syntaxes équivalentes majeures, la **AT&T** et la **INTEL**, chacune comportant leurs caractéristiques.
 Le mot syntaxe **équivalentes** est important, car il signifie qu'il est possible d'écrire une instructions de plusieurs façons différentes.
 
-La syntaxe INTEL fonctionne en : `opération <destination> <source>`
-Tandis que la syntaxe A&AT fonctionne en : `opération <source> <destination>`
-|    INTEL   | A&AT         |
+La syntaxe **INTEL** fonctionne en : `opération <destination> <source>`
+Tandis que la syntaxe **AT&T** fonctionne en : `opération <source> <destination>`
+|    INTEL   | AT&T         |
 |:----------:|--------------|
 | mov eax, 1 | mov $1, %eax |
 
-Une autre différence majeure entre les deux syntaxes est visible sur l'exemple si dessus : en **A&AT** un `%` doit être placé devant le nom des registres, et un `$` sera placé avant les valeurs.
+Une autre différence majeure entre les deux syntaxes est visible sur l'exemple si dessus : en **AT&T** un `%` doit être placé devant le nom des registres, et un `$` sera placé avant les valeurs.
 Aussi, il est possible en assembleur de ne manipuler qu'une partie d'un registre plutôt que l’entièreté d'un registre.
-En **A&AT**, désigner la partie du registre dans lequel on veut travailler se fera dans l'instruction, tandis qu'en **INTEL** cela sera défini par le nom du registre.
-|    INTEL   | A&AT         |
+En **AT&T**, désigner la partie du registre dans lequel on veut travailler se fera dans l'instruction, tandis qu'en **INTEL** cela sera défini par le nom du registre.
+|    INTEL   | AT&T         |
 |:----------:|--------------|
 | mov al, 5 | movb $5, %eax|
 
 En INTEL, un registre est divisible en sous parties. Par exemple, on peut utiliser le registre `EAX` différemment en l'appelant de différentes façons : 
-- EAX pour utiliser les 32 bits du registre
-- AX pour utiliser les 16 premiers bits
-- AL pour utiliser les 8 premiers bits (de 0 à 7)
-- AH pour utiliser les bits 7 à 15 
+ - EAX pour utiliser les 32 bits du registre
+ - AX pour utiliser les 16 premiers bits
+ - AL pour utiliser les 8 premiers bits (de 0 à 7)
+ - AH pour utiliser les bits 7 à 15 
 
-**A&AT** utilisera une syntaxe différente pour manipuler des parties de registres.
-Il faudra ajouter 
+**AT&T** utilisera une syntaxe différente pour manipuler des parties de registres.
+Il faudra ajouter une lettre à la fin de chaque instruction pour spécifier la taille voulue, parmi :
+
+ -  b = byte (8 bit)
+-   s = short (16 bits)
+-   w = word (16 bits)
+-   l = long (32 bits)
 
 ### Les instruction essentielles
 
@@ -276,7 +281,7 @@ Le programme reprends donc son cours normal.
 ret2libc
 ropchain
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEzMDI2MjgxMzEsMTM2NDE5NjMwMywtMT
+eyJoaXN0b3J5IjpbLTEwMjIyOTUwMDMsMTM2NDE5NjMwMywtMT
 UyMjI1NDU5NywtMTE0OTA4MDA4LDExNTU3ODQwMTYsMTYzNTUz
 NjMzNiwtNDM4NzczMzA2LC0yMDY0MTg3NTQxLDEwNTA1MzAzND
 IsODA0NTE2OTY3LDE5MjEyNDM2NTQsMTM4MTc0Nzg4OCwxMjI2
