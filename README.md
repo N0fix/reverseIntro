@@ -123,11 +123,11 @@ En x86 on va considérer les registres suivants :
 ### La syntaxe
 
 Il existe plusieurs façon équivalentes de représenter des opérations en assembleur. Avant toute chose, il faudra choisir la syntaxe avec laquelle on souhaite travailler. 
-Les instructions sont systématiquement formée d'une opération à effectuer, d'une source et d'une destination.
+Les instructions sont systématiquement formées d'une opération à effectuer, d'une source et d'une destination.
 Par exemple, dans l'instruction `mov eax, 1`, l'opérateur `mov` déplace la valeur 1 (source) dans la destination `eax`. 
 
-Il existe deux syntaxes équivalentes majeures, la **AT&T** et la **INTEL**, chacune comportant leurs caractéristiques.
-Le mot syntaxe **équivalentes** est important, car il signifie qu'il est possible d'écrire une instructions de plusieurs façons différentes.
+Il existe deux syntaxes équivalentes majeures, la **AT&T** et la **INTEL**, chacune comportant ses caractéristiques.
+Le mot syntaxe **équivalente** est important, car il signifie qu'il est possible d'écrire une même instruction de plusieurs façons différentes.
 
 La syntaxe **INTEL** fonctionne en : `opération <destination> <source>`
 Tandis que la syntaxe **AT&T** fonctionne en : `opération <source> <destination>`
@@ -136,7 +136,7 @@ Tandis que la syntaxe **AT&T** fonctionne en : `opération <source> <destination
 |:----------:|--------------|
 | mov eax, 1 | mov $1, %eax |
 
-Une autre différence majeure entre les deux syntaxes est visible sur l'exemple si dessus : en **AT&T** un `%` doit être placé devant le nom des registres, et un `$` sera placé avant les valeurs.
+Une autre différence majeure entre les deux syntaxes est visible sur l'exemple ci-dessus : en **AT&T** un `%` doit être placé devant le nom des registres, et un `$` sera placé avant les valeurs.
 Aussi, il est possible en assembleur de ne manipuler qu'une partie d'un registre plutôt que l’entièreté d'un registre.
 En **AT&T**, désigner la partie du registre dans lequel on veut travailler se fera dans l'instruction, tandis qu'en **INTEL** cela sera défini par le nom du registre.
 
@@ -339,7 +339,7 @@ Le programme reprends donc son cours normal.
 ret2libc
 ropchain
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTM3OTM4ODc4NSwxMDg4OTg5ODM2LC03NT
+eyJoaXN0b3J5IjpbMTMzNzM4OTE5MCwxMDg4OTg5ODM2LC03NT
 g4MjQ1MjQsNzQ5NTQ1NzAwLDEwMDkzMjUxMjMsOTQyNTM5NjAy
 LDEwNjA5NTA0MzMsMTQ3MjcyNDg2LDEzNjQxOTYzMDMsLTE1Mj
 IyNTQ1OTcsLTExNDkwODAwOCwxMTU1Nzg0MDE2LDE2MzU1MzYz
