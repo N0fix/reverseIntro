@@ -138,7 +138,9 @@ En **A&AT**, désigner la partie du registre dans lequel on veut travailler se f
 
 En INTEL, un registre est divisible en sous parties. Par exemple, on peut utiliser le registre `EAX` différemment en l'appelant de différentes façons : 
 - EAX pour utiliser les 32 bits du registre
--  
+- AX pour utiliser les 16 premiers bits
+- AL pour utiliser les 8 premiers bits (de 0 à 7)
+- AH pour utiliser les bits 7 à 15 
 
 ### Les instruction essentielles
 
@@ -271,11 +273,11 @@ Le programme reprends donc son cours normal.
 ret2libc
 ropchain
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE2OTcyMzg0OTgsLTE1MjIyNTQ1OTcsLT
-ExNDkwODAwOCwxMTU1Nzg0MDE2LDE2MzU1MzYzMzYsLTQzODc3
-MzMwNiwtMjA2NDE4NzU0MSwxMDUwNTMwMzQyLDgwNDUxNjk2Ny
-wxOTIxMjQzNjU0LDEzODE3NDc4ODgsMTIyNjA1OTI3NiwxMTE4
-MDYxOTY1LC0xNTc0NTM0NTcxLDIxMTU2NDQ4NTksOTU4OTAxMj
-U1LDQ5NDcxNjc0MiwtMTIwNjgzOTYxLDE0ODkyMjE2NjcsMjEx
-OTUwNTUyM119
+eyJoaXN0b3J5IjpbMTM2NDE5NjMwMywtMTUyMjI1NDU5NywtMT
+E0OTA4MDA4LDExNTU3ODQwMTYsMTYzNTUzNjMzNiwtNDM4Nzcz
+MzA2LC0yMDY0MTg3NTQxLDEwNTA1MzAzNDIsODA0NTE2OTY3LD
+E5MjEyNDM2NTQsMTM4MTc0Nzg4OCwxMjI2MDU5Mjc2LDExMTgw
+NjE5NjUsLTE1NzQ1MzQ1NzEsMjExNTY0NDg1OSw5NTg5MDEyNT
+UsNDk0NzE2NzQyLC0xMjA2ODM5NjEsMTQ4OTIyMTY2NywyMTE5
+NTA1NTIzXX0=
 -->
