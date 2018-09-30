@@ -107,11 +107,16 @@ En x86 on va considérer les registres suivants :
 > ESP  (Extended Stack Pointer) pointe toujours vers le haut de la pile
 > EBP (Extended Base Pointer) est un pointeur qui est censé pointer vers le bas de la pile (on verra que cela n'est en réalité pas le cas)
 -   ESI, EDI
-> Lors des chargement de données sur le disque, ce sont ces registres qui sont utilisés pou désigner la source et la destination des
+> Lors des chargement de données sur le disque, ce sont ces registres qui sont utilisés pou désigner la source et la destination des opérations.
+> ESI (Extended Source Index) pointeur source
+> EDI (Extended Destination Index) pointeur destination
 -   EIP (Instruction Pointer)
+> Il s'agit du registre qui pointe systématiquement sur l'instruction à exécuter par le programme. 
 
 
 ### La syntaxe
+
+Il existe plusieurs façon équivalentes de représenter des opérations en assembleur. 
 
 ### Les instruction essentielles
 
@@ -390,7 +395,7 @@ Récap :
 ret2libc
 ropchain
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTY4OTEwMTE2MywxMDUwNTMwMzQyLDgwND
+eyJoaXN0b3J5IjpbLTUwNjI0NDU1OCwxMDUwNTMwMzQyLDgwND
 UxNjk2NywxOTIxMjQzNjU0LDEzODE3NDc4ODgsMTIyNjA1OTI3
 NiwxMTE4MDYxOTY1LC0xNTc0NTM0NTcxLDIxMTU2NDQ4NTksOT
 U4OTAxMjU1LDQ5NDcxNjc0MiwtMTIwNjgzOTYxLDE0ODkyMjE2
