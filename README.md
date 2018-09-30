@@ -167,11 +167,15 @@ On commence par le `push ebp`
    0x0804841d <+0>:	push   ebp
 ```
 Ici, on va garder sur le haut de la stack la valeur de `ebp` avant que la fonction commence. Cela nous permettra de restaurer l'ancienne valeur d'`ebp` à la sortie de la fonction.
-En rouge la valeur 
+En rouge l'adresse de l'instruction à executer après la fin de la fonction `hello()` (comme décrit précédemment), en vert notre pointeur `char *str`.
+
 ![Stack first ptr str](https://raw.githubusercontent.com/N0fix/reverseIntro/master/img/stack3.png)
 
-
-
+Deuxième instruction :
+```C
+   0x0804841e <+1>:	mov    ebp,esp
+```
+On déplac
 
 
 
@@ -320,7 +324,7 @@ Récap :
 |old EBP value (`0x0800050a`)|__ESP__ et __EBP__|
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTgxNjMwNTc4MiwxMzgxNzQ3ODg4LDEyMj
+eyJoaXN0b3J5IjpbLTM1MDc0NzAyOCwxMzgxNzQ3ODg4LDEyMj
 YwNTkyNzYsMTExODA2MTk2NSwtMTU3NDUzNDU3MSwyMTE1NjQ0
 ODU5LDk1ODkwMTI1NSw0OTQ3MTY3NDIsLTEyMDY4Mzk2MSwxND
 g5MjIxNjY3LDIxMTk1MDU1MjMsLTEwNjk4ODk4NzgsMjEzNTA0
