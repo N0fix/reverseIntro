@@ -158,11 +158,16 @@ Ainsi, dans l'exemple
 
 INTEL fait un déplacement vers les 5 premiers bits du registre `eax` en appelant le registre `al`, là où **AT&T** utilisera l'opération `movb`, où `b` signifiera `byte`.
 
-Pour le reste de ce rendu, j'utiliserai la syntaxe **INTEL**, le format `opération <destination> <source>` étant bien plus instinctif pour moi, car très proche de ce qu'on fait dans des lan
+Pour le reste de ce rendu, j'utiliserai la syntaxe **INTEL**, le format `opération <destination> <source>` étant bien plus instinctif pour moi, car très proche de ce qui est fait pour assigner des valeurs à des variables dans des langages de programmation de plus haut niveau.
 
 ### Les instruction essentielles
 
-## Les appels de fonction
+Voici donc les instructions les plus courantes et dont on aura besoin afin d'expliquer la partie suivante sur les appels de fonctions.
+
+#### MOV
+L'instruction ``
+
+## Les appels de fonctions
 
 ### Passage des arguments et appel de la fonction
 
@@ -291,11 +296,11 @@ Le programme reprends donc son cours normal.
 ret2libc
 ropchain
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE2ODEzMjE5MDAsMTM2NDE5NjMwMywtMT
-UyMjI1NDU5NywtMTE0OTA4MDA4LDExNTU3ODQwMTYsMTYzNTUz
-NjMzNiwtNDM4NzczMzA2LC0yMDY0MTg3NTQxLDEwNTA1MzAzND
-IsODA0NTE2OTY3LDE5MjEyNDM2NTQsMTM4MTc0Nzg4OCwxMjI2
-MDU5Mjc2LDExMTgwNjE5NjUsLTE1NzQ1MzQ1NzEsMjExNTY0ND
-g1OSw5NTg5MDEyNTUsNDk0NzE2NzQyLC0xMjA2ODM5NjEsMTQ4
-OTIyMTY2N119
+eyJoaXN0b3J5IjpbLTc2MTYyMTE2MiwxMzY0MTk2MzAzLC0xNT
+IyMjU0NTk3LC0xMTQ5MDgwMDgsMTE1NTc4NDAxNiwxNjM1NTM2
+MzM2LC00Mzg3NzMzMDYsLTIwNjQxODc1NDEsMTA1MDUzMDM0Mi
+w4MDQ1MTY5NjcsMTkyMTI0MzY1NCwxMzgxNzQ3ODg4LDEyMjYw
+NTkyNzYsMTExODA2MTk2NSwtMTU3NDUzNDU3MSwyMTE1NjQ0OD
+U5LDk1ODkwMTI1NSw0OTQ3MTY3NDIsLTEyMDY4Mzk2MSwxNDg5
+MjIxNjY3XX0=
 -->
