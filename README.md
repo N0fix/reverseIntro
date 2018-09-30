@@ -204,7 +204,7 @@ L'instruction `jmp <addr>` permettra au programme de sauter directement à l'ins
    0x08048441 <+17>:	mov    eax,DWORD PTR [esp+0x1c]
 	...
 ```
-Où que l'on soit dans le code, appeler `jmp 0x08048439` permettra de faire continuer le programme à partie de l'instruction :
+Où que l'on soit dans le code, appeler `jmp 0x08048439` permettra de faire continuer le programme à partir de l'instruction :
 ```C
    0x08048439 <+9>:	mov    DWORD PTR [esp+0x1c],0x80484f0
 ```
@@ -339,11 +339,11 @@ Le programme reprends donc son cours normal.
 ret2libc
 ropchain
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTcyOTAwMzU3NSwxMDg4OTg5ODM2LC03NT
-g4MjQ1MjQsNzQ5NTQ1NzAwLDEwMDkzMjUxMjMsOTQyNTM5NjAy
-LDEwNjA5NTA0MzMsMTQ3MjcyNDg2LDEzNjQxOTYzMDMsLTE1Mj
-IyNTQ1OTcsLTExNDkwODAwOCwxMTU1Nzg0MDE2LDE2MzU1MzYz
-MzYsLTQzODc3MzMwNiwtMjA2NDE4NzU0MSwxMDUwNTMwMzQyLD
-gwNDUxNjk2NywxOTIxMjQzNjU0LDEzODE3NDc4ODgsMTIyNjA1
-OTI3Nl19
+eyJoaXN0b3J5IjpbMTk0MzgzMTkwMCwtNzI5MDAzNTc1LDEwOD
+g5ODk4MzYsLTc1ODgyNDUyNCw3NDk1NDU3MDAsMTAwOTMyNTEy
+Myw5NDI1Mzk2MDIsMTA2MDk1MDQzMywxNDcyNzI0ODYsMTM2ND
+E5NjMwMywtMTUyMjI1NDU5NywtMTE0OTA4MDA4LDExNTU3ODQw
+MTYsMTYzNTUzNjMzNiwtNDM4NzczMzA2LC0yMDY0MTg3NTQxLD
+EwNTA1MzAzNDIsODA0NTE2OTY3LDE5MjEyNDM2NTQsMTM4MTc0
+Nzg4OF19
 -->
