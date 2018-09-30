@@ -5,7 +5,7 @@ Mon premier sujet d'étude sera donc naturellement le reverse et l'analyse de co
 
 # REVERSE
 
-Dans un premier temps je m'interesse à l'architecture x86, soit l'architecture 32bits d'intel.
+Dans un premier temps je m’intéresse à l'architecture x86, soit l'architecture 32bits d'intel.
 Il existe de nombreuses autres architectures, dont les plus connues sont : 
 
  - x86-64 (Architecture 64bits intel)
@@ -15,16 +15,16 @@ Il existe de nombreuses autres architectures, dont les plus connues sont :
 
 ## Composition d'un programme
 
-Un programme fonctionne grâce à deux parties essentielles : le processeur et la mémoire. Avant de voir comment un le processeur execute un programme, il faut analyser comment est gérée la mémoire. 
-Il est important de constater que la mémoire est répartie en pluieurs segments qui ont chacunes un rôle propre.
+Un programme fonctionne grâce à deux parties essentielles : le processeur et la mémoire. Avant de voir comment un le processeur exécute un programme, il faut analyser comment est gérée la mémoire. 
+Il est important de constater que la mémoire est répartie en plusieurs segments qui ont chacune un rôle propre.
 Parmi celles qui vont le plus nous intéresser : 
 
  - .text (Où sera situé les instructions du programme, notre "code")
  - .bss (Où seront stockées les variables globales non initialisées)
  - .data (Où seront stockées les variables globales initialisées)
- - .got et .plt (Où sont stockées les adresses de fontions de la libC lorsque compilées dynamiquement)
+ - .got et .plt (Où sont stockées les adresses de fonctions de la libC lorsque compilées dynamiquement)
 
-Voici un example avec un programme tout simple expliquant les différentes sections :
+Voici un exemple avec un programme tout simple expliquant les différentes sections :
 
 ```C
 #include <stdio.h>
@@ -47,23 +47,23 @@ int main(char** argv, int argc){
 }
 //end of .text section 
 ```
-En réalité, la section .text sera bien plus grande que simplement nos quelques lignes de code transformées en assembleur. En effet par exemple lorsque l'executable sera compilé avec gcc en temps qu'executable linux 32bits (ELF32), des instructions seront ajoutées au début et après le programme que l'on a écrit. Il est intéressant de remarquer que la première fonction executée n'est pas la fonction `main()` , mais la fonction `_start()`, qui préparera elle même les arguments pour `_libc_start_main()`, qui préparera les arguments pour la fonction `init()`, qui appelera la fonction `main()` . Les arguments préparés seront les fameux ARGV, ARGC, et ENV, une variable permettant de récupérer les variables d'environnement depuis le programme.
+En réalité, la section .text sera bien plus grande que simplement nos quelques lignes de code transformées en assembleur. En effet par exemple lorsque l’exécutable sera compilé avec gcc en temps qu’exécutable linux 32bits (ELF32), des instructions seront ajoutées au début et après le programme que l'on a écrit. Il est intéressant de remarquer que la première fonction exécutée n'est pas la fonction `main()` , mais la fonction `_start()`, qui préparera elle même les arguments pour `_libc_start_main()`, qui préparera les arguments pour la fonction `init()`, qui appellera la fonction `main()` . Les arguments préparés seront les fameux ARGV, ARGC, et ENV, une variable permettant de récupérer les variables d'environnement depuis le programme.
 
 >Le "entry point" (l'adresse écrite dans le header du fichier et qui définit l'adresse de la première instruction à executer) pointe vers la fonction `_start()`.
 
-Ces fonctions sont d'ailleurs évidemment observables via `objdump --disassemble  notreProgamme`, qui va entièrement désassembler notre executable.
+Ces fonctions sont d'ailleurs évidemment observables via `objdump --disassemble  notreProgamme`, qui va entièrement désassembler notre exécutable.
 
-Une autre partie très importante de la mémoire est une partie qui est gérée pendant l'execution du progamme, contrairement aux sections montrées précédemment.
+Une autre partie très importante de la mémoire est une partie qui est gérée pendant l’exécution du programme, contrairement aux sections montrées précédemment.
 Il s'agit de la pile (la fameuse "Stack") et le tas ("Heap").
 
 ### Le Heap
-Dans le heap seront stockées toutes les variables allouées dynamiquement par des fonctions du type `malloc()`, `calloc()`, ou encore `realloc()` (pour les fonctions les plus communes). Ces variables son allouées pendant l'execution du programme et sont stockées dans le Heap. Il est intéressant de constater que le Heap contient également le contenu de ENV (et donc tous les chemins des variables d'environnement).
+Dans le heap seront stockées toutes les variables allouées dynamiquement par des fonctions du type `malloc()`, `calloc()`, ou encore `realloc()` (pour les fonctions les plus communes). Ces variables son allouées pendant l’exécution du programme et sont stockées dans le Heap. Il est intéressant de constater que le Heap contient également le contenu de ENV (et donc tous les chemins des variables d'environnement).
 
 ### La Stack
 
-Lors de l'execution de fonctions dans le programme, les arguments seront "push" sur la stack, c'est à dire qu'il seront placé en haut de la pile, au dessus du dernier élément (la pile est dite "LIFO", Last In First Out). On va donc empiler des éléments sur la stack, et les dépiler lorsque l'on en aura besoin.
+Lors de l’exécution de fonctions dans le programme, les arguments seront "push" sur la stack, c'est à dire qu'il seront placé en haut de la pile, au dessus du dernier élément (la pile est dite "LIFO", Last In First Out). On va donc empiler des éléments sur la stack, et les dépiler lorsque l'on en aura besoin.
 
-### Récapitulatif de la mémore avec un schéma et un code
+### Récapitulatif de la mémoire avec un schéma et un code
 Voici un schéma qui résume bien la mémoire dans un programme en plus de donner la localisation de chaque segment dans la mémoire  :
 
 ![enter image description here](https://azeria-labs.com/wp-content/uploads/2017/07/stack-part2-1.png)
@@ -94,6 +94,8 @@ int main(char** argv, int argc){
 ## Le processeur
 
 ### Les registres en x86
+
+
 
 ### La syntaxe
 
@@ -127,11 +129,11 @@ Une fois la fonction `main()` désassemblé avec `GDB` via la commande `disas ma
    0x08048448 <+24>:	call   0x804841d <hello>   ;call de la fonction hello
 	...
 ```
-Trois instructions ici vont permettrent de 'push' le pointeur vers notre chaine de caractères "Hello" sur la pile.
+Trois instructions ici vont permettent de 'push' le pointeur vers notre chaîne de caractères "Hello" sur la pile.
 
  1. Le pointeur est placé dans la pile à l'adresse `esp+0x1c`
  2. On copie le pointeur dans `EAX`
- 3. On "push" `EAX` en déplacant son contenu sur le haut de la stack 
+ 3. On "push" `EAX` en déplaçant son contenu sur le haut de la stack 
 
 Un simple `push 0x80484f0` aurai pu suffire, mais le code assembleur n'est pas toujours parfaitement optimisé. 
 Voici le nouvel état de la pile : 
@@ -139,7 +141,7 @@ Voici le nouvel état de la pile :
 ![Stack first ptr str](https://raw.githubusercontent.com/N0fix/reverseIntro/master/img/stack1.png)
 
 Maintenant que notre pointeur `char* str` a bien été push sur la stack, on sait que les arguments sont prêts, on va pouvoir appeler la fonction grâce à l'instruction `call`.
-L'instruction `call` est un peu particulière, car avant d'appeler la fonction, elle va push l'instruction à executer quand la fonction appelée sera terminée. 
+L'instruction `call` est un peu particulière, car avant d'appeler la fonction, elle va push l'instruction à exécuter quand la fonction appelée sera terminée. 
 Dans notre cas on avait : 
 ```C
 	...
@@ -152,7 +154,7 @@ L'adresse `0x0804844d` va donc être push sur la stack. On obtient :
 ![Stack first ptr str](https://raw.githubusercontent.com/N0fix/reverseIntro/master/img/stack2.png)
 
 
-Ensuite, le programme execute un `jmp 0x804841d`, donc un jump à l'adresse de notre fonction `hello()`.
+Ensuite, le programme exécute un `jmp 0x804841d`, donc un jump à l'adresse de notre fonction `hello()`.
 
 ### Après l'appel
 
@@ -162,7 +164,7 @@ Une chose à savoir pour les appels aux fonctions en assembleur, c'est qu'elles 
  2. L'état de la pile avant la fonction doit être restauré à la sortie de la fonction
 
 Afin de répondre à la première contrainte, le programme va simuler l'idée d'une pile neuve. 
-Pour faire une nouelle pile dans notre situation, il suffirait de dire que le bas de la pile si situe désormais en haut de la pile. Ainsi, le bas et le haut de la pile étant au même niveau, on obtient une nouvelle pile vide. Afin d'être en mesure de restaurer la pile dans son état avant la fonction, on gardera juste en mémoire l'ancienne position du bas de la pile avant de dire que le bas de la pile est au même niveau que le haut de la pile.
+Pour faire une nouvelle pile dans notre situation, il suffirait de dire que le bas de la pile si situe désormais en haut de la pile. Ainsi, le bas et le haut de la pile étant au même niveau, on obtient une nouvelle pile vide. Afin d'être en mesure de restaurer la pile dans son état avant la fonction, on gardera juste en mémoire l'ancienne position du bas de la pile avant de dire que le bas de la pile est au même niveau que le haut de la pile.
 Ceci est accompli par ces deux lignes d'assembleur que je vais détailler, et qui sont systématiquement présentes à chaque début de fonction :
 
 ```C
@@ -179,7 +181,7 @@ On commence par le `push ebp`
    0x0804841d <+0>:	push   ebp
 ```
 Ici, on va garder sur le haut de la stack la valeur de `ebp` avant que la fonction commence. Cela nous permettra de restaurer l'ancienne valeur d'`ebp` à la sortie de la fonction.
-En rouge l'adresse de l'instruction à executer après la fin de la fonction `hello()` (comme décrit précédemment), en vert notre pointeur `char *str`.
+En rouge l'adresse de l'instruction à exécuter après la fin de la fonction `hello()` (comme décrit précédemment), en vert notre pointeur `char *str`.
 
 ![Stack first ptr str](https://raw.githubusercontent.com/N0fix/reverseIntro/master/img/stack3.png)
 
@@ -188,7 +190,7 @@ Deuxième instruction :
    0x0804841e <+1>:	mov    ebp,esp
 ```
 On déplace le pointeur EBP vers ESP afin d'obtenir l'impression d'une stack vide.
-Le progamme à donc désormais l'impression d'une pile vide : 
+Le programme à donc désormais l'impression d'une pile vide : 
 
 ![Stack first ptr str](https://raw.githubusercontent.com/N0fix/reverseIntro/master/img/stack4.png)
 
@@ -374,7 +376,7 @@ Récap :
 ret2libc
 ropchain
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNjM2NzQ2Njk3LDEwNTA1MzAzNDIsODA0NT
+eyJoaXN0b3J5IjpbNjEyOTQ4NjgyLDEwNTA1MzAzNDIsODA0NT
 E2OTY3LDE5MjEyNDM2NTQsMTM4MTc0Nzg4OCwxMjI2MDU5Mjc2
 LDExMTgwNjE5NjUsLTE1NzQ1MzQ1NzEsMjExNTY0NDg1OSw5NT
 g5MDEyNTUsNDk0NzE2NzQyLC0xMjA2ODM5NjEsMTQ4OTIyMTY2
