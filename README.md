@@ -1,3 +1,5 @@
+# Veille Cyberdéfense
+## Sujet : Reverse engineering et exploita 
 
 # Présentation du sujet
 Mon nom est Victorien Blanchard et voici mon rapport de veille cyber concernant le reverse engineering, et probablement à posteriori l'exploitation de binaire via l'étude de failles du type Buffer Overflow.
@@ -336,11 +338,11 @@ Le programme reprends donc son cours normal.
 ret2libc
 ropchain
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTAwOTMyNTEyMyw5NDI1Mzk2MDIsMTA2MD
-k1MDQzMywxNDcyNzI0ODYsMTM2NDE5NjMwMywtMTUyMjI1NDU5
-NywtMTE0OTA4MDA4LDExNTU3ODQwMTYsMTYzNTUzNjMzNiwtND
-M4NzczMzA2LC0yMDY0MTg3NTQxLDEwNTA1MzAzNDIsODA0NTE2
-OTY3LDE5MjEyNDM2NTQsMTM4MTc0Nzg4OCwxMjI2MDU5Mjc2LD
-ExMTgwNjE5NjUsLTE1NzQ1MzQ1NzEsMjExNTY0NDg1OSw5NTg5
-MDEyNTVdfQ==
+eyJoaXN0b3J5IjpbNzg2NTk2NzQ3LDEwMDkzMjUxMjMsOTQyNT
+M5NjAyLDEwNjA5NTA0MzMsMTQ3MjcyNDg2LDEzNjQxOTYzMDMs
+LTE1MjIyNTQ1OTcsLTExNDkwODAwOCwxMTU1Nzg0MDE2LDE2Mz
+U1MzYzMzYsLTQzODc3MzMwNiwtMjA2NDE4NzU0MSwxMDUwNTMw
+MzQyLDgwNDUxNjk2NywxOTIxMjQzNjU0LDEzODE3NDc4ODgsMT
+IyNjA1OTI3NiwxMTE4MDYxOTY1LC0xNTc0NTM0NTcxLDIxMTU2
+NDQ4NTldfQ==
 -->
