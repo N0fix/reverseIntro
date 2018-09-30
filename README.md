@@ -167,7 +167,10 @@ Voici donc les instructions les plus courantes et dont on aura besoin afin d'exp
 #### MOV
 L'instruction `mov <destination> <source>` copie (et ne déplace pas comme son nom pourrait l'indiquer) une valeur de la source vers la destination. Exemple : `mov eax, 1` place la valeur 1 dans `eax`.
 #### ADD
-L'instruction `add <destination> <source>` additionne une valeur de la source avec la destination. Exemple : `mov eax, 1` place la valeur 1 dans `eax`.
+L'instruction `add <destination> <source>` additionne une valeur de la source avec la destination, et copie le résultat dans la destination. Exemple si `eax` contient la valeur 10 : `add eax, 5` aura pour effet de copier la valeur 15 dans `eax`.
+#### SUB
+Même chose que pour l'instruction `add`, mais en soustrayant.
+#### 
 
 ## Les appels de fonctions
 
@@ -298,7 +301,7 @@ Le programme reprends donc son cours normal.
 ret2libc
 ropchain
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTYzMjYzOTQxNSwxMzY0MTk2MzAzLC0xNT
+eyJoaXN0b3J5IjpbLTM1Nzk1MDg0OCwxMzY0MTk2MzAzLC0xNT
 IyMjU0NTk3LC0xMTQ5MDgwMDgsMTE1NTc4NDAxNiwxNjM1NTM2
 MzM2LC00Mzg3NzMzMDYsLTIwNjQxODc1NDEsMTA1MDUzMDM0Mi
 w4MDQ1MTY5NjcsMTkyMTI0MzY1NCwxMzgxNzQ3ODg4LDEyMjYw
