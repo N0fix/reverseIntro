@@ -58,14 +58,15 @@ En réalité, la section .text sera bien plus grande que simplement nos quelques
 
 Ces fonctions sont d'ailleurs évidemment observables via `objdump --disassemble  notreProgamme`, qui va entièrement désassembler notre exécutable.
 
-Une autre partie très importante de la mémoire est une partie qui est gérée dynamquement pendant l’exécution du programme, contrairement aux sections montrées précédemment.
+Une autre partie très importante de la mémoire est une partie qui est gérée dynamiquement pendant l’exécution du programme, contrairement aux sections montrées précédemment.
 Il s'agit de la pile (la fameuse "Stack") et le tas ("Heap").
 
 ### Le Heap
-Dans le heap seront stockées toutes les variables allouées dynamiquement par des fonctions du type `malloc()`, `calloc()`, ou encore `realloc()` (pour les fonctions les plus communes). Ces variables son allouées pendant l’exécution du programme et sont stockées dans le Heap. Il est intéressant de constater que le Heap contient également le contenu de ENV (et donc tous les chemins des variables d'environnement).
+Dans le heap seront stockées toutes les variables allouées dynamiquement par des fonctions du type `malloc()`, `calloc()`, ou encore `realloc()` (pour les fonctions les plus communes). Ces variables sont allouées pendant l’exécution du programme et sont stockées dans le Heap. Il est intéressant de constater que le Heap contient également le contenu de ENV (et donc tous les chemins des variables d'environnement).
 
 ### La Stack
 
+Il s'agit de la mémoire la plus manipulée lors de l’exécution d'un programme. C'est ici que le programme va stocker chaque variable qu'il a besoin de manipuler (arguments de fonctions, variables locales...).
 Lors de l’exécution de fonctions dans le programme, les arguments seront "push" sur la stack, c'est à dire qu'il seront placé en haut de la pile, au dessus du dernier élément (la pile est dite "LIFO", Last In First Out). On va donc empiler des éléments sur la stack, et les dépiler lorsque l'on en aura besoin.
 
 ### Récapitulatif de la mémoire avec un schéma et un code
@@ -338,11 +339,11 @@ Le programme reprends donc son cours normal.
 ret2libc
 ropchain
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTA5NTU0NDQxLDEwODg5ODk4MzYsLTc1OD
-gyNDUyNCw3NDk1NDU3MDAsMTAwOTMyNTEyMyw5NDI1Mzk2MDIs
-MTA2MDk1MDQzMywxNDcyNzI0ODYsMTM2NDE5NjMwMywtMTUyMj
-I1NDU5NywtMTE0OTA4MDA4LDExNTU3ODQwMTYsMTYzNTUzNjMz
-NiwtNDM4NzczMzA2LC0yMDY0MTg3NTQxLDEwNTA1MzAzNDIsOD
-A0NTE2OTY3LDE5MjEyNDM2NTQsMTM4MTc0Nzg4OCwxMjI2MDU5
-Mjc2XX0=
+eyJoaXN0b3J5IjpbLTYxMzUyNjI4OSwxMDg4OTg5ODM2LC03NT
+g4MjQ1MjQsNzQ5NTQ1NzAwLDEwMDkzMjUxMjMsOTQyNTM5NjAy
+LDEwNjA5NTA0MzMsMTQ3MjcyNDg2LDEzNjQxOTYzMDMsLTE1Mj
+IyNTQ1OTcsLTExNDkwODAwOCwxMTU1Nzg0MDE2LDE2MzU1MzYz
+MzYsLTQzODc3MzMwNiwtMjA2NDE4NzU0MSwxMDUwNTMwMzQyLD
+gwNDUxNjk2NywxOTIxMjQzNjU0LDEzODE3NDc4ODgsMTIyNjA1
+OTI3Nl19
 -->
