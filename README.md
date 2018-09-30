@@ -72,19 +72,19 @@ Voici un schéma qui résume bien la mémoire dans un programme en plus de donne
 #include <stdio.h>
 #include <stdlib.h>
 //.text section from here    
-char* strBss = "Hello from bss!"; //initialised -> .data section
-int variable; //Not initialised -> .bss section
+char* strBss = "Hello from bss!";     //initialised -> .data section
+int variable; 			      //Not initialised -> .bss section
     
 void hello(char* str){
     printf("%s\n", str);
 }
     
 int main(char** argv, int argc){
-    char* str = "Hello from the stack!"; //Will be pushed to Stack
+    char* str = "Hello from the stack!";           //Will be pushed to Stack
     char* strFromHeap = malloc(sizeof(char) * 21); //Allocated on Heap
-    sprintf(strFromHeap, "Hello from the Heap!");
-    hello(str); //sr is beeing pushed to the stack
-    free(strFromHeap); //Always free() dynamically allocated var
+    sprintf(strFromHeap, "Hello from the Heap!");  //Putting text in strFromHeap variable
+    hello(str);                                    //str is beeing pushed to the stack
+    free(strFromHeap);                             //Always free() dynamically allocated var
     return 1;
 }
 //end of .text section 
@@ -367,11 +367,11 @@ Récap :
 |old EBP value (`0x0800050a`)|__ESP__ et __EBP__|
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE2NDczMDQwNTksMTkyMTI0MzY1NCwxMz
-gxNzQ3ODg4LDEyMjYwNTkyNzYsMTExODA2MTk2NSwtMTU3NDUz
-NDU3MSwyMTE1NjQ0ODU5LDk1ODkwMTI1NSw0OTQ3MTY3NDIsLT
-EyMDY4Mzk2MSwxNDg5MjIxNjY3LDIxMTk1MDU1MjMsLTEwNjk4
-ODk4NzgsMjEzNTA0MzkxNSwzODkwMTI2MzQsLTc3MjA4OTA4My
-w0MTAyNDEzMzAsOTgwMDcxMDk2LC03NTEwNDI5MjYsLTExNDk3
-OTQzMDhdfQ==
+eyJoaXN0b3J5IjpbMTg5OTM5ODY5OSwxOTIxMjQzNjU0LDEzOD
+E3NDc4ODgsMTIyNjA1OTI3NiwxMTE4MDYxOTY1LC0xNTc0NTM0
+NTcxLDIxMTU2NDQ4NTksOTU4OTAxMjU1LDQ5NDcxNjc0MiwtMT
+IwNjgzOTYxLDE0ODkyMjE2NjcsMjExOTUwNTUyMywtMTA2OTg4
+OTg3OCwyMTM1MDQzOTE1LDM4OTAxMjYzNCwtNzcyMDg5MDgzLD
+QxMDI0MTMzMCw5ODAwNzEwOTYsLTc1MTA0MjkyNiwtMTE0OTc5
+NDMwOF19
 -->
