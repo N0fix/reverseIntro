@@ -67,7 +67,7 @@ Dans le heap seront stockées toutes les variables allouées dynamiquement par d
 ### La Stack
 
 Il s'agit de la mémoire la plus manipulée lors de l’exécution d'un programme. C'est ici que le programme va stocker chaque variable qu'il a besoin de manipuler (arguments de fonctions, variables locales...).
-Lors de l’exécution de fonctions dans le programme, les arguments seront "push" sur la stack, c'est à dire qu'il seront placé en haut de la pile, au dessus du dernier élément (la pile est dite "LIFO", Last In First Out). On va donc empiler des éléments sur la stack, et les dépiler lorsque l'on en aura besoin.
+Lors de l’exécution de fonctions dans le programme, les arguments seront "push" sur cette stack, c'est à dire qu'il seront placé en haut de la pile, au dessus du dernier élément (la pile est dite "LIFO", Last In First Out). Le programme va donc empiler (=push) des éléments sur la pile (= la stack) pour les garder en mémoires, et les dépiler (=pop) lorsqu'il aura besoin de les manipuler.
 
 ### Récapitulatif de la mémoire avec un schéma et un code
 Voici un schéma qui résume bien la mémoire dans un programme en plus de donner la localisation de chaque segment dans la mémoire  :
@@ -339,11 +339,11 @@ Le programme reprends donc son cours normal.
 ret2libc
 ropchain
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTYxMzUyNjI4OSwxMDg4OTg5ODM2LC03NT
-g4MjQ1MjQsNzQ5NTQ1NzAwLDEwMDkzMjUxMjMsOTQyNTM5NjAy
-LDEwNjA5NTA0MzMsMTQ3MjcyNDg2LDEzNjQxOTYzMDMsLTE1Mj
-IyNTQ1OTcsLTExNDkwODAwOCwxMTU1Nzg0MDE2LDE2MzU1MzYz
-MzYsLTQzODc3MzMwNiwtMjA2NDE4NzU0MSwxMDUwNTMwMzQyLD
-gwNDUxNjk2NywxOTIxMjQzNjU0LDEzODE3NDc4ODgsMTIyNjA1
-OTI3Nl19
+eyJoaXN0b3J5IjpbOTU4ODg5OTY2LDEwODg5ODk4MzYsLTc1OD
+gyNDUyNCw3NDk1NDU3MDAsMTAwOTMyNTEyMyw5NDI1Mzk2MDIs
+MTA2MDk1MDQzMywxNDcyNzI0ODYsMTM2NDE5NjMwMywtMTUyMj
+I1NDU5NywtMTE0OTA4MDA4LDExNTU3ODQwMTYsMTYzNTUzNjMz
+NiwtNDM4NzczMzA2LC0yMDY0MTg3NTQxLDEwNTA1MzAzNDIsOD
+A0NTE2OTY3LDE5MjEyNDM2NTQsMTM4MTc0Nzg4OCwxMjI2MDU5
+Mjc2XX0=
 -->
