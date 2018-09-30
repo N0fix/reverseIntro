@@ -103,7 +103,8 @@ En x86 on va considérer les registres suivants :
 -   EIP (Instruction Pointer)
 >EAX (Accumulator) est utilisé pour stocker des valeurs et pour stocker les valeurs de retour des fonctions
 >ECX (Counter) est généralement le compteur que l'on incrémente (souvent appelé `i` dans les boucles `for` en langage `C`).
->EDX (Data) 
+>EDX (Data) Utilisé pour les opérations d'entrée/sortie
+>EBX (Base) Utilisé 
 
 ### La syntaxe
 
@@ -384,7 +385,7 @@ Récap :
 ret2libc
 ropchain
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTEwMjQwMzExOSwxMDUwNTMwMzQyLDgwND
+eyJoaXN0b3J5IjpbLTM2NDA2NzE2OSwxMDUwNTMwMzQyLDgwND
 UxNjk2NywxOTIxMjQzNjU0LDEzODE3NDc4ODgsMTIyNjA1OTI3
 NiwxMTE4MDYxOTY1LC0xNTc0NTM0NTcxLDIxMTU2NDQ4NTksOT
 U4OTAxMjU1LDQ5NDcxNjc0MiwtMTIwNjgzOTYxLDE0ODkyMjE2
