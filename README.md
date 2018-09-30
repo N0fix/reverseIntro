@@ -4,7 +4,7 @@ Mon nom est Victorien Blanchard et voici mon rapport de veille cyber concernant 
 Mon premier sujet d'étude sera donc naturellement le reverse et l'analyse de code assembleur, afin d'avoir les bases nécessaires pour attaquer l'exploitation de binaire.
 Je vais commencer par l'analyse de binaire x86, puis x86-64, puis ARM, et peut être MIPS.
 Je m'attaquerai parallèlement à l'exploitation de ces binaires.
-J'attaquerai également l'analyse de code pour
+J'attaquerai également l'analyse de code malveillant.
 
 # REVERSE
 
@@ -336,7 +336,7 @@ Le programme reprends donc son cours normal.
 ret2libc
 ropchain
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTkwMjIzMDE1NCw5NDI1Mzk2MDIsMTA2MD
+eyJoaXN0b3J5IjpbMTAwOTMyNTEyMyw5NDI1Mzk2MDIsMTA2MD
 k1MDQzMywxNDcyNzI0ODYsMTM2NDE5NjMwMywtMTUyMjI1NDU5
 NywtMTE0OTA4MDA4LDExNTU3ODQwMTYsMTYzNTUzNjMzNiwtND
 M4NzczMzA2LC0yMDY0MTg3NTQxLDEwNTA1MzAzNDIsODA0NTE2
