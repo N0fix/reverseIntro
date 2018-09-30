@@ -125,6 +125,7 @@ Le mot syntaxe **équivalentes** est important, car il signifie qu'il est possib
 
 La syntaxe **INTEL** fonctionne en : `opération <destination> <source>`
 Tandis que la syntaxe **AT&T** fonctionne en : `opération <source> <destination>`
+
 |    INTEL   | AT&T         |
 |:----------:|--------------|
 | mov eax, 1 | mov $1, %eax |
@@ -132,6 +133,7 @@ Tandis que la syntaxe **AT&T** fonctionne en : `opération <source> <destination
 Une autre différence majeure entre les deux syntaxes est visible sur l'exemple si dessus : en **AT&T** un `%` doit être placé devant le nom des registres, et un `$` sera placé avant les valeurs.
 Aussi, il est possible en assembleur de ne manipuler qu'une partie d'un registre plutôt que l’entièreté d'un registre.
 En **AT&T**, désigner la partie du registre dans lequel on veut travailler se fera dans l'instruction, tandis qu'en **INTEL** cela sera défini par le nom du registre.
+
 |    INTEL   | AT&T         |
 |:----------:|--------------|
 | mov al, 5 | movb $5, %eax|
@@ -184,7 +186,8 @@ L'instruction `push <source>` empile la valeur source sur la pile. Exemple si la
 
 #### POP
 L'instruction `pop <destination>` dépile la dernière valeur sur la pile et place cette valeur dans la destination. Exemple si la valeur 15 est présente sur la pile : `pop eax` aura pour effet de retirer 15 de la pile et de placer 15 dans `eax`. La valeur du registre `esp` sera également modifiée puisque la taille de la pile réduit.
-![Stack first ptr str](https://raw.githubusercontent.com/N0fix/reverseIntro/master/img/stack7.png)
+
+![Stack first ptr str](https://raw.githubusercontent.com/N0fix/reverseIntro/master/img/stack8.png)
 
 #### JMP
 L'instruction `jmp <addr>` permettra au programme de sauter directement à l'instruction située à l'adresse donnée. Exemple, dans ce code  :
@@ -330,11 +333,11 @@ Le programme reprends donc son cours normal.
 ret2libc
 ropchain
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTA2MDk1MDQzMywxNDcyNzI0ODYsMTM2ND
-E5NjMwMywtMTUyMjI1NDU5NywtMTE0OTA4MDA4LDExNTU3ODQw
-MTYsMTYzNTUzNjMzNiwtNDM4NzczMzA2LC0yMDY0MTg3NTQxLD
-EwNTA1MzAzNDIsODA0NTE2OTY3LDE5MjEyNDM2NTQsMTM4MTc0
-Nzg4OCwxMjI2MDU5Mjc2LDExMTgwNjE5NjUsLTE1NzQ1MzQ1Nz
-EsMjExNTY0NDg1OSw5NTg5MDEyNTUsNDk0NzE2NzQyLC0xMjA2
-ODM5NjFdfQ==
+eyJoaXN0b3J5IjpbOTQyNTM5NjAyLDEwNjA5NTA0MzMsMTQ3Mj
+cyNDg2LDEzNjQxOTYzMDMsLTE1MjIyNTQ1OTcsLTExNDkwODAw
+OCwxMTU1Nzg0MDE2LDE2MzU1MzYzMzYsLTQzODc3MzMwNiwtMj
+A2NDE4NzU0MSwxMDUwNTMwMzQyLDgwNDUxNjk2NywxOTIxMjQz
+NjU0LDEzODE3NDc4ODgsMTIyNjA1OTI3NiwxMTE4MDYxOTY1LC
+0xNTc0NTM0NTcxLDIxMTU2NDQ4NTksOTU4OTAxMjU1LDQ5NDcx
+Njc0Ml19
 -->
