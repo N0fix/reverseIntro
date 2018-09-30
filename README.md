@@ -200,7 +200,7 @@ Les sorties de fonction sont toujours composées de deux instructions qui vont a
 ```
 La première instruction `leave` est équivalent à un `pop ebp`, ce qui va rétablir EBP à son ancienne valeur : 
 ![Stack first ptr str](https://raw.githubusercontent.com/N0fix/reverseIntro/master/img/stack2.png) 
-Tandis que l'instruction `ret`  rend la main à la fonction appelant
+Tandis que l'instruction `ret`  rend la main à la fonction appelante (dans notre cas `main()`), en faisant un `pop eip` (on met l'adresse `0x0804844d` dans le registre qui pointe vers les instruction à executer), puis en executant quittant la fonction.
 
 # Lis plus à partir d'ici
 
@@ -349,11 +349,11 @@ Récap :
 |old EBP value (`0x0800050a`)|__ESP__ et __EBP__|
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbODA2Njk5ODU1LDE5MjEyNDM2NTQsMTM4MT
-c0Nzg4OCwxMjI2MDU5Mjc2LDExMTgwNjE5NjUsLTE1NzQ1MzQ1
-NzEsMjExNTY0NDg1OSw5NTg5MDEyNTUsNDk0NzE2NzQyLC0xMj
-A2ODM5NjEsMTQ4OTIyMTY2NywyMTE5NTA1NTIzLC0xMDY5ODg5
-ODc4LDIxMzUwNDM5MTUsMzg5MDEyNjM0LC03NzIwODkwODMsND
-EwMjQxMzMwLDk4MDA3MTA5NiwtNzUxMDQyOTI2LC0xMTQ5Nzk0
-MzA4XX0=
+eyJoaXN0b3J5IjpbOTg4OTMzODIsMTkyMTI0MzY1NCwxMzgxNz
+Q3ODg4LDEyMjYwNTkyNzYsMTExODA2MTk2NSwtMTU3NDUzNDU3
+MSwyMTE1NjQ0ODU5LDk1ODkwMTI1NSw0OTQ3MTY3NDIsLTEyMD
+Y4Mzk2MSwxNDg5MjIxNjY3LDIxMTk1MDU1MjMsLTEwNjk4ODk4
+NzgsMjEzNTA0MzkxNSwzODkwMTI2MzQsLTc3MjA4OTA4Myw0MT
+AyNDEzMzAsOTgwMDcxMDk2LC03NTEwNDI5MjYsLTExNDk3OTQz
+MDhdfQ==
 -->
