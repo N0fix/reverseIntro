@@ -156,7 +156,9 @@ Ainsi, dans l'exemple
 |:----------:|--------------|
 | mov al, 5 | movb $5, %eax|
 
-INTEL fait un déplacement vers les 5 premiers bits du registre `eax` en appelant le registre `al`, là où **AT&T** utilisera l'opération `movb`, où `b` signifieara `
+INTEL fait un déplacement vers les 5 premiers bits du registre `eax` en appelant le registre `al`, là où **AT&T** utilisera l'opération `movb`, où `b` signifiera `byte`.
+
+Pour le reste de ce rendu, j'utiliserai la syntaxe **INTEL**, le format `opération <destination> <source>` étant bien plus instinctif pour moi, car très proche de ce qu'on fait dans des lan
 
 ### Les instruction essentielles
 
@@ -289,11 +291,11 @@ Le programme reprends donc son cours normal.
 ret2libc
 ropchain
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTQ3MjY4MDc5LDEzNjQxOTYzMDMsLTE1Mj
-IyNTQ1OTcsLTExNDkwODAwOCwxMTU1Nzg0MDE2LDE2MzU1MzYz
-MzYsLTQzODc3MzMwNiwtMjA2NDE4NzU0MSwxMDUwNTMwMzQyLD
-gwNDUxNjk2NywxOTIxMjQzNjU0LDEzODE3NDc4ODgsMTIyNjA1
-OTI3NiwxMTE4MDYxOTY1LC0xNTc0NTM0NTcxLDIxMTU2NDQ4NT
-ksOTU4OTAxMjU1LDQ5NDcxNjc0MiwtMTIwNjgzOTYxLDE0ODky
-MjE2NjddfQ==
+eyJoaXN0b3J5IjpbLTE2ODEzMjE5MDAsMTM2NDE5NjMwMywtMT
+UyMjI1NDU5NywtMTE0OTA4MDA4LDExNTU3ODQwMTYsMTYzNTUz
+NjMzNiwtNDM4NzczMzA2LC0yMDY0MTg3NTQxLDEwNTA1MzAzND
+IsODA0NTE2OTY3LDE5MjEyNDM2NTQsMTM4MTc0Nzg4OCwxMjI2
+MDU5Mjc2LDExMTgwNjE5NjUsLTE1NzQ1MzQ1NzEsMjExNTY0ND
+g1OSw5NTg5MDEyNTUsNDk0NzE2NzQyLC0xMjA2ODM5NjEsMTQ4
+OTIyMTY2N119
 -->
