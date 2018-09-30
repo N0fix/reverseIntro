@@ -104,9 +104,10 @@ En x86 on va considérer les registres suivants :
 >EDX (Data) Utilisé pour les opérations d'entrée/sortie
 >EBX (Base) Utilisé comme pointeur de données (c'est lui qui va pointer vers l'adresse d'un tableau par exemple)
 -   ESP, EBP
-> ESP pointe toujours vers le haut de la pile
-> EBP est un pointeur qui est censé pointe
+> ESP  (Extended Stack Pointer) pointe toujours vers le haut de la pile
+> EBP (Extended Base Pointer) est un pointeur qui est censé pointer vers le bas de la pile (on verra que cela n'est en réalité pas le cas)
 -   ESI, EDI
+> Lors des chargement de données sur le disque, ce sont ces registres qui sont utilisés pou désigner la source et la destination des
 -   EIP (Instruction Pointer)
 
 
@@ -389,7 +390,7 @@ Récap :
 ret2libc
 ropchain
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTYzMTc1NTg4NSwxMDUwNTMwMzQyLDgwND
+eyJoaXN0b3J5IjpbLTY4OTEwMTE2MywxMDUwNTMwMzQyLDgwND
 UxNjk2NywxOTIxMjQzNjU0LDEzODE3NDc4ODgsMTIyNjA1OTI3
 NiwxMTE4MDYxOTY1LC0xNTc0NTM0NTcxLDIxMTU2NDQ4NTksOT
 U4OTAxMjU1LDQ5NDcxNjc0MiwtMTIwNjgzOTYxLDE0ODkyMjE2
