@@ -52,13 +52,13 @@ int main(char** argv, int argc){
 }
 //end of .text section 
 ```
-En réalité, la section .text sera bien plus grande que simplement nos quelques lignes de code transformées en assembleur. En effet par exemple lorsque l’exécutable sera compilé avec gcc en temps qu’exécutable linux 32bits (ELF32), des instructions seront ajoutées au début et après le programme que l'on a écrit. Il est intéressant de remarquer que la première fonction exécutée n'est pas la fonction `main()` , mais la fonction `_start()`, qui préparera elle même les arguments pour `_libc_start_main()`, qui préparera les arguments pour la fonction `init()`, qui appellera la fonction `main()` . Les arguments préparés seront les fameux ARGV, ARGC, et ENV, une variable permettant de récupérer les variables d'environnement depuis le programme.
+En réalité, la section .text sera bien plus grande que simplement nos quelques lignes de code transformées en assembleur. En effet par exemple lorsque l’exécutable sera compilé avec gcc en temps qu’exécutable linux 32bits (ELF32), des instructions seront ajoutées au début et après le programme que l'on a écrit. Il est intéressant de remarquer que la première fonction exécutée n'est pas la fonction `main()` , mais la fonction `_start()`, qui préparera elle même les arguments pour `_libc_start_main()`, qui préparera les arguments pour la fonction `init()`, qui appellera enfin la fonction `main()` . Les arguments préparés seront les fameux ARGV, ARGC, et ENV, une variable permettant de récupérer les variables d'environnement depuis le programme.
 
 >Le "entry point" (l'adresse écrite dans le header du fichier et qui définit l'adresse de la première instruction à executer) pointe vers la fonction `_start()`.
 
 Ces fonctions sont d'ailleurs évidemment observables via `objdump --disassemble  notreProgamme`, qui va entièrement désassembler notre exécutable.
 
-Une autre partie très importante de la mémoire est une partie qui est gérée pendant l’exécution du programme, contrairement aux sections montrées précédemment.
+Une autre partie très importante de la mémoire est une partie qui est gérée dynamquement pendant l’exécution du programme, contrairement aux sections montrées précédemment.
 Il s'agit de la pile (la fameuse "Stack") et le tas ("Heap").
 
 ### Le Heap
@@ -338,7 +338,7 @@ Le programme reprends donc son cours normal.
 ret2libc
 ropchain
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTUwODIzMTg1LDEwODg5ODk4MzYsLTc1OD
+eyJoaXN0b3J5IjpbMTA5NTU0NDQxLDEwODg5ODk4MzYsLTc1OD
 gyNDUyNCw3NDk1NDU3MDAsMTAwOTMyNTEyMyw5NDI1Mzk2MDIs
 MTA2MDk1MDQzMywxNDcyNzI0ODYsMTM2NDE5NjMwMywtMTUyMj
 I1NDU5NywtMTE0OTA4MDA4LDExNTU3ODQwMTYsMTYzNTUzNjMz
