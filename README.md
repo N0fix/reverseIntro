@@ -5,16 +5,13 @@
 Ce rapport de veille cyber concernera le reverse engineering, et l'exploitation de binaire via des failles du type buffer overflow. Je reviendrais sur les différentes sécurités établies au fil des années pour éviter au maximum les failles de ce genre, et sur comment chacune de ces sécurités ont étés contournées.
 Mon premier sujet d'étude sera donc naturellement le reverse et l'analyse de code assembleur, afin d'avoir les bases nécessaires pour attaquer l'exploitation de binaire.
 Seront étudiés dans l'ordre : les binaires x86, puis x86-64, puis probablement ARM, et peut être MIPS.
-Je m'attaquerai parallèlement à l'exploitation de binaires pour chacunes de ces familles de processeurs, en expliquant les concepts généraux de chaque failles, et les spécificités à chaque fam.
-J'attaquerai également l'analyse de code malveillant.
-
-
-# Présentation du sujet
+Je m'attaquerai parallèlement à l'exploitation de binaires pour chacune de ces familles de processeurs, en expliquant les concepts généraux de chaque failles, et les spécificités à chaque famille d'assembleur.
+Il est également probable que je démarre une partie sur l'analyse de code malveillant. 
 
 
 # REVERSE
 
-Dans un premier temps je m’intéresse à l'architecture x86, soit l'architecture 32bits d'intel.
+Dans un premier temps nous allons anal'architecture x86, soit l'architecture 32bits d'intel.
 Il existe de nombreuses autres architectures, dont les plus connues sont : 
 
  - x86-64 (Architecture 64bits intel)
@@ -342,11 +339,11 @@ Le programme reprends donc son cours normal.
 ret2libc
 ropchain
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTI4OTk1NTczMyw3NDk1NDU3MDAsMTAwOT
-MyNTEyMyw5NDI1Mzk2MDIsMTA2MDk1MDQzMywxNDcyNzI0ODYs
-MTM2NDE5NjMwMywtMTUyMjI1NDU5NywtMTE0OTA4MDA4LDExNT
-U3ODQwMTYsMTYzNTUzNjMzNiwtNDM4NzczMzA2LC0yMDY0MTg3
-NTQxLDEwNTA1MzAzNDIsODA0NTE2OTY3LDE5MjEyNDM2NTQsMT
-M4MTc0Nzg4OCwxMjI2MDU5Mjc2LDExMTgwNjE5NjUsLTE1NzQ1
-MzQ1NzFdfQ==
+eyJoaXN0b3J5IjpbNzA5Njc2MjQ3LDc0OTU0NTcwMCwxMDA5Mz
+I1MTIzLDk0MjUzOTYwMiwxMDYwOTUwNDMzLDE0NzI3MjQ4Niwx
+MzY0MTk2MzAzLC0xNTIyMjU0NTk3LC0xMTQ5MDgwMDgsMTE1NT
+c4NDAxNiwxNjM1NTM2MzM2LC00Mzg3NzMzMDYsLTIwNjQxODc1
+NDEsMTA1MDUzMDM0Miw4MDQ1MTY5NjcsMTkyMTI0MzY1NCwxMz
+gxNzQ3ODg4LDEyMjYwNTkyNzYsMTExODA2MTk2NSwtMTU3NDUz
+NDU3MV19
 -->
