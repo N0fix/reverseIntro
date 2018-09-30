@@ -2,6 +2,7 @@
 # Présentation du sujet
 Mon nom est Victorien Blanchard et voici mon rapport de veille cyber concernant le reverse engineering, et probablement à posteriori l'exploitation de binaire via l'étude de failles du type Buffer Overflow.
 Mon premier sujet d'étude sera donc naturellement le reverse et l'analyse de code assembleur, afin d'avoir les bases nécessaires pour attaquer l'exploitation de binaire.
+Je vais commencer par l'analyse de binaire x86, puis x86-64, pui 
 
 # REVERSE
 
@@ -333,11 +334,11 @@ Le programme reprends donc son cours normal.
 ret2libc
 ropchain
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbOTQyNTM5NjAyLDEwNjA5NTA0MzMsMTQ3Mj
-cyNDg2LDEzNjQxOTYzMDMsLTE1MjIyNTQ1OTcsLTExNDkwODAw
-OCwxMTU1Nzg0MDE2LDE2MzU1MzYzMzYsLTQzODc3MzMwNiwtMj
-A2NDE4NzU0MSwxMDUwNTMwMzQyLDgwNDUxNjk2NywxOTIxMjQz
-NjU0LDEzODE3NDc4ODgsMTIyNjA1OTI3NiwxMTE4MDYxOTY1LC
-0xNTc0NTM0NTcxLDIxMTU2NDQ4NTksOTU4OTAxMjU1LDQ5NDcx
-Njc0Ml19
+eyJoaXN0b3J5IjpbOTgwNzM5MDc3LDk0MjUzOTYwMiwxMDYwOT
+UwNDMzLDE0NzI3MjQ4NiwxMzY0MTk2MzAzLC0xNTIyMjU0NTk3
+LC0xMTQ5MDgwMDgsMTE1NTc4NDAxNiwxNjM1NTM2MzM2LC00Mz
+g3NzMzMDYsLTIwNjQxODc1NDEsMTA1MDUzMDM0Miw4MDQ1MTY5
+NjcsMTkyMTI0MzY1NCwxMzgxNzQ3ODg4LDEyMjYwNTkyNzYsMT
+ExODA2MTk2NSwtMTU3NDUzNDU3MSwyMTE1NjQ0ODU5LDk1ODkw
+MTI1NV19
 -->
