@@ -142,6 +142,9 @@ En INTEL, un registre est divisible en sous parties. Par exemple, on peut utilis
 - AL pour utiliser les 8 premiers bits (de 0 à 7)
 - AH pour utiliser les bits 7 à 15 
 
+**A&AT** utilisera une syntaxe différente pour manipuler des parties de registres.
+Il faudra ajouter 
+
 ### Les instruction essentielles
 
 ## Les appels de fonction
@@ -273,11 +276,11 @@ Le programme reprends donc son cours normal.
 ret2libc
 ropchain
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTM2NDE5NjMwMywtMTUyMjI1NDU5NywtMT
-E0OTA4MDA4LDExNTU3ODQwMTYsMTYzNTUzNjMzNiwtNDM4Nzcz
-MzA2LC0yMDY0MTg3NTQxLDEwNTA1MzAzNDIsODA0NTE2OTY3LD
-E5MjEyNDM2NTQsMTM4MTc0Nzg4OCwxMjI2MDU5Mjc2LDExMTgw
-NjE5NjUsLTE1NzQ1MzQ1NzEsMjExNTY0NDg1OSw5NTg5MDEyNT
-UsNDk0NzE2NzQyLC0xMjA2ODM5NjEsMTQ4OTIyMTY2NywyMTE5
-NTA1NTIzXX0=
+eyJoaXN0b3J5IjpbLTEzMDI2MjgxMzEsMTM2NDE5NjMwMywtMT
+UyMjI1NDU5NywtMTE0OTA4MDA4LDExNTU3ODQwMTYsMTYzNTUz
+NjMzNiwtNDM4NzczMzA2LC0yMDY0MTg3NTQxLDEwNTA1MzAzND
+IsODA0NTE2OTY3LDE5MjEyNDM2NTQsMTM4MTc0Nzg4OCwxMjI2
+MDU5Mjc2LDExMTgwNjE5NjUsLTE1NzQ1MzQ1NzEsMjExNTY0ND
+g1OSw5NTg5MDEyNTUsNDk0NzE2NzQyLC0xMjA2ODM5NjEsMTQ4
+OTIyMTY2N119
 -->
