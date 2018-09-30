@@ -2,10 +2,10 @@
 # Veille Cyberdéfense - Victorien Blanchard
 ## Sujet : Reverse engineering et exploitation de binaires
 
-Ce rapport de veille cyber concernera le reverse engineering, et l'exploitation de binaire via des failles du type buffer overflow. Je reviendrais sur les différentes sécurités établies au fil des années pour éviter au maximum les failles de ce genre, et sur comment chacune de ces sécurités ont étés contournées.
-Mon premier sujet d'étude sera donc naturellement le reverse et l'analyse de code assembleur, afin d'avoir les bases nécessaires pour attaquer l'exploitation de binaire.
+Ce rapport de veille cyber concernera le reverse engineering, et l'exploitation de binaires via des failles du type buffer overflow. Je reviendrai sur les différentes sécurités établies au fil des années pour éviter au maximum les failles de ce genre, et sur comment chacune de ces sécurités ont été contournées.
+Mon premier sujet d'étude sera donc naturellement le reverse et l'analyse de code assembleur, afin d'avoir les bases nécessaires pour attaquer l'exploitation de binaires.
 Seront étudiés dans l'ordre : les binaires x86, puis x86-64, puis probablement ARM, et peut être MIPS ou une autre architecture bien plus exotique.
-Je m'attaquerai parallèlement à l'exploitation de binaires pour chacune de ces familles de processeurs, en expliquant les concepts généraux de chaque failles, et les spécificités à chaque famille d'assembleur.
+Je m'attaquerai parallèlement à l'exploitation de binaires pour chacune de ces familles de processeurs, en expliquant les concepts généraux de chaque failles, et les spécificités à chaque familles d'assembleur.
 Il est également probable que je démarre une partie sur l'analyse de code malveillant. 
 
 
@@ -338,11 +338,11 @@ Le programme reprends donc son cours normal.
 ret2libc
 ropchain
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTY3MTE1MzYyNiwxMDg4OTg5ODM2LC03NT
-g4MjQ1MjQsNzQ5NTQ1NzAwLDEwMDkzMjUxMjMsOTQyNTM5NjAy
-LDEwNjA5NTA0MzMsMTQ3MjcyNDg2LDEzNjQxOTYzMDMsLTE1Mj
-IyNTQ1OTcsLTExNDkwODAwOCwxMTU1Nzg0MDE2LDE2MzU1MzYz
-MzYsLTQzODc3MzMwNiwtMjA2NDE4NzU0MSwxMDUwNTMwMzQyLD
-gwNDUxNjk2NywxOTIxMjQzNjU0LDEzODE3NDc4ODgsMTIyNjA1
-OTI3Nl19
+eyJoaXN0b3J5IjpbLTExNzA1NjE2MDEsMTA4ODk4OTgzNiwtNz
+U4ODI0NTI0LDc0OTU0NTcwMCwxMDA5MzI1MTIzLDk0MjUzOTYw
+MiwxMDYwOTUwNDMzLDE0NzI3MjQ4NiwxMzY0MTk2MzAzLC0xNT
+IyMjU0NTk3LC0xMTQ5MDgwMDgsMTE1NTc4NDAxNiwxNjM1NTM2
+MzM2LC00Mzg3NzMzMDYsLTIwNjQxODc1NDEsMTA1MDUzMDM0Mi
+w4MDQ1MTY5NjcsMTkyMTI0MzY1NCwxMzgxNzQ3ODg4LDEyMjYw
+NTkyNzZdfQ==
 -->
