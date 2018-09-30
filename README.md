@@ -63,7 +63,7 @@ Dans le heap seront stockées toutes les variables allouées dynamiquement par d
 
 Lors de l'execution de fonctions dans le programme, les arguments seront "push" sur la stack, c'est à dire qu'il seront placé en haut de la pile, au dessus du dernier élément (la pile est dite "LIFO", Last In First Out). On va donc empiler des éléments sur la stack, et les dépiler lorsque l'on en aura besoin.
 
-### Récap de la mémore avec un schéma + code
+### Récapitulatif de la mémore avec un schéma et un code
 Voici un schéma qui résume bien la mémoire dans un programme en plus de donner la localisation de chaque segment dans la mémoire  :
 
 ![enter image description here](https://azeria-labs.com/wp-content/uploads/2017/07/stack-part2-1.png)
@@ -91,8 +91,9 @@ int main(char** argv, int argc){
 ```
 
 
-## explication differentes syntaxes assembleur
-//TODO
+## Le processeur
+
+
 
 ## Les appels de fonction
 
@@ -369,11 +370,11 @@ Récap :
 ret2libc
 ropchain
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTA1MDUzMDM0Miw4MDQ1MTY5NjcsMTkyMT
-I0MzY1NCwxMzgxNzQ3ODg4LDEyMjYwNTkyNzYsMTExODA2MTk2
-NSwtMTU3NDUzNDU3MSwyMTE1NjQ0ODU5LDk1ODkwMTI1NSw0OT
-Q3MTY3NDIsLTEyMDY4Mzk2MSwxNDg5MjIxNjY3LDIxMTk1MDU1
-MjMsLTEwNjk4ODk4NzgsMjEzNTA0MzkxNSwzODkwMTI2MzQsLT
-c3MjA4OTA4Myw0MTAyNDEzMzAsOTgwMDcxMDk2LC03NTEwNDI5
-MjZdfQ==
+eyJoaXN0b3J5IjpbMTQ5NzI0MjQ2NiwxMDUwNTMwMzQyLDgwND
+UxNjk2NywxOTIxMjQzNjU0LDEzODE3NDc4ODgsMTIyNjA1OTI3
+NiwxMTE4MDYxOTY1LC0xNTc0NTM0NTcxLDIxMTU2NDQ4NTksOT
+U4OTAxMjU1LDQ5NDcxNjc0MiwtMTIwNjgzOTYxLDE0ODkyMjE2
+NjcsMjExOTUwNTUyMywtMTA2OTg4OTg3OCwyMTM1MDQzOTE1LD
+M4OTAxMjYzNCwtNzcyMDg5MDgzLDQxMDI0MTMzMCw5ODAwNzEw
+OTZdfQ==
 -->
