@@ -120,7 +120,7 @@ Il existe plusieurs façon équivalentes de représenter des opérations en asse
 Les instructions sont systématiquement formée d'une opération à effectuer, d'une source et d'une destination.
 Par exemple, dans l'instruction `mov eax, 1`, l'opérateur `mov` déplace la valeur 1 (source) dans la destination `eax`. 
 
-Il existe deux syntaxes équivalentes majeures, la A&AT et la INTEL, chacune comportant leurs caractéristiques.
+Il existe deux syntaxes équivalentes majeures, la **A&AT** et la **INTEL**, chacune comportant leurs caractéristiques.
 Le mot syntaxe **équivalentes** est important, car il signifie qu'il est possible d'écrire une instructions de plusieurs façons différentes.
 
 La syntaxe INTEL fonctionne en : `opération <destination> <source>`
@@ -129,7 +129,8 @@ Tandis que la syntaxe A&AT fonctionne en : `opération <source> <destination>`
 |:----------:|--------------|
 | mov eax, 1 | mov $1, %eax |
 
-Une autre différence majeure entre les deux syntaxes est qu'en A&AT les registres doivent être 
+Une autre différence majeure entre les deux syntaxes est visible sur l'exemple si dessus : en **A&AT** un `%` doit être placé devant le nom des registres.
+
 
 ### Les instruction essentielles
 
@@ -262,11 +263,11 @@ Le programme reprends donc son cours normal.
 ret2libc
 ropchain
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTE1NTc4NDAxNiwxNjM1NTM2MzM2LC00Mz
-g3NzMzMDYsLTIwNjQxODc1NDEsMTA1MDUzMDM0Miw4MDQ1MTY5
-NjcsMTkyMTI0MzY1NCwxMzgxNzQ3ODg4LDEyMjYwNTkyNzYsMT
-ExODA2MTk2NSwtMTU3NDUzNDU3MSwyMTE1NjQ0ODU5LDk1ODkw
-MTI1NSw0OTQ3MTY3NDIsLTEyMDY4Mzk2MSwxNDg5MjIxNjY3LD
-IxMTk1MDU1MjMsLTEwNjk4ODk4NzgsMjEzNTA0MzkxNSwzODkw
-MTI2MzRdfQ==
+eyJoaXN0b3J5IjpbLTExNDkwODAwOCwxMTU1Nzg0MDE2LDE2Mz
+U1MzYzMzYsLTQzODc3MzMwNiwtMjA2NDE4NzU0MSwxMDUwNTMw
+MzQyLDgwNDUxNjk2NywxOTIxMjQzNjU0LDEzODE3NDc4ODgsMT
+IyNjA1OTI3NiwxMTE4MDYxOTY1LC0xNTc0NTM0NTcxLDIxMTU2
+NDQ4NTksOTU4OTAxMjU1LDQ5NDcxNjc0MiwtMTIwNjgzOTYxLD
+E0ODkyMjE2NjcsMjExOTUwNTUyMywtMTA2OTg4OTg3OCwyMTM1
+MDQzOTE1XX0=
 -->
