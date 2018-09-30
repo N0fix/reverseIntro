@@ -2,8 +2,7 @@
 # Veille Cyberdéfense - Victorien Blanchard
 ## Sujet : Reverse engineering et exploitation de binaires
 
-C
-Mon nom est Victorien Blanchard et voici mon rapport de veille cyber concernant le reverse engineering, et probablement à posteriori l'exploitation de binaire via l'étude de failles du type Buffer Overflow.
+Ce rapport de veille cyber concernera le reverse engineering, et l'exploitation de binaire via des failles du type buffer overflow. Je reviendrais sur les différentes sécurités établies au fil des années pour éviter au maximum les failles de ce genre, et sur comment chacune de ces sécurités ont étés 
 Mon premier sujet d'étude sera donc naturellement le reverse et l'analyse de code assembleur, afin d'avoir les bases nécessaires pour attaquer l'exploitation de binaire.
 Je vais commencer par l'analyse de binaire x86, puis x86-64, puis ARM, et peut être MIPS.
 Je m'attaquerai parallèlement à l'exploitation de ces binaires.
@@ -343,11 +342,11 @@ Le programme reprends donc son cours normal.
 ret2libc
 ropchain
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNzM4NTgxMTIzLDc0OTU0NTcwMCwxMDA5Mz
-I1MTIzLDk0MjUzOTYwMiwxMDYwOTUwNDMzLDE0NzI3MjQ4Niwx
-MzY0MTk2MzAzLC0xNTIyMjU0NTk3LC0xMTQ5MDgwMDgsMTE1NT
-c4NDAxNiwxNjM1NTM2MzM2LC00Mzg3NzMzMDYsLTIwNjQxODc1
-NDEsMTA1MDUzMDM0Miw4MDQ1MTY5NjcsMTkyMTI0MzY1NCwxMz
-gxNzQ3ODg4LDEyMjYwNTkyNzYsMTExODA2MTk2NSwtMTU3NDUz
-NDU3MV19
+eyJoaXN0b3J5IjpbMTgzNzQyOTk0OCw3NDk1NDU3MDAsMTAwOT
+MyNTEyMyw5NDI1Mzk2MDIsMTA2MDk1MDQzMywxNDcyNzI0ODYs
+MTM2NDE5NjMwMywtMTUyMjI1NDU5NywtMTE0OTA4MDA4LDExNT
+U3ODQwMTYsMTYzNTUzNjMzNiwtNDM4NzczMzA2LC0yMDY0MTg3
+NTQxLDEwNTA1MzAzNDIsODA0NTE2OTY3LDE5MjEyNDM2NTQsMT
+M4MTc0Nzg4OCwxMjI2MDU5Mjc2LDExMTgwNjE5NjUsLTE1NzQ1
+MzQ1NzFdfQ==
 -->
