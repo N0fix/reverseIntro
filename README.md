@@ -183,9 +183,19 @@ L'instruction `push <source>` empile la valeur source sur la pile. Exemple si la
 L'instruction `pop <destination>` dépile la dernière valeur sur la pile et place cette valeur dans la destination. Exemple si la valeur 15 est présente sur la pile : `pop eax` aura pour effet de retirer 15 de la pile et de placer 15 dans `eax`. La valeur du registre `esp` sera également modifiée puisque la taille de la pile réduit.
 
 #### JMP
-L'instruction `jmp <addr>` permettra au programme de sauter directement à l'instruction située à l'adresse donnée. Exemple :
+L'instruction `jmp <addr>` permettra au programme de sauter directement à l'instruction située à l'adresse donnée. Exemple, dans ce code  :
 
-
+```C
+	...
+   0x08048439 <+9>:	mov    DWORD PTR [esp+0x1c],0x80484f0
+   0x08048441 <+17>:	mov    eax,DWORD PTR [esp+0x1c]
+	...
+```
+Où que l'on soit dans le code, appeler `jmp 0x08048439` permettra de faire continuer le programme à partie de l'instruction :
+```C
+   0x08048439 <+9>:	mov    DWORD PTR [esp+0x1c],0x80484f0
+```
+Cette instruction est un équivalent des `GOTO` en C.
 
 ## Les appels de fonctions
 
@@ -316,11 +326,11 @@ Le programme reprends donc son cours normal.
 ret2libc
 ropchain
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTYyNjEyOTAxMiwxMzY0MTk2MzAzLC0xNT
-IyMjU0NTk3LC0xMTQ5MDgwMDgsMTE1NTc4NDAxNiwxNjM1NTM2
-MzM2LC00Mzg3NzMzMDYsLTIwNjQxODc1NDEsMTA1MDUzMDM0Mi
-w4MDQ1MTY5NjcsMTkyMTI0MzY1NCwxMzgxNzQ3ODg4LDEyMjYw
-NTkyNzYsMTExODA2MTk2NSwtMTU3NDUzNDU3MSwyMTE1NjQ0OD
-U5LDk1ODkwMTI1NSw0OTQ3MTY3NDIsLTEyMDY4Mzk2MSwxNDg5
-MjIxNjY3XX0=
+eyJoaXN0b3J5IjpbMTQ3MjcyNDg2LDEzNjQxOTYzMDMsLTE1Mj
+IyNTQ1OTcsLTExNDkwODAwOCwxMTU1Nzg0MDE2LDE2MzU1MzYz
+MzYsLTQzODc3MzMwNiwtMjA2NDE4NzU0MSwxMDUwNTMwMzQyLD
+gwNDUxNjk2NywxOTIxMjQzNjU0LDEzODE3NDc4ODgsMTIyNjA1
+OTI3NiwxMTE4MDYxOTY1LC0xNTc0NTM0NTcxLDIxMTU2NDQ4NT
+ksOTU4OTAxMjU1LDQ5NDcxNjc0MiwtMTIwNjgzOTYxLDE0ODky
+MjE2NjddfQ==
 -->
