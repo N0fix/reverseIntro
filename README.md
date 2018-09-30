@@ -123,7 +123,9 @@ Trois instructions ici vont permettrent de 'push' le pointeur vers notre chaine 
 
 Un simple `push 0x80484f0` aurai pu suffire, mais le code assembleur n'est pas toujours parfaitement optimisé. 
 Voici le nouvel état de la pile : 
+
 ![Stack first ptr str](https://raw.githubusercontent.com/N0fix/reverseIntro/master/img/stack1.png)
+
 Maintenant que notre pointeur `char* str` a bien été push sur la stack, on sait que les arguments sont prêts, on va pouvoir appeler la fonction grâce à l'instruction `call`.
 L'instruction `call` est un peu particulière, car avant d'appeler la fonction, elle va push l'instruction à executer quand la fonction appelée sera terminée. 
 Dans notre cas on avait : 
@@ -134,7 +136,9 @@ Dans notre cas on avait :
 	...
 ```
 L'adresse `0x0804844d` va donc être push sur la stack. On obtient : 
+
 ![Stack first ptr str](https://raw.githubusercontent.com/N0fix/reverseIntro/master/img/stack2.png)
+
 
 Ensuite, le programme execute un `jmp 0x804841d`, donc un jump à l'adresse de notre fonction `hello()`.
 
@@ -309,10 +313,10 @@ Récap :
 |old EBP value (`0x0800050a`)|__ESP__ et __EBP__|
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTIyNjA1OTI3NiwxMTE4MDYxOTY1LC0xNT
-c0NTM0NTcxLDIxMTU2NDQ4NTksOTU4OTAxMjU1LDQ5NDcxNjc0
-MiwtMTIwNjgzOTYxLDE0ODkyMjE2NjcsMjExOTUwNTUyMywtMT
-A2OTg4OTg3OCwyMTM1MDQzOTE1LDM4OTAxMjYzNCwtNzcyMDg5
-MDgzLDQxMDI0MTMzMCw5ODAwNzEwOTYsLTc1MTA0MjkyNiwtMT
-E0OTc5NDMwOF19
+eyJoaXN0b3J5IjpbNjc1OTEwNTQ4LDEyMjYwNTkyNzYsMTExOD
+A2MTk2NSwtMTU3NDUzNDU3MSwyMTE1NjQ0ODU5LDk1ODkwMTI1
+NSw0OTQ3MTY3NDIsLTEyMDY4Mzk2MSwxNDg5MjIxNjY3LDIxMT
+k1MDU1MjMsLTEwNjk4ODk4NzgsMjEzNTA0MzkxNSwzODkwMTI2
+MzQsLTc3MjA4OTA4Myw0MTAyNDEzMzAsOTgwMDcxMDk2LC03NT
+EwNDI5MjYsLTExNDk3OTQzMDhdfQ==
 -->
