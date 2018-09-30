@@ -48,7 +48,7 @@ int main(char** argv, int argc){
     sprintf(strFromHeap, "Hello from the Heap!");  //Putting text in strFromHeap variable
     hello(str);                                    //str is beeing pushed to the stack
     free(strFromHeap);                             //Always free() dynamically allocated var
-    return 1;
+    return 0;
 }
 //end of .text section 
 ```
@@ -90,7 +90,7 @@ int main(char** argv, int argc){
     sprintf(strFromHeap, "Hello from the Heap!");  //Putting text in strFromHeap variable
     hello(str);                                    //str is beeing pushed to the stack
     free(strFromHeap);                             //Always free() dynamically allocated var
-    return 1;
+    return 0;
 }
 //end of .text section 
 ```
@@ -104,17 +104,17 @@ En x86 on va considérer les registres suivants :
 
 -   EAX, ECX, EDX, EBX 
 
->EAX (Accumulator) est utilisé pour stocker des valeurs et pour stocker les valeurs de retour des fonctions
+>EAX (Accumulator) est utilisé pour stocker des valeurs et pour stocker les valeurs de retour des fonctions.
 >ECX (Counter) est généralement le compteur que l'on incrémente (souvent appelé `i` dans les boucles `for` en langage `C`).
->EDX (Data) Utilisé pour les opérations d'entrée/sortie
->EBX (Base) Utilisé comme pointeur de données (c'est lui qui va pointer vers l'adresse d'un tableau par exemple)
+>EDX (Data) Utilisé pour les opérations d'entrée/sortie.
+>EBX (Base) Utilisé comme pointeur de données (c'est lui qui va pointer vers l'adresse d'un tableau par exemple).
 -   ESP, EBP
-> ESP  (Extended Stack Pointer) pointe toujours vers le haut de la pile
-> EBP (Extended Base Pointer) est un pointeur qui est censé pointer vers le bas de la pile (on verra que cela n'est en réalité pas le cas)
+> ESP  (Extended Stack Pointer) pointe toujours vers le haut de la pile.
+> EBP (Extended Base Pointer) est un pointeur qui est censé pointer vers le bas de la pile (on verra que cela n'est en réalité pas le cas).
 -   ESI, EDI
 > Lors des chargement de données sur le disque, ce sont ces registres qui sont utilisés pou désigner la source et la destination des opérations.
-> ESI (Extended Source Index) pointeur source
-> EDI (Extended Destination Index) pointeur destination
+> ESI (Extended Source Index) pointeur source.
+> EDI (Extended Destination Index) pointeur destination.
 -   EIP (Instruction Pointer)
 > Il s'agit du registre qui pointe systématiquement sur l'instruction à exécuter par le programme. 
 
@@ -338,11 +338,11 @@ Le programme reprends donc son cours normal.
 ret2libc
 ropchain
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTA4ODk4OTgzNiwtNzU4ODI0NTI0LDc0OT
-U0NTcwMCwxMDA5MzI1MTIzLDk0MjUzOTYwMiwxMDYwOTUwNDMz
-LDE0NzI3MjQ4NiwxMzY0MTk2MzAzLC0xNTIyMjU0NTk3LC0xMT
-Q5MDgwMDgsMTE1NTc4NDAxNiwxNjM1NTM2MzM2LC00Mzg3NzMz
-MDYsLTIwNjQxODc1NDEsMTA1MDUzMDM0Miw4MDQ1MTY5NjcsMT
-kyMTI0MzY1NCwxMzgxNzQ3ODg4LDEyMjYwNTkyNzYsMTExODA2
-MTk2NV19
+eyJoaXN0b3J5IjpbMTY3MTE1MzYyNiwxMDg4OTg5ODM2LC03NT
+g4MjQ1MjQsNzQ5NTQ1NzAwLDEwMDkzMjUxMjMsOTQyNTM5NjAy
+LDEwNjA5NTA0MzMsMTQ3MjcyNDg2LDEzNjQxOTYzMDMsLTE1Mj
+IyNTQ1OTcsLTExNDkwODAwOCwxMTU1Nzg0MDE2LDE2MzU1MzYz
+MzYsLTQzODc3MzMwNiwtMjA2NDE4NzU0MSwxMDUwNTMwMzQyLD
+gwNDUxNjk2NywxOTIxMjQzNjU0LDEzODE3NDc4ODgsMTIyNjA1
+OTI3Nl19
 -->
