@@ -118,7 +118,7 @@ En x86 on va considérer les registres suivants :
 
 Il existe plusieurs façon équivalentes de représenter des opérations en assembleur. Avant toute chose, il faudra choisir la syntaxe avec laquelle on souhaite travailler. 
 Les instructions sont systématiquement formée d'une opération à effectuer, d'une source et d'une destination.
-Par exemple, l'instruction `
+Par exemple, dans l'instruction `mov eax, 1`, l'opérateur `mov` déplace la valeur 1 (source) dans la destination `eax`. 
 
 Il existe deux syntaxes majeures, la A&AT et la INTEL.
 
@@ -255,11 +255,11 @@ Le programme reprends donc son cours normal.
 ret2libc
 ropchain
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEzNTUxNDM2MzgsLTQzODc3MzMwNiwtMj
-A2NDE4NzU0MSwxMDUwNTMwMzQyLDgwNDUxNjk2NywxOTIxMjQz
-NjU0LDEzODE3NDc4ODgsMTIyNjA1OTI3NiwxMTE4MDYxOTY1LC
-0xNTc0NTM0NTcxLDIxMTU2NDQ4NTksOTU4OTAxMjU1LDQ5NDcx
-Njc0MiwtMTIwNjgzOTYxLDE0ODkyMjE2NjcsMjExOTUwNTUyMy
-wtMTA2OTg4OTg3OCwyMTM1MDQzOTE1LDM4OTAxMjYzNCwtNzcy
-MDg5MDgzXX0=
+eyJoaXN0b3J5IjpbLTI2ODA1MTYzMSwtNDM4NzczMzA2LC0yMD
+Y0MTg3NTQxLDEwNTA1MzAzNDIsODA0NTE2OTY3LDE5MjEyNDM2
+NTQsMTM4MTc0Nzg4OCwxMjI2MDU5Mjc2LDExMTgwNjE5NjUsLT
+E1NzQ1MzQ1NzEsMjExNTY0NDg1OSw5NTg5MDEyNTUsNDk0NzE2
+NzQyLC0xMjA2ODM5NjEsMTQ4OTIyMTY2NywyMTE5NTA1NTIzLC
+0xMDY5ODg5ODc4LDIxMzUwNDM5MTUsMzg5MDEyNjM0LC03NzIw
+ODkwODNdfQ==
 -->
