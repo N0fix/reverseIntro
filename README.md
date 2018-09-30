@@ -167,8 +167,8 @@ On commence par le `push ebp`
    0x0804841d <+0>:	push   ebp
 ```
 Ici, on va garder sur le haut de la stack la valeur de `ebp` avant que la fonction commence. Cela nous permettra de restaurer l'ancienne valeur d'`ebp` à la sortie de la fonction.
-
-
+En rouge la valeur 
+![Stack first ptr str](https://raw.githubusercontent.com/N0fix/reverseIntro/master/img/stack3.png)
 
 
 
@@ -320,10 +320,10 @@ Récap :
 |old EBP value (`0x0800050a`)|__ESP__ et __EBP__|
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTM4MTc0Nzg4OCwxMjI2MDU5Mjc2LDExMT
-gwNjE5NjUsLTE1NzQ1MzQ1NzEsMjExNTY0NDg1OSw5NTg5MDEy
-NTUsNDk0NzE2NzQyLC0xMjA2ODM5NjEsMTQ4OTIyMTY2NywyMT
-E5NTA1NTIzLC0xMDY5ODg5ODc4LDIxMzUwNDM5MTUsMzg5MDEy
-NjM0LC03NzIwODkwODMsNDEwMjQxMzMwLDk4MDA3MTA5NiwtNz
-UxMDQyOTI2LC0xMTQ5Nzk0MzA4XX0=
+eyJoaXN0b3J5IjpbLTgxNjMwNTc4MiwxMzgxNzQ3ODg4LDEyMj
+YwNTkyNzYsMTExODA2MTk2NSwtMTU3NDUzNDU3MSwyMTE1NjQ0
+ODU5LDk1ODkwMTI1NSw0OTQ3MTY3NDIsLTEyMDY4Mzk2MSwxND
+g5MjIxNjY3LDIxMTk1MDU1MjMsLTEwNjk4ODk4NzgsMjEzNTA0
+MzkxNSwzODkwMTI2MzQsLTc3MjA4OTA4Myw0MTAyNDEzMzAsOT
+gwMDcxMDk2LC03NTEwNDI5MjYsLTExNDk3OTQzMDhdfQ==
 -->
