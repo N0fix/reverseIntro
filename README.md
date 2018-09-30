@@ -117,6 +117,8 @@ En x86 on va considérer les registres suivants :
 ### La syntaxe
 
 Il existe plusieurs façon équivalentes de représenter des opérations en assembleur. Avant toute chose, il faudra choisir la syntaxe avec laquelle on souhaite travailler. 
+Les instructions sont systématiquement formée d'une opération à effectuer, d'une source et d'une destination.
+Par exemple, l'instruction `
 
 Il existe deux syntaxes majeures, la A&AT et la INTEL.
 
@@ -253,11 +255,11 @@ Le programme reprends donc son cours normal.
 ret2libc
 ropchain
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTQzODc3MzMwNiwtMjA2NDE4NzU0MSwxMD
-UwNTMwMzQyLDgwNDUxNjk2NywxOTIxMjQzNjU0LDEzODE3NDc4
-ODgsMTIyNjA1OTI3NiwxMTE4MDYxOTY1LC0xNTc0NTM0NTcxLD
-IxMTU2NDQ4NTksOTU4OTAxMjU1LDQ5NDcxNjc0MiwtMTIwNjgz
-OTYxLDE0ODkyMjE2NjcsMjExOTUwNTUyMywtMTA2OTg4OTg3OC
-wyMTM1MDQzOTE1LDM4OTAxMjYzNCwtNzcyMDg5MDgzLDQxMDI0
-MTMzMF19
+eyJoaXN0b3J5IjpbLTEzNTUxNDM2MzgsLTQzODc3MzMwNiwtMj
+A2NDE4NzU0MSwxMDUwNTMwMzQyLDgwNDUxNjk2NywxOTIxMjQz
+NjU0LDEzODE3NDc4ODgsMTIyNjA1OTI3NiwxMTE4MDYxOTY1LC
+0xNTc0NTM0NTcxLDIxMTU2NDQ4NTksOTU4OTAxMjU1LDQ5NDcx
+Njc0MiwtMTIwNjgzOTYxLDE0ODkyMjE2NjcsMjExOTUwNTUyMy
+wtMTA2OTg4OTg3OCwyMTM1MDQzOTE1LDM4OTAxMjYzNCwtNzcy
+MDg5MDgzXX0=
 -->
