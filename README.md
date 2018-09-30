@@ -201,7 +201,18 @@ Les sorties de fonction sont toujours composées de deux instructions qui vont a
 La première instruction `leave` est équivalent à un `pop ebp`, ce qui va rétablir EBP à son ancienne valeur : 
 ![Stack first ptr str](https://raw.githubusercontent.com/N0fix/reverseIntro/master/img/stack2.png) 
 Tandis que l'instruction `ret`  rend la main à la fonction appelante (dans notre cas `main()`), en faisant un `pop eip` (on met l'adresse `0x0804844d` dans le registre qui pointe vers les instructions à executer) puis en quittqnt la fonction.
-Le programme lira l'instruction pointée par `eip`, et donc l'instruction qui suivait l'appel de notre fonction. Le progamme reprends donc son cours normal.
+
+```C
+ gdb-peda$ disas main
+	... 
+   0x08048445 <+21>:	mov    DWORD PTR [esp],eax
+   0x08048448 <+24>:	call   0x804841d <hello>
+   0x0804844d <+29>:	mov    eax,0x0
+	...
+```
+
+Le programme lira l'instruction pointée par `eip`, et donc l'instruction qui suivait l'appel de notre fonction. 
+Le progamme reprends donc son cours normal.
 
 
 
@@ -352,11 +363,11 @@ Récap :
 |old EBP value (`0x0800050a`)|__ESP__ et __EBP__|
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTU2OTY1MjE0OCwxOTIxMjQzNjU0LDEzOD
-E3NDc4ODgsMTIyNjA1OTI3NiwxMTE4MDYxOTY1LC0xNTc0NTM0
-NTcxLDIxMTU2NDQ4NTksOTU4OTAxMjU1LDQ5NDcxNjc0MiwtMT
-IwNjgzOTYxLDE0ODkyMjE2NjcsMjExOTUwNTUyMywtMTA2OTg4
-OTg3OCwyMTM1MDQzOTE1LDM4OTAxMjYzNCwtNzcyMDg5MDgzLD
-QxMDI0MTMzMCw5ODAwNzEwOTYsLTc1MTA0MjkyNiwtMTE0OTc5
-NDMwOF19
+eyJoaXN0b3J5IjpbLTExMDI3OTYxMzEsMTkyMTI0MzY1NCwxMz
+gxNzQ3ODg4LDEyMjYwNTkyNzYsMTExODA2MTk2NSwtMTU3NDUz
+NDU3MSwyMTE1NjQ0ODU5LDk1ODkwMTI1NSw0OTQ3MTY3NDIsLT
+EyMDY4Mzk2MSwxNDg5MjIxNjY3LDIxMTk1MDU1MjMsLTEwNjk4
+ODk4NzgsMjEzNTA0MzkxNSwzODkwMTI2MzQsLTc3MjA4OTA4My
+w0MTAyNDEzMzAsOTgwMDcxMDk2LC03NTEwNDI5MjYsLTExNDk3
+OTQzMDhdfQ==
 -->
