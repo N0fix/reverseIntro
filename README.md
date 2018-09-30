@@ -105,15 +105,15 @@ En x86 on va considérer les registres suivants :
 
 -   EAX, ECX, EDX, EBX 
 
->EAX (Accumulator) est utilisé pour stocker des valeurs et pour stocker les valeurs de retour des fonctions.
->ECX (Counter) est généralement le compteur que l'on incrémente (souvent appelé `i` dans les boucles `for` en langage `C`).
+>EAX (Accumulator) est utilisé pour stocker des valeurs en général, mais également pour stocker les valeurs de retour des fonctions.
+>ECX (Counter) est généralement le compteur que l'on incrémente (compteur souvent appelé `i` dans les boucles `for` en langage `C`).
 >EDX (Data) Utilisé pour les opérations d'entrée/sortie.
 >EBX (Base) Utilisé comme pointeur de données (c'est lui qui va pointer vers l'adresse d'un tableau par exemple).
 -   ESP, EBP
 > ESP  (Extended Stack Pointer) pointe toujours vers le haut de la pile.
 > EBP (Extended Base Pointer) est un pointeur qui est censé pointer vers le bas de la pile (on verra que cela n'est en réalité pas le cas).
 -   ESI, EDI
-> Lors des chargement de données sur le disque, ce sont ces registres qui sont utilisés pou désigner la source et la destination des opérations.
+> Lors des chargement de données sur le disque, ce sont ces registres qui sont utilisés pour désigner la source et la destination des opérations.
 > ESI (Extended Source Index) pointeur source.
 > EDI (Extended Destination Index) pointeur destination.
 -   EIP (Instruction Pointer)
@@ -339,11 +339,11 @@ Le programme reprends donc son cours normal.
 ret2libc
 ropchain
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbOTU4ODg5OTY2LDEwODg5ODk4MzYsLTc1OD
-gyNDUyNCw3NDk1NDU3MDAsMTAwOTMyNTEyMyw5NDI1Mzk2MDIs
-MTA2MDk1MDQzMywxNDcyNzI0ODYsMTM2NDE5NjMwMywtMTUyMj
-I1NDU5NywtMTE0OTA4MDA4LDExNTU3ODQwMTYsMTYzNTUzNjMz
-NiwtNDM4NzczMzA2LC0yMDY0MTg3NTQxLDEwNTA1MzAzNDIsOD
-A0NTE2OTY3LDE5MjEyNDM2NTQsMTM4MTc0Nzg4OCwxMjI2MDU5
-Mjc2XX0=
+eyJoaXN0b3J5IjpbMTM3OTM4ODc4NSwxMDg4OTg5ODM2LC03NT
+g4MjQ1MjQsNzQ5NTQ1NzAwLDEwMDkzMjUxMjMsOTQyNTM5NjAy
+LDEwNjA5NTA0MzMsMTQ3MjcyNDg2LDEzNjQxOTYzMDMsLTE1Mj
+IyNTQ1OTcsLTExNDkwODAwOCwxMTU1Nzg0MDE2LDE2MzU1MzYz
+MzYsLTQzODc3MzMwNiwtMjA2NDE4NzU0MSwxMDUwNTMwMzQyLD
+gwNDUxNjk2NywxOTIxMjQzNjU0LDEzODE3NDc4ODgsMTIyNjA1
+OTI3Nl19
 -->
