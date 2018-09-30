@@ -170,7 +170,8 @@ L'instruction `mov <destination> <source>` copie (et ne déplace pas comme son n
 L'instruction `add <destination> <source>` additionne une valeur de la source avec la destination, et copie le résultat dans la destination. Exemple si `eax` contient la valeur 10 : `add eax, 5` aura pour effet de copier la valeur 15 dans `eax`.
 #### SUB
 Même chose que pour l'instruction `add`, mais en soustrayant.
-#### 
+#### POP
+L'instruction `pop <destination>` dépile la dernière valeur sur la pile et place cette valeur dans la destination. Exemple si la valeur 15 est présente sur la pile : `pop eax` aura pour effet de retirer 15 de la pile et de placer 15 dans `eax`. La valeur du 
 
 ## Les appels de fonctions
 
@@ -301,11 +302,11 @@ Le programme reprends donc son cours normal.
 ret2libc
 ropchain
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTM1Nzk1MDg0OCwxMzY0MTk2MzAzLC0xNT
-IyMjU0NTk3LC0xMTQ5MDgwMDgsMTE1NTc4NDAxNiwxNjM1NTM2
-MzM2LC00Mzg3NzMzMDYsLTIwNjQxODc1NDEsMTA1MDUzMDM0Mi
-w4MDQ1MTY5NjcsMTkyMTI0MzY1NCwxMzgxNzQ3ODg4LDEyMjYw
-NTkyNzYsMTExODA2MTk2NSwtMTU3NDUzNDU3MSwyMTE1NjQ0OD
-U5LDk1ODkwMTI1NSw0OTQ3MTY3NDIsLTEyMDY4Mzk2MSwxNDg5
-MjIxNjY3XX0=
+eyJoaXN0b3J5IjpbNzA1OTQ4OTgsMTM2NDE5NjMwMywtMTUyMj
+I1NDU5NywtMTE0OTA4MDA4LDExNTU3ODQwMTYsMTYzNTUzNjMz
+NiwtNDM4NzczMzA2LC0yMDY0MTg3NTQxLDEwNTA1MzAzNDIsOD
+A0NTE2OTY3LDE5MjEyNDM2NTQsMTM4MTc0Nzg4OCwxMjI2MDU5
+Mjc2LDExMTgwNjE5NjUsLTE1NzQ1MzQ1NzEsMjExNTY0NDg1OS
+w5NTg5MDEyNTUsNDk0NzE2NzQyLC0xMjA2ODM5NjEsMTQ4OTIy
+MTY2N119
 -->
