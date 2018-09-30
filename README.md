@@ -157,12 +157,18 @@ Ceci est accompli par ces deux lignes d'assembleur que je vais détailler, et qu
    0x0804841d <+0>:	push   ebp
    0x0804841e <+1>:	mov    ebp,esp
 ```
+
 ### L'appel à la fonction
 
+Afin de bien comprendre ces lignes, je vais afficher l'état réel de la pile, et l'état de la pile vu par le programme après chaque instruction.
+
+On commence par le `push ebp`
+```C
+   0x0804841d <+0>:	push   ebp
+```
+Ici, on va garder sur le haut de la stack la valeur de ``
 
 
-
-Afin de bien comprendre ces lignes, voici l'état réel de la pile, et l'état de la pile vu par le programme à chaque instant :
 
 
 
@@ -313,10 +319,10 @@ Récap :
 |old EBP value (`0x0800050a`)|__ESP__ et __EBP__|
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNjc1OTEwNTQ4LDEyMjYwNTkyNzYsMTExOD
-A2MTk2NSwtMTU3NDUzNDU3MSwyMTE1NjQ0ODU5LDk1ODkwMTI1
-NSw0OTQ3MTY3NDIsLTEyMDY4Mzk2MSwxNDg5MjIxNjY3LDIxMT
-k1MDU1MjMsLTEwNjk4ODk4NzgsMjEzNTA0MzkxNSwzODkwMTI2
-MzQsLTc3MjA4OTA4Myw0MTAyNDEzMzAsOTgwMDcxMDk2LC03NT
-EwNDI5MjYsLTExNDk3OTQzMDhdfQ==
+eyJoaXN0b3J5IjpbLTEzMDc2MzY2ODQsMTIyNjA1OTI3NiwxMT
+E4MDYxOTY1LC0xNTc0NTM0NTcxLDIxMTU2NDQ4NTksOTU4OTAx
+MjU1LDQ5NDcxNjc0MiwtMTIwNjgzOTYxLDE0ODkyMjE2NjcsMj
+ExOTUwNTUyMywtMTA2OTg4OTg3OCwyMTM1MDQzOTE1LDM4OTAx
+MjYzNCwtNzcyMDg5MDgzLDQxMDI0MTMzMCw5ODAwNzEwOTYsLT
+c1MTA0MjkyNiwtMTE0OTc5NDMwOF19
 -->
