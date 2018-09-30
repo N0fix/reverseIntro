@@ -145,10 +145,18 @@ En INTEL, un registre est divisible en sous parties. Par exemple, on peut utilis
 **AT&T** utilisera une syntaxe différente pour manipuler des parties de registres.
 Il faudra ajouter une lettre à la fin de chaque instruction pour spécifier la taille voulue, parmi :
 
- -  b = byte (8 bit)
+ -  b = byte (8 bits)
 -   s = short (16 bits)
 -   w = word (16 bits)
 -   l = long (32 bits)
+
+Ainsi, dans l'exemple 
+
+|    INTEL   | AT&T         |
+|:----------:|--------------|
+| mov al, 5 | movb $5, %eax|
+
+INTEL fait un déplacement vers les 5 premiers bits du registre `eax` en appelant le registre `al`, là où **AT&T** utilisera l'opération `movb`, où `b` signifieara `
 
 ### Les instruction essentielles
 
@@ -281,11 +289,11 @@ Le programme reprends donc son cours normal.
 ret2libc
 ropchain
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEwMjIyOTUwMDMsMTM2NDE5NjMwMywtMT
-UyMjI1NDU5NywtMTE0OTA4MDA4LDExNTU3ODQwMTYsMTYzNTUz
-NjMzNiwtNDM4NzczMzA2LC0yMDY0MTg3NTQxLDEwNTA1MzAzND
-IsODA0NTE2OTY3LDE5MjEyNDM2NTQsMTM4MTc0Nzg4OCwxMjI2
-MDU5Mjc2LDExMTgwNjE5NjUsLTE1NzQ1MzQ1NzEsMjExNTY0ND
-g1OSw5NTg5MDEyNTUsNDk0NzE2NzQyLC0xMjA2ODM5NjEsMTQ4
-OTIyMTY2N119
+eyJoaXN0b3J5IjpbMTQ3MjY4MDc5LDEzNjQxOTYzMDMsLTE1Mj
+IyNTQ1OTcsLTExNDkwODAwOCwxMTU1Nzg0MDE2LDE2MzU1MzYz
+MzYsLTQzODc3MzMwNiwtMjA2NDE4NzU0MSwxMDUwNTMwMzQyLD
+gwNDUxNjk2NywxOTIxMjQzNjU0LDEzODE3NDc4ODgsMTIyNjA1
+OTI3NiwxMTE4MDYxOTY1LC0xNTc0NTM0NTcxLDIxMTU2NDQ4NT
+ksOTU4OTAxMjU1LDQ5NDcxNjc0MiwtMTIwNjgzOTYxLDE0ODky
+MjE2NjddfQ==
 -->
