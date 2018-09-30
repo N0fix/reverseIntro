@@ -164,7 +164,7 @@ Ainsi, dans l'exemple
 |:----------:|--------------|
 | mov al, 5 | movb $5, %eax|
 
-INTEL fait un déplacement vers les 5 premiers bits du registre `eax` en appelant le registre `al`, là où **AT&T** utilisera l'opération `movb`, où `b` signifiera `byte`.
+INTEL fait un déplacement vers les 8 premiers bits du registre `eax` en appelant le registre `al`, là où **AT&T** utilisera l'opération `movb`, où `b` signifiera `byte`.
 
 Lorsque l'opération ne porte pas sur un registre mais sur une adresse, **INTEL** utilisera la syntaxe suivante :
 
@@ -339,7 +339,7 @@ Le programme reprends donc son cours normal.
 ret2libc
 ropchain
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTMzNzM4OTE5MCwxMDg4OTg5ODM2LC03NT
+eyJoaXN0b3J5IjpbLTcyOTAwMzU3NSwxMDg4OTg5ODM2LC03NT
 g4MjQ1MjQsNzQ5NTQ1NzAwLDEwMDkzMjUxMjMsOTQyNTM5NjAy
 LDEwNjA5NTA0MzMsMTQ3MjcyNDg2LDEzNjQxOTYzMDMsLTE1Mj
 IyNTQ1OTcsLTExNDkwODAwOCwxMTU1Nzg0MDE2LDE2MzU1MzYz
