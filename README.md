@@ -98,13 +98,17 @@ int main(char** argv, int argc){
 En x86 on va considérer les registres suivants : 
 
 -   EAX, ECX, EDX, EBX 
--   ESP, EBP
--   ESI, EDI
--   EIP (Instruction Pointer)
+
 >EAX (Accumulator) est utilisé pour stocker des valeurs et pour stocker les valeurs de retour des fonctions
 >ECX (Counter) est généralement le compteur que l'on incrémente (souvent appelé `i` dans les boucles `for` en langage `C`).
 >EDX (Data) Utilisé pour les opérations d'entrée/sortie
->EBX (Base) Utilisé 
+>EBX (Base) Utilisé comme pointeur de données (c'est lui qui va pointer vers l'adresse d'un tableau par exemple)
+-   ESP, EBP
+> ESP pointe toujours vers le haut de la pile
+> EBP est un pointeur qui est censé pointe
+-   ESI, EDI
+-   EIP (Instruction Pointer)
+
 
 ### La syntaxe
 
@@ -385,7 +389,7 @@ Récap :
 ret2libc
 ropchain
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTM2NDA2NzE2OSwxMDUwNTMwMzQyLDgwND
+eyJoaXN0b3J5IjpbLTYzMTc1NTg4NSwxMDUwNTMwMzQyLDgwND
 UxNjk2NywxOTIxMjQzNjU0LDEzODE3NDc4ODgsMTIyNjA1OTI3
 NiwxMTE4MDYxOTY1LC0xNTc0NTM0NTcxLDIxMTU2NDQ4NTksOT
 U4OTAxMjU1LDQ5NDcxNjc0MiwtMTIwNjgzOTYxLDE0ODkyMjE2
