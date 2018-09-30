@@ -95,7 +95,14 @@ int main(char** argv, int argc){
 
 ### Les registres en x86
 
-En x86 on va consid
+En x86 on va considérer les registres suivants : 
+
+-   EAX, ECX, EDX, EBX 
+-   ESP, EBP
+-   ESI, EDI
+-   EIP (Instruction Pointer)
+>EAX est généralement le compteur que l'on incrémente (souvent appelé `i` dans les boucles `for` en langage `C`).
+>EXC 
 
 ### La syntaxe
 
@@ -376,11 +383,11 @@ Récap :
 ret2libc
 ropchain
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNDM5NTE3MDA1LDEwNTA1MzAzNDIsODA0NT
-E2OTY3LDE5MjEyNDM2NTQsMTM4MTc0Nzg4OCwxMjI2MDU5Mjc2
-LDExMTgwNjE5NjUsLTE1NzQ1MzQ1NzEsMjExNTY0NDg1OSw5NT
-g5MDEyNTUsNDk0NzE2NzQyLC0xMjA2ODM5NjEsMTQ4OTIyMTY2
-NywyMTE5NTA1NTIzLC0xMDY5ODg5ODc4LDIxMzUwNDM5MTUsMz
-g5MDEyNjM0LC03NzIwODkwODMsNDEwMjQxMzMwLDk4MDA3MTA5
-Nl19
+eyJoaXN0b3J5IjpbLTk3MjkzNjU3MiwxMDUwNTMwMzQyLDgwND
+UxNjk2NywxOTIxMjQzNjU0LDEzODE3NDc4ODgsMTIyNjA1OTI3
+NiwxMTE4MDYxOTY1LC0xNTc0NTM0NTcxLDIxMTU2NDQ4NTksOT
+U4OTAxMjU1LDQ5NDcxNjc0MiwtMTIwNjgzOTYxLDE0ODkyMjE2
+NjcsMjExOTUwNTUyMywtMTA2OTg4OTg3OCwyMTM1MDQzOTE1LD
+M4OTAxMjYzNCwtNzcyMDg5MDgzLDQxMDI0MTMzMCw5ODAwNzEw
+OTZdfQ==
 -->
