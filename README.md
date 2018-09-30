@@ -187,7 +187,12 @@ Voici le vrai état de la pile :
 
 ### Sortie de la fonction
 
+Les sorties de fonction sont toujours composées de deux instructions qui vont avoir pour but de remettre la pile dans l'état dans lequel elle était avant l'appel: 
 
+```C
+   0x08048452 <+34>:	leave  
+   0x08048453 <+35>:	ret    
+```
 
 
 # Lis plus à partir d'ici
@@ -337,10 +342,10 @@ Récap :
 |old EBP value (`0x0800050a`)|__ESP__ et __EBP__|
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbOTUyOTExOTcsMTM4MTc0Nzg4OCwxMjI2MD
-U5Mjc2LDExMTgwNjE5NjUsLTE1NzQ1MzQ1NzEsMjExNTY0NDg1
-OSw5NTg5MDEyNTUsNDk0NzE2NzQyLC0xMjA2ODM5NjEsMTQ4OT
-IyMTY2NywyMTE5NTA1NTIzLC0xMDY5ODg5ODc4LDIxMzUwNDM5
-MTUsMzg5MDEyNjM0LC03NzIwODkwODMsNDEwMjQxMzMwLDk4MD
-A3MTA5NiwtNzUxMDQyOTI2LC0xMTQ5Nzk0MzA4XX0=
+eyJoaXN0b3J5IjpbLTIwMjg4NjUzMDAsMTM4MTc0Nzg4OCwxMj
+I2MDU5Mjc2LDExMTgwNjE5NjUsLTE1NzQ1MzQ1NzEsMjExNTY0
+NDg1OSw5NTg5MDEyNTUsNDk0NzE2NzQyLC0xMjA2ODM5NjEsMT
+Q4OTIyMTY2NywyMTE5NTA1NTIzLC0xMDY5ODg5ODc4LDIxMzUw
+NDM5MTUsMzg5MDEyNjM0LC03NzIwODkwODMsNDEwMjQxMzMwLD
+k4MDA3MTA5NiwtNzUxMDQyOTI2LC0xMTQ5Nzk0MzA4XX0=
 -->
