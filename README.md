@@ -130,7 +130,7 @@ Tandis que la syntaxe A&AT fonctionne en : `opération <source> <destination>`
 | mov eax, 1 | mov $1, %eax |
 
 Une autre différence majeure entre les deux syntaxes est visible sur l'exemple si dessus : en **A&AT** un `%` doit être placé devant le nom des registres, et un `$` sera placé avant les valeurs.
-Une autre d
+Aussi, il est possible dans les deux syntaxes de manipuler une partie d'un registre plutôt 
 
 
 ### Les instruction essentielles
@@ -264,11 +264,11 @@ Le programme reprends donc son cours normal.
 ret2libc
 ropchain
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTkwMzI3MzY5MSwtMTE0OTA4MDA4LDExNT
-U3ODQwMTYsMTYzNTUzNjMzNiwtNDM4NzczMzA2LC0yMDY0MTg3
-NTQxLDEwNTA1MzAzNDIsODA0NTE2OTY3LDE5MjEyNDM2NTQsMT
-M4MTc0Nzg4OCwxMjI2MDU5Mjc2LDExMTgwNjE5NjUsLTE1NzQ1
-MzQ1NzEsMjExNTY0NDg1OSw5NTg5MDEyNTUsNDk0NzE2NzQyLC
-0xMjA2ODM5NjEsMTQ4OTIyMTY2NywyMTE5NTA1NTIzLC0xMDY5
-ODg5ODc4XX0=
+eyJoaXN0b3J5IjpbLTE1MjIyNTQ1OTcsLTExNDkwODAwOCwxMT
+U1Nzg0MDE2LDE2MzU1MzYzMzYsLTQzODc3MzMwNiwtMjA2NDE4
+NzU0MSwxMDUwNTMwMzQyLDgwNDUxNjk2NywxOTIxMjQzNjU0LD
+EzODE3NDc4ODgsMTIyNjA1OTI3NiwxMTE4MDYxOTY1LC0xNTc0
+NTM0NTcxLDIxMTU2NDQ4NTksOTU4OTAxMjU1LDQ5NDcxNjc0Mi
+wtMTIwNjgzOTYxLDE0ODkyMjE2NjcsMjExOTUwNTUyMywtMTA2
+OTg4OTg3OF19
 -->
