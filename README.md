@@ -118,7 +118,7 @@ Une fois la fonction `main()` désassemblé avec `GDB` via la commande `disas ma
 	...
    0x08048439 <+9>:	mov    DWORD PTR [esp+0x1c],0x80484f0
    0x08048441 <+17>:	mov    eax,DWORD PTR [esp+0x1c]
-   0x08048445 <+21>:	mov    DWORD PTR [esp],eax ;push de l'addr de la string
+   0x08048445 <+21>:	mov    DWORD PTR [esp],eax ;push addr de la string
    0x08048448 <+24>:	call   0x804841d <hello>   ;call de la fonction hello
 	...
 ```
@@ -367,11 +367,11 @@ Récap :
 |old EBP value (`0x0800050a`)|__ESP__ et __EBP__|
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTE4NzY5MTY5MSwxOTIxMjQzNjU0LDEzOD
-E3NDc4ODgsMTIyNjA1OTI3NiwxMTE4MDYxOTY1LC0xNTc0NTM0
-NTcxLDIxMTU2NDQ4NTksOTU4OTAxMjU1LDQ5NDcxNjc0MiwtMT
-IwNjgzOTYxLDE0ODkyMjE2NjcsMjExOTUwNTUyMywtMTA2OTg4
-OTg3OCwyMTM1MDQzOTE1LDM4OTAxMjYzNCwtNzcyMDg5MDgzLD
-QxMDI0MTMzMCw5ODAwNzEwOTYsLTc1MTA0MjkyNiwtMTE0OTc5
-NDMwOF19
+eyJoaXN0b3J5IjpbLTE2NDczMDQwNTksMTkyMTI0MzY1NCwxMz
+gxNzQ3ODg4LDEyMjYwNTkyNzYsMTExODA2MTk2NSwtMTU3NDUz
+NDU3MSwyMTE1NjQ0ODU5LDk1ODkwMTI1NSw0OTQ3MTY3NDIsLT
+EyMDY4Mzk2MSwxNDg5MjIxNjY3LDIxMTk1MDU1MjMsLTEwNjk4
+ODk4NzgsMjEzNTA0MzkxNSwzODkwMTI2MzQsLTc3MjA4OTA4My
+w0MTAyNDEzMzAsOTgwMDcxMDk2LC03NTEwNDI5MjYsLTExNDk3
+OTQzMDhdfQ==
 -->
