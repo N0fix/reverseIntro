@@ -158,6 +158,12 @@ Ainsi, dans l'exemple
 
 INTEL fait un déplacement vers les 5 premiers bits du registre `eax` en appelant le registre `al`, là où **AT&T** utilisera l'opération `movb`, où `b` signifiera `byte`.
 
+Lorsque l'opération ne porte pas sur un registre mais sur une adresse, **INTEL** utilisera la syntaxe suivante :
+
+|    INTEL   | AT&T         |
+|:----------:|--------------|
+| mov DWORD PTR [addresse], 5 | movb $5, %eax|
+
 Pour le reste de ce rendu, j'utiliserai la syntaxe **INTEL**, le format `opération <destination> <source>` étant bien plus instinctif pour moi, car très proche de ce qui est fait pour assigner des valeurs à des variables dans des langages de programmation de plus haut niveau.
 
 ### Les instruction essentielles
@@ -306,11 +312,11 @@ Le programme reprends donc son cours normal.
 ret2libc
 ropchain
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTM2MjYxMTI5MSwxMzY0MTk2MzAzLC0xNT
-IyMjU0NTk3LC0xMTQ5MDgwMDgsMTE1NTc4NDAxNiwxNjM1NTM2
-MzM2LC00Mzg3NzMzMDYsLTIwNjQxODc1NDEsMTA1MDUzMDM0Mi
-w4MDQ1MTY5NjcsMTkyMTI0MzY1NCwxMzgxNzQ3ODg4LDEyMjYw
-NTkyNzYsMTExODA2MTk2NSwtMTU3NDUzNDU3MSwyMTE1NjQ0OD
-U5LDk1ODkwMTI1NSw0OTQ3MTY3NDIsLTEyMDY4Mzk2MSwxNDg5
-MjIxNjY3XX0=
+eyJoaXN0b3J5IjpbMzYzOTgxMjMxLDEzNjQxOTYzMDMsLTE1Mj
+IyNTQ1OTcsLTExNDkwODAwOCwxMTU1Nzg0MDE2LDE2MzU1MzYz
+MzYsLTQzODc3MzMwNiwtMjA2NDE4NzU0MSwxMDUwNTMwMzQyLD
+gwNDUxNjk2NywxOTIxMjQzNjU0LDEzODE3NDc4ODgsMTIyNjA1
+OTI3NiwxMTE4MDYxOTY1LC0xNTc0NTM0NTcxLDIxMTU2NDQ4NT
+ksOTU4OTAxMjU1LDQ5NDcxNjc0MiwtMTIwNjgzOTYxLDE0ODky
+MjE2NjddfQ==
 -->
