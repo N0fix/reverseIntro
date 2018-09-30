@@ -20,7 +20,7 @@ Il existe évidemment de nombreuses autres architectures, dont les plus connues 
 
 ## Composition d'un programme
 
-Un programme fonctionne grâce à deux parties essentielles : le processeur et la mémoire. Avant de voir comment un le processeur exécute un programme, il faut analyser comment est gérée la mémoire. 
+Premièrement, il faut bien comprendre comment est composé un programme. Un programme fonctionne grâce à deux parties essentielles : le processeur et la mémoire. Avant de voir comment un le processeur exécute un programme, il faut analyser comment est gérée la mémoire. 
 Il est important de constater que la mémoire est répartie en plusieurs segments qui ont chacune un rôle propre.
 Parmi celles qui vont le plus nous intéresser : 
 
@@ -338,11 +338,11 @@ Le programme reprends donc son cours normal.
 ret2libc
 ropchain
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTc1ODgyNDUyNCw3NDk1NDU3MDAsMTAwOT
-MyNTEyMyw5NDI1Mzk2MDIsMTA2MDk1MDQzMywxNDcyNzI0ODYs
-MTM2NDE5NjMwMywtMTUyMjI1NDU5NywtMTE0OTA4MDA4LDExNT
-U3ODQwMTYsMTYzNTUzNjMzNiwtNDM4NzczMzA2LC0yMDY0MTg3
-NTQxLDEwNTA1MzAzNDIsODA0NTE2OTY3LDE5MjEyNDM2NTQsMT
-M4MTc0Nzg4OCwxMjI2MDU5Mjc2LDExMTgwNjE5NjUsLTE1NzQ1
-MzQ1NzFdfQ==
+eyJoaXN0b3J5IjpbMTA4ODk4OTgzNiwtNzU4ODI0NTI0LDc0OT
+U0NTcwMCwxMDA5MzI1MTIzLDk0MjUzOTYwMiwxMDYwOTUwNDMz
+LDE0NzI3MjQ4NiwxMzY0MTk2MzAzLC0xNTIyMjU0NTk3LC0xMT
+Q5MDgwMDgsMTE1NTc4NDAxNiwxNjM1NTM2MzM2LC00Mzg3NzMz
+MDYsLTIwNjQxODc1NDEsMTA1MDUzMDM0Miw4MDQ1MTY5NjcsMT
+kyMTI0MzY1NCwxMzgxNzQ3ODg4LDEyMjYwNTkyNzYsMTExODA2
+MTk2NV19
 -->
