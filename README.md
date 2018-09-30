@@ -12,6 +12,7 @@ Il existe de nombreuses autres architectures, dont les plus connues sont :
  - ARM
  - MISP
 
+
 ## Composition d'un programme
 
 Un programme fonctionne grâce à deux parties essentielles : le processeur et la mémoire. Avant de voir comment un le processeur execute un programme, il faut analyser comment est gérée la mémoire. 
@@ -86,6 +87,10 @@ int main(char** argv, int argc){
 }
 //end of .text section 
 ```
+
+
+## explication differentes syntaxes assembleur
+//to
 
 ## Les appels de fonction
 
@@ -342,7 +347,7 @@ Récap :
 |old EBP value (`0x0800050a`)|__ESP__ et __EBP__|
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTMyMDczNzU0OCwxMzgxNzQ3ODg4LDEyMj
+eyJoaXN0b3J5IjpbMTU0NjY2MzM2NiwxMzgxNzQ3ODg4LDEyMj
 YwNTkyNzYsMTExODA2MTk2NSwtMTU3NDUzNDU3MSwyMTE1NjQ0
 ODU5LDk1ODkwMTI1NSw0OTQ3MTY3NDIsLTEyMDY4Mzk2MSwxND
 g5MjIxNjY3LDIxMTk1MDU1MjMsLTEwNjk4ODk4NzgsMjEzNTA0
