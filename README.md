@@ -116,7 +116,11 @@ En x86 on va considérer les registres suivants :
 
 ### La syntaxe
 
-Il existe plusieurs façon équivalentes de représenter des opérations en assembleur. 
+Il existe plusieurs façon équivalentes de représenter des opérations en assembleur. Avant toute chose, il faudra choisir la syntaxe avec laquelle on souhaite travailler. 
+
+Il existe deux syntaxes majeures, la A&AT et la INTEL.
+
+
 
 ### Les instruction essentielles
 
@@ -395,11 +399,11 @@ Récap :
 ret2libc
 ropchain
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTUwNjI0NDU1OCwxMDUwNTMwMzQyLDgwND
-UxNjk2NywxOTIxMjQzNjU0LDEzODE3NDc4ODgsMTIyNjA1OTI3
-NiwxMTE4MDYxOTY1LC0xNTc0NTM0NTcxLDIxMTU2NDQ4NTksOT
-U4OTAxMjU1LDQ5NDcxNjc0MiwtMTIwNjgzOTYxLDE0ODkyMjE2
-NjcsMjExOTUwNTUyMywtMTA2OTg4OTg3OCwyMTM1MDQzOTE1LD
-M4OTAxMjYzNCwtNzcyMDg5MDgzLDQxMDI0MTMzMCw5ODAwNzEw
-OTZdfQ==
+eyJoaXN0b3J5IjpbLTIwNjQxODc1NDEsMTA1MDUzMDM0Miw4MD
+Q1MTY5NjcsMTkyMTI0MzY1NCwxMzgxNzQ3ODg4LDEyMjYwNTky
+NzYsMTExODA2MTk2NSwtMTU3NDUzNDU3MSwyMTE1NjQ0ODU5LD
+k1ODkwMTI1NSw0OTQ3MTY3NDIsLTEyMDY4Mzk2MSwxNDg5MjIx
+NjY3LDIxMTk1MDU1MjMsLTEwNjk4ODk4NzgsMjEzNTA0MzkxNS
+wzODkwMTI2MzQsLTc3MjA4OTA4Myw0MTAyNDEzMzAsOTgwMDcx
+MDk2XX0=
 -->
