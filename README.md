@@ -211,7 +211,7 @@ La première instruction `leave` est équivalent à un `pop ebp`, ce qui va rét
 
 ![Stack first ptr str](https://raw.githubusercontent.com/N0fix/reverseIntro/master/img/stack2.png) 
 
-Tandis que l'instruction `ret`  rend la main à la fonction appelante (dans notre cas `main()`), en faisant un `pop eip` (on met l'adresse `0x0804844d` dans le registre qui pointe vers les instructions à executer) puis en quittant la fonction.
+Tandis que l'instruction `ret`  rend la main à la fonction appelante (dans notre cas `main()`), en faisant un `pop eip` (on met l'adresse `0x0804844d` dans le registre qui pointe vers les instructions à exécuter) puis en quittant la fonction.
 
 ```C
  gdb-peda$ disas main
@@ -223,7 +223,7 @@ Tandis que l'instruction `ret`  rend la main à la fonction appelante (dans notr
 ```
 
 Le programme lira l'instruction pointée par `eip`, et donc l'instruction qui suivait l'appel de notre fonction. 
-Le progamme reprends donc son cours normal.
+Le programme reprends donc son cours normal.
 
 
 
@@ -376,11 +376,11 @@ Récap :
 ret2libc
 ropchain
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNjEyOTQ4NjgyLDEwNTA1MzAzNDIsODA0NT
-E2OTY3LDE5MjEyNDM2NTQsMTM4MTc0Nzg4OCwxMjI2MDU5Mjc2
-LDExMTgwNjE5NjUsLTE1NzQ1MzQ1NzEsMjExNTY0NDg1OSw5NT
-g5MDEyNTUsNDk0NzE2NzQyLC0xMjA2ODM5NjEsMTQ4OTIyMTY2
-NywyMTE5NTA1NTIzLC0xMDY5ODg5ODc4LDIxMzUwNDM5MTUsMz
-g5MDEyNjM0LC03NzIwODkwODMsNDEwMjQxMzMwLDk4MDA3MTA5
-Nl19
+eyJoaXN0b3J5IjpbLTEyMDg0Mzk5MTYsMTA1MDUzMDM0Miw4MD
+Q1MTY5NjcsMTkyMTI0MzY1NCwxMzgxNzQ3ODg4LDEyMjYwNTky
+NzYsMTExODA2MTk2NSwtMTU3NDUzNDU3MSwyMTE1NjQ0ODU5LD
+k1ODkwMTI1NSw0OTQ3MTY3NDIsLTEyMDY4Mzk2MSwxNDg5MjIx
+NjY3LDIxMTk1MDU1MjMsLTEwNjk4ODk4NzgsMjEzNTA0MzkxNS
+wzODkwMTI2MzQsLTc3MjA4OTA4Myw0MTAyNDEzMzAsOTgwMDcx
+MDk2XX0=
 -->
