@@ -20,11 +20,11 @@ Il existe évidemment de nombreuses autres architectures, dont les plus connues 
 
 ## Composition d'un programme
 
-Premièrement, il faut bien comprendre comment est composé un programme. Un programme fonctionne grâce à deux parties essentielles : le processeur et la mémoire. Avant de voir comment un le processeur exécute un programme, il faut analyser comment est gérée la mémoire. 
-Il est important de constater que la mémoire est répartie en plusieurs segments qui ont chacune un rôle propre.
+Premièrement, il faut bien comprendre comment est composé un programme. Un programme fonctionne grâce à deux parties essentielles : le processeur et la mémoire. Avant de voir comment le processeur exécute un programme, il faut analyser comment est gérée la mémoire. 
+Il est important de constater que la mémoire est répartie en plusieurs segments qui ont chacun un rôle propre.
 Parmi celles qui vont le plus nous intéresser : 
 
- - .text (Où sera situé les instructions du programme, notre "code")
+ - .text (Où seront situées les instructions du programme, notre "code")
  - .bss (Où seront stockées les variables globales non initialisées)
  - .data (Où seront stockées les variables globales initialisées)
  - .got et .plt (Où sont stockées les adresses de fonctions de la libC lorsque compilées dynamiquement)
@@ -338,11 +338,11 @@ Le programme reprends donc son cours normal.
 ret2libc
 ropchain
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTExNzA1NjE2MDEsMTA4ODk4OTgzNiwtNz
-U4ODI0NTI0LDc0OTU0NTcwMCwxMDA5MzI1MTIzLDk0MjUzOTYw
-MiwxMDYwOTUwNDMzLDE0NzI3MjQ4NiwxMzY0MTk2MzAzLC0xNT
-IyMjU0NTk3LC0xMTQ5MDgwMDgsMTE1NTc4NDAxNiwxNjM1NTM2
-MzM2LC00Mzg3NzMzMDYsLTIwNjQxODc1NDEsMTA1MDUzMDM0Mi
-w4MDQ1MTY5NjcsMTkyMTI0MzY1NCwxMzgxNzQ3ODg4LDEyMjYw
-NTkyNzZdfQ==
+eyJoaXN0b3J5IjpbMTUwODIzMTg1LDEwODg5ODk4MzYsLTc1OD
+gyNDUyNCw3NDk1NDU3MDAsMTAwOTMyNTEyMyw5NDI1Mzk2MDIs
+MTA2MDk1MDQzMywxNDcyNzI0ODYsMTM2NDE5NjMwMywtMTUyMj
+I1NDU5NywtMTE0OTA4MDA4LDExNTU3ODQwMTYsMTYzNTUzNjMz
+NiwtNDM4NzczMzA2LC0yMDY0MTg3NTQxLDEwNTA1MzAzNDIsOD
+A0NTE2OTY3LDE5MjEyNDM2NTQsMTM4MTc0Nzg4OCwxMjI2MDU5
+Mjc2XX0=
 -->
