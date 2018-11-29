@@ -364,7 +364,7 @@ mov EAX, $2  # moves 0x2 in first 32bits of RAX register. (1)
 mov RAX, $2  # totaly overwrite RAX register with 0x2 value. (2)
 ```
 #### (1)
-If RAX contained a 64bits value, only the first 32bits will be overwritten. That means that if RAX has a value of `0x8888888844444444`, its value will become `0x8888888800000002`.
+If RAX contained a 64bits value, only the first 32bits will be overwritten. That means that if RAX has a value of `0x88888888 44444444`, its value will become `0x88888888 00000002`.
 
 #### (2)
 No matter which value RAX contained, it will be fully overwritten by the given value.
@@ -402,14 +402,15 @@ In 64bits, the instruction has been renamed `syscall`, and the instruction `int 
 ## Memory
 
 In 64bits, not every possible 64bits address can be mapped into memory.
-Indeed, memory goes from `0x0000000000000000` to `0x00007fff ffffffff`
+Indeed, mapped memory goes from `0x00000000 00000000` to `0x00007fff ffffffff`. The rest of the memory is reserved by the system.
+This change of maximum possible memory address size will be really important when we'll be  
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTA0OTQyMTYwLDM3NTg4NzEwLDE0MzQ3ND
-g2MTMsNzMwNDAxNDUwLDE5NDM4MzE5MDAsLTcyOTAwMzU3NSwx
-MDg4OTg5ODM2LC03NTg4MjQ1MjQsNzQ5NTQ1NzAwLDEwMDkzMj
-UxMjMsOTQyNTM5NjAyLDEwNjA5NTA0MzMsMTQ3MjcyNDg2LDEz
-NjQxOTYzMDMsLTE1MjIyNTQ1OTcsLTExNDkwODAwOCwxMTU1Nz
-g0MDE2LDE2MzU1MzYzMzYsLTQzODc3MzMwNiwtMjA2NDE4NzU0
-MV19
+eyJoaXN0b3J5IjpbLTE2MDIwMzAwMjAsMzc1ODg3MTAsMTQzND
+c0ODYxMyw3MzA0MDE0NTAsMTk0MzgzMTkwMCwtNzI5MDAzNTc1
+LDEwODg5ODk4MzYsLTc1ODgyNDUyNCw3NDk1NDU3MDAsMTAwOT
+MyNTEyMyw5NDI1Mzk2MDIsMTA2MDk1MDQzMywxNDcyNzI0ODYs
+MTM2NDE5NjMwMywtMTUyMjI1NDU5NywtMTE0OTA4MDA4LDExNT
+U3ODQwMTYsMTYzNTUzNjMzNiwtNDM4NzczMzA2LC0yMDY0MTg3
+NTQxXX0=
 -->
