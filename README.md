@@ -343,7 +343,7 @@ Le programme reprends donc son cours normal.
 
 ## First things first
 
-The main differences between x86 and x64 (also known as x86-x64) architectures is that x86 works with 32 bytes addresses and registers, while x64 works with 64 bytes registers and memory.
+The main differences between x86 and x64 (also known as x86-x64) architectures is that x86 works with 32 bytes addresses and registers, while x64 works with 64 bytes registers and memory. From now I will be using 
 This implies a few things we have to remember.
 
 ### Registers
@@ -393,7 +393,9 @@ mov RAX, QWORD PTR [ESP + 0x8]  # moves a 64bits value from the address ESP + 0x
 ## Function calls
 
 In 32bits, we saw that arguments to functions where pushed to the stack using the `push` instruction. 
-In 64bits, we assume that we have enough space to store any argument we could need directly into registers, instead of pushing each one of them to the stack, which means that we will use (in this order) `RAX`, `RDI`, `RSI`,  `RDX`, `RCX`, `R8`, `R9` to store our function's arguments. If we ever need more arguments, we will need to push them to the stack, as we used to do in 32bits. If you are calling a `syscall`, `RAX` will contain the number of the syscall you want to call. Every syscall number can be found in [this table](https://github.com/N0fix/misc/blob/master/syscalls64.md) for 64bits syscall, and in [this one](https://github.com/N0fix/misc/blob/master/syscalls32.md) for 32bits syscall.
+In 64bits, we assume that we have enough space to store any argument we could need directly into registers, instead of pushing each one of them to the stack, which means that we will use (in this order) `RAX`, `RDI`, `RSI`,  `RDX`, `RCX`, `R8`, `R9` to store our function's arguments. If we ever need more arguments, we will need to push them to the stack, as we used to do in 32bits. If you are calling a `syscall`, `RAX` will contain the number of the syscall you want to call. Every syscall number can be found in [this table](https://github.com/N0fix/misc/blob/master/syscalls64.md) for 64bits syscall, and in [this one](https://github.com/N0fix/misc/blob/master/syscalls32.md) for 32bits syscall. 
+
+> Notice that system calls numbers has changed between x86 and x86-64 architecture.
 
 ### Syscalls
 In 32bits, syscall are initiated using the `int 0x80` instruction, which will execute the given syscall depending of parameters you put in your registers (see the [32bits syscall](https://github.com/N0fix/misc/blob/master/syscalls32.md) table above).
@@ -403,10 +405,11 @@ In 64bits, the instruction has been renamed `syscall`, and the instruction `int 
 
 In 64bits, not every possible 64bits address can be mapped into memory.
 Indeed, mapped memory goes from `0x00000000 00000000` to `0x00007fff ffffffff`. The rest of the memory is reserved by the system.
-This change of maximum possible memory address size will be really important when we'll be  
+This change of the maximum possible memory address size will be really important when we'll be coming to pawn binaries.
+ 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE2MDIwMzAwMjAsMzc1ODg3MTAsMTQzND
+eyJoaXN0b3J5IjpbLTExNzEzMjEyNjAsMzc1ODg3MTAsMTQzND
 c0ODYxMyw3MzA0MDE0NTAsMTk0MzgzMTkwMCwtNzI5MDAzNTc1
 LDEwODg5ODk4MzYsLTc1ODgyNDUyNCw3NDk1NDU3MDAsMTAwOT
 MyNTEyMyw5NDI1Mzk2MDIsMTA2MDk1MDQzMywxNDcyNzI0ODYs
