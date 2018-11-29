@@ -378,9 +378,16 @@ We now have access to 8 more registers named `r8` to `r15`. We use their 32bits 
  - `B` stands for `Byte`
 
  Assuming a word is 2bytes long.
+
+## Manipulation of values with memory
+
+We saw in the first chapter that we could manipulate values at a given address using the [] operator as shown in this example :  
+```
+mov DWORD
+```
  
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMzIwMjcyMzU3LDM3NTg4NzEwLDE0MzQ3ND
+eyJoaXN0b3J5IjpbMjc0ODE1MDkwLDM3NTg4NzEwLDE0MzQ3ND
 g2MTMsNzMwNDAxNDUwLDE5NDM4MzE5MDAsLTcyOTAwMzU3NSwx
 MDg4OTg5ODM2LC03NTg4MjQ1MjQsNzQ5NTQ1NzAwLDEwMDkzMj
 UxMjMsOTQyNTM5NjAyLDEwNjA5NTA0MzMsMTQ3MjcyNDg2LDEz
