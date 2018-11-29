@@ -347,13 +347,20 @@ The main differences between x86 and x64 (also known as x86-x64) architectures i
 This implies a few things we have to remember.
 
 ### Registers
-All registers keeps the same names depending on their size (eax for 32bits, `ax` for 16bits, `al/ah` for 8bits
+All registers keeps the same names depending on their size (`eax` for 32bits, `ax` for 16bits, `al/ah` for 8bits), but registers now have a new name when you need to use their all 64bits :
+| 32bits | 64bits |
+|--|--|
+| EAX | RAX |
+| EDX | RDX |
+| EBX | RBX |
+|
+
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbOTMwMzE2NjM1LDE0MzQ3NDg2MTMsNzMwND
-AxNDUwLDE5NDM4MzE5MDAsLTcyOTAwMzU3NSwxMDg4OTg5ODM2
-LC03NTg4MjQ1MjQsNzQ5NTQ1NzAwLDEwMDkzMjUxMjMsOTQyNT
-M5NjAyLDEwNjA5NTA0MzMsMTQ3MjcyNDg2LDEzNjQxOTYzMDMs
-LTE1MjIyNTQ1OTcsLTExNDkwODAwOCwxMTU1Nzg0MDE2LDE2Mz
-U1MzYzMzYsLTQzODc3MzMwNiwtMjA2NDE4NzU0MSwxMDUwNTMw
-MzQyXX0=
+eyJoaXN0b3J5IjpbLTE0NTQxMDMyODksMTQzNDc0ODYxMyw3Mz
+A0MDE0NTAsMTk0MzgzMTkwMCwtNzI5MDAzNTc1LDEwODg5ODk4
+MzYsLTc1ODgyNDUyNCw3NDk1NDU3MDAsMTAwOTMyNTEyMyw5ND
+I1Mzk2MDIsMTA2MDk1MDQzMywxNDcyNzI0ODYsMTM2NDE5NjMw
+MywtMTUyMjI1NDU5NywtMTE0OTA4MDA4LDExNTU3ODQwMTYsMT
+YzNTUzNjMzNiwtNDM4NzczMzA2LC0yMDY0MTg3NTQxLDEwNTA1
+MzAzNDJdfQ==
 -->
