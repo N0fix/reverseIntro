@@ -373,14 +373,18 @@ No matter which value RAX contained, it will be fully overwritten by the given v
 
 We now have access to 8 more registers named `r8` to `r15`. We use their 32bits lower parts using `r8d`, 16bits with `r8w` and 8bits wil `r8b` (this is an example for `r8`), where :
 
- - `D` stands for
+ - `D` stands for `Double word`
+ - `W` stands for `Word`
+ - `B` stands for `Byte`
+
+ Assuming a word is 2bytes long.
  
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEzNjU4MzcxNjYsMzc1ODg3MTAsMTQzND
-c0ODYxMyw3MzA0MDE0NTAsMTk0MzgzMTkwMCwtNzI5MDAzNTc1
-LDEwODg5ODk4MzYsLTc1ODgyNDUyNCw3NDk1NDU3MDAsMTAwOT
-MyNTEyMyw5NDI1Mzk2MDIsMTA2MDk1MDQzMywxNDcyNzI0ODYs
-MTM2NDE5NjMwMywtMTUyMjI1NDU5NywtMTE0OTA4MDA4LDExNT
-U3ODQwMTYsMTYzNTUzNjMzNiwtNDM4NzczMzA2LC0yMDY0MTg3
-NTQxXX0=
+eyJoaXN0b3J5IjpbMzIwMjcyMzU3LDM3NTg4NzEwLDE0MzQ3ND
+g2MTMsNzMwNDAxNDUwLDE5NDM4MzE5MDAsLTcyOTAwMzU3NSwx
+MDg4OTg5ODM2LC03NTg4MjQ1MjQsNzQ5NTQ1NzAwLDEwMDkzMj
+UxMjMsOTQyNTM5NjAyLDEwNjA5NTA0MzMsMTQ3MjcyNDg2LDEz
+NjQxOTYzMDMsLTE1MjIyNTQ1OTcsLTExNDkwODAwOCwxMTU1Nz
+g0MDE2LDE2MzU1MzYzMzYsLTQzODc3MzMwNiwtMjA2NDE4NzU0
+MV19
 -->
