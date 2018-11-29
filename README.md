@@ -340,7 +340,7 @@ Le programme reprends donc son cours normal.
 *Passage du français à l'anglais, je traduirais le premier chapitre plus tard*
 
 # MAIN DIFFERENCES BETWEEN x86 AND x64 ARCHITECTURE 
-This chapter will cover main differences between a 32 and a 64bits architecture regarding ELF files (= linux executable files).
+This chapter will cover main differences between a 32 and a 64bits architecture regarding ELF (`"Executable and Linkable Format"`, UNIX executable binries) files .
 
 > From now I will be using either `x86-64` or `x64` to refer to a 64bits
 > architecture.
@@ -421,7 +421,7 @@ This change of the maximum possible memory address size will be really important
  
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEwODM4MzIwMTUsMzc1ODg3MTAsMTQzND
+eyJoaXN0b3J5IjpbLTIwNzcxMzIyOTUsMzc1ODg3MTAsMTQzND
 c0ODYxMyw3MzA0MDE0NTAsMTk0MzgzMTkwMCwtNzI5MDAzNTc1
 LDEwODg5ODk4MzYsLTc1ODgyNDUyNCw3NDk1NDU3MDAsMTAwOT
 MyNTEyMyw5NDI1Mzk2MDIsMTA2MDk1MDQzMywxNDcyNzI0ODYs
