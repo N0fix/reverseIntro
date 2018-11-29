@@ -371,13 +371,16 @@ No matter which value RAX contained, it will be fully overwritten by the given v
 
 ### There is more about registers
 
-We now have access to 8 more registers named `r8` to `r15`. We use their 32bits lower parts using `r8d`, 16bits with `r8w` and 8bits wil `r8b`.
+We now have access to 8 more registers named `r8` to `r15`. We use their 32bits lower parts using `r8d`, 16bits with `r8w` and 8bits wil `r8b` (this is an example for `r8`), where :
+
+ - `D` stands for
+ 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTUxODIxNzg2MSwzNzU4ODcxMCwxNDM0Nz
-Q4NjEzLDczMDQwMTQ1MCwxOTQzODMxOTAwLC03MjkwMDM1NzUs
-MTA4ODk4OTgzNiwtNzU4ODI0NTI0LDc0OTU0NTcwMCwxMDA5Mz
-I1MTIzLDk0MjUzOTYwMiwxMDYwOTUwNDMzLDE0NzI3MjQ4Niwx
-MzY0MTk2MzAzLC0xNTIyMjU0NTk3LC0xMTQ5MDgwMDgsMTE1NT
-c4NDAxNiwxNjM1NTM2MzM2LC00Mzg3NzMzMDYsLTIwNjQxODc1
-NDFdfQ==
+eyJoaXN0b3J5IjpbLTEzNjU4MzcxNjYsMzc1ODg3MTAsMTQzND
+c0ODYxMyw3MzA0MDE0NTAsMTk0MzgzMTkwMCwtNzI5MDAzNTc1
+LDEwODg5ODk4MzYsLTc1ODgyNDUyNCw3NDk1NDU3MDAsMTAwOT
+MyNTEyMyw5NDI1Mzk2MDIsMTA2MDk1MDQzMywxNDcyNzI0ODYs
+MTM2NDE5NjMwMywtMTUyMjI1NDU5NywtMTE0OTA4MDA4LDExNT
+U3ODQwMTYsMTYzNTUzNjMzNiwtNDM4NzczMzA2LC0yMDY0MTg3
+NTQxXX0=
 -->
