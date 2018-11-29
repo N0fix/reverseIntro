@@ -408,7 +408,7 @@ In 64bits, the instruction has been renamed `syscall`, and the instruction `int 
 > `/usr/include/asm/unistd_32.h`, and in `/usr/include/asm/unistd_64.h`
 > for 64bits.
 
-> Those files will always be more reliable then any information you might find on internet, as they rules system calls on your system. Note that on rare cases, those can vary from one computer to another, as 
+> Those files will always be more reliable then any information you might find on internet, as they rules system calls on your system. Note that on rare cases, those might vary from one computer to another, as those files as writable, but you should not encounter this problem in real situations.
 
 ## Memory
 
@@ -418,7 +418,7 @@ This change of the maximum possible memory address size will be really important
  
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTA5NDAyOTIxMiwzNzU4ODcxMCwxNDM0Nz
+eyJoaXN0b3J5IjpbLTIyNjI3MTk5NSwzNzU4ODcxMCwxNDM0Nz
 Q4NjEzLDczMDQwMTQ1MCwxOTQzODMxOTAwLC03MjkwMDM1NzUs
 MTA4ODk4OTgzNiwtNzU4ODI0NTI0LDc0OTU0NTcwMCwxMDA5Mz
 I1MTIzLDk0MjUzOTYwMiwxMDYwOTUwNDMzLDE0NzI3MjQ4Niwx
