@@ -393,16 +393,14 @@ mov RAX, QWORD PTR [ESP + 0x8]  # moves a 64bits value from the address ESP + 0x
 ## Function calls
 
 In 32bits, we saw that arguments to functions where pushed to the stack using the `push` instruction. 
-In 64bits, we assume that we have enough space to store any argument we could need directly into registers, instead of pushing each one of them to the stack, which means that we will use (in this order) `RAX`, `RDI`, `RSI`,  `RDX`, `RCX`, `R8`, `R9` to store our function's arguments. If we ever need more arguments, we will n
-
-%rax, for number of syscall, %rdi, %rsi, %rdx, %rcx, %r8, %9, for arguments.
+In 64bits, we assume that we have enough space to store any argument we could need directly into registers, instead of pushing each one of them to the stack, which means that we will use (in this order) `RAX`, `RDI`, `RSI`,  `RDX`, `RCX`, `R8`, `R9` to store our function's arguments. If we ever need more arguments, we will need to push them to the stack, as we used to do in 32bits. If you are calling a `syscall`, `RAX` will contain the number of the syscall you want to call. Every syscall number can be found in [this table](https://github.com/N0fix/misc/blob/master/syscalls64.md) for 64bits syscall, and in this one for 32bis syscall.
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTc0MzgyNzg4OSwzNzU4ODcxMCwxNDM0Nz
-Q4NjEzLDczMDQwMTQ1MCwxOTQzODMxOTAwLC03MjkwMDM1NzUs
-MTA4ODk4OTgzNiwtNzU4ODI0NTI0LDc0OTU0NTcwMCwxMDA5Mz
-I1MTIzLDk0MjUzOTYwMiwxMDYwOTUwNDMzLDE0NzI3MjQ4Niwx
-MzY0MTk2MzAzLC0xNTIyMjU0NTk3LC0xMTQ5MDgwMDgsMTE1NT
-c4NDAxNiwxNjM1NTM2MzM2LC00Mzg3NzMzMDYsLTIwNjQxODc1
-NDFdfQ==
+eyJoaXN0b3J5IjpbLTE5MzMwODUxMzksMzc1ODg3MTAsMTQzND
+c0ODYxMyw3MzA0MDE0NTAsMTk0MzgzMTkwMCwtNzI5MDAzNTc1
+LDEwODg5ODk4MzYsLTc1ODgyNDUyNCw3NDk1NDU3MDAsMTAwOT
+MyNTEyMyw5NDI1Mzk2MDIsMTA2MDk1MDQzMywxNDcyNzI0ODYs
+MTM2NDE5NjMwMywtMTUyMjI1NDU5NywtMTE0OTA4MDA4LDExNT
+U3ODQwMTYsMTYzNTUzNjMzNiwtNDM4NzczMzA2LC0yMDY0MTg3
+NTQxXX0=
 -->
