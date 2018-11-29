@@ -339,6 +339,9 @@ Le programme reprends donc son cours normal.
 
 *Passage du français à l'anglais, je traduirais le premier chapitre plus tard*
 
+
+
+
 # MAIN DIFFERENCES BETWEEN x86 AND x64 ARCHITECTURE 
 This chapter will cover main differences between a 32 and a 64bits architecture regarding ELF (`"Executable and Linkable Format"`, UNIX executable binaries).
 
@@ -348,12 +351,12 @@ This chapter will cover main differences between a 32 and a 64bits architecture 
 ## First things first
 
 
-
 The main differences between x86 and x64 (also known as x86-x64) architectures is that x86 works with 32 bytes addresses and registers, while x64 works with 64 bytes registers and memory. 
 This implies a few things we have to remember.
 
 ### Registers
 All registers keeps the same names depending on their size (`eax` for 32bits, `ax` for 16bits, `al/ah` for 8bits), but registers now have a new name when you need to use their all 64bits :
+
 | 32bits | 64bits |
 |--|--|
 | EAX | RAX |
@@ -421,11 +424,11 @@ This change of the maximum possible memory address size will be really important
  
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTg4NDQyOTgwMSwzNzU4ODcxMCwxNDM0Nz
-Q4NjEzLDczMDQwMTQ1MCwxOTQzODMxOTAwLC03MjkwMDM1NzUs
-MTA4ODk4OTgzNiwtNzU4ODI0NTI0LDc0OTU0NTcwMCwxMDA5Mz
-I1MTIzLDk0MjUzOTYwMiwxMDYwOTUwNDMzLDE0NzI3MjQ4Niwx
-MzY0MTk2MzAzLC0xNTIyMjU0NTk3LC0xMTQ5MDgwMDgsMTE1NT
-c4NDAxNiwxNjM1NTM2MzM2LC00Mzg3NzMzMDYsLTIwNjQxODc1
-NDFdfQ==
+eyJoaXN0b3J5IjpbLTEwNTA4MjQ3ODMsLTg4NDQyOTgwMSwzNz
+U4ODcxMCwxNDM0NzQ4NjEzLDczMDQwMTQ1MCwxOTQzODMxOTAw
+LC03MjkwMDM1NzUsMTA4ODk4OTgzNiwtNzU4ODI0NTI0LDc0OT
+U0NTcwMCwxMDA5MzI1MTIzLDk0MjUzOTYwMiwxMDYwOTUwNDMz
+LDE0NzI3MjQ4NiwxMzY0MTk2MzAzLC0xNTIyMjU0NTk3LC0xMT
+Q5MDgwMDgsMTE1NTc4NDAxNiwxNjM1NTM2MzM2LC00Mzg3NzMz
+MDZdfQ==
 -->
