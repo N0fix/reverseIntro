@@ -397,10 +397,10 @@ In 64bits, we assume that we have enough space to store any argument we could ne
 
 ### Syscalls
 In 32bits, syscall are initiated using the `int 0x80` instruction, which will execute the given syscall depending of parameters you put in your registers (see the [32bits syscall](https://github.com/N0fix/misc/blob/master/syscalls32.md) table above).
-In 64bits, the instruction is
+In 64bits, the instruction has been renamed `syscall`, and the instruction `int 0x80` is no longer valid.
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE3MjUyMjA0NCwzNzU4ODcxMCwxNDM0Nz
+eyJoaXN0b3J5IjpbMTc0NDIwODk4MCwzNzU4ODcxMCwxNDM0Nz
 Q4NjEzLDczMDQwMTQ1MCwxOTQzODMxOTAwLC03MjkwMDM1NzUs
 MTA4ODk4OTgzNiwtNzU4ODI0NTI0LDc0OTU0NTcwMCwxMDA5Mz
 I1MTIzLDk0MjUzOTYwMiwxMDYwOTUwNDMzLDE0NzI3MjQ4Niwx
