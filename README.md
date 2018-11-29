@@ -393,16 +393,16 @@ mov RAX, QWORD PTR [ESP + 0x8]  # moves a 64bits value from the address ESP + 0x
 ## Function calls
 
 In 32bits, we saw that arguments to functions where pushed to the stack using the `push` instruction. 
-In 64bits, we assume that we have enough space to store any argument we could need directly into registers, instead of pushing each one of them to the stack. 
+In 64bits, we assume that we have enough space to store any argument we could need directly into registers, instead of pushing each one of them to the stack, which means that we will use (in this order) `RAX`, `RDI`, `RSI`,  `RDX`, `RCX`, `R8`, `R9` to store our function's arguments. If we ever need more arguments, we will n
 
 %rax, for number of syscall, %rdi, %rsi, %rdx, %rcx, %r8, %9, for arguments.
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNzUwNjQxNzc2LDM3NTg4NzEwLDE0MzQ3ND
-g2MTMsNzMwNDAxNDUwLDE5NDM4MzE5MDAsLTcyOTAwMzU3NSwx
-MDg4OTg5ODM2LC03NTg4MjQ1MjQsNzQ5NTQ1NzAwLDEwMDkzMj
-UxMjMsOTQyNTM5NjAyLDEwNjA5NTA0MzMsMTQ3MjcyNDg2LDEz
-NjQxOTYzMDMsLTE1MjIyNTQ1OTcsLTExNDkwODAwOCwxMTU1Nz
-g0MDE2LDE2MzU1MzYzMzYsLTQzODc3MzMwNiwtMjA2NDE4NzU0
-MV19
+eyJoaXN0b3J5IjpbMTc0MzgyNzg4OSwzNzU4ODcxMCwxNDM0Nz
+Q4NjEzLDczMDQwMTQ1MCwxOTQzODMxOTAwLC03MjkwMDM1NzUs
+MTA4ODk4OTgzNiwtNzU4ODI0NTI0LDc0OTU0NTcwMCwxMDA5Mz
+I1MTIzLDk0MjUzOTYwMiwxMDYwOTUwNDMzLDE0NzI3MjQ4Niwx
+MzY0MTk2MzAzLC0xNTIyMjU0NTk3LC0xMTQ5MDgwMDgsMTE1NT
+c4NDAxNiwxNjM1NTM2MzM2LC00Mzg3NzMzMDYsLTIwNjQxODc1
+NDFdfQ==
 -->
