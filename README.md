@@ -383,15 +383,15 @@ We now have access to 8 more registers named `r8` to `r15`. We use their 32bits 
 
 We saw in the first chapter that we could manipulate values at a given address using the [] operator as shown in this example :  
 ```
-mov DWORD
+mov EAX, DWORD PTR [ESP + 0x8]  # moves the value at the address ESP + 0x8 to EAX
 ```
- 
+ If we want to use 64bits addresses, we will only need to use the prefix `Q`, which stands for `Qwad Word`
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjc0ODE1MDkwLDM3NTg4NzEwLDE0MzQ3ND
-g2MTMsNzMwNDAxNDUwLDE5NDM4MzE5MDAsLTcyOTAwMzU3NSwx
-MDg4OTg5ODM2LC03NTg4MjQ1MjQsNzQ5NTQ1NzAwLDEwMDkzMj
-UxMjMsOTQyNTM5NjAyLDEwNjA5NTA0MzMsMTQ3MjcyNDg2LDEz
-NjQxOTYzMDMsLTE1MjIyNTQ1OTcsLTExNDkwODAwOCwxMTU1Nz
-g0MDE2LDE2MzU1MzYzMzYsLTQzODc3MzMwNiwtMjA2NDE4NzU0
-MV19
+eyJoaXN0b3J5IjpbLTc5OTIwMzY5MSwzNzU4ODcxMCwxNDM0Nz
+Q4NjEzLDczMDQwMTQ1MCwxOTQzODMxOTAwLC03MjkwMDM1NzUs
+MTA4ODk4OTgzNiwtNzU4ODI0NTI0LDc0OTU0NTcwMCwxMDA5Mz
+I1MTIzLDk0MjUzOTYwMiwxMDYwOTUwNDMzLDE0NzI3MjQ4Niwx
+MzY0MTk2MzAzLC0xNTIyMjU0NTk3LC0xMTQ5MDgwMDgsMTE1NT
+c4NDAxNiwxNjM1NTM2MzM2LC00Mzg3NzMzMDYsLTIwNjQxODc1
+NDFdfQ==
 -->
