@@ -340,7 +340,7 @@ Le programme reprends donc son cours normal.
 *Passage du français à l'anglais, je traduirais le premier chapitre plus tard*
 
 # MAIN DIFFERENCES BETWEEN x86 AND x64 ARCHITECTURE 
-This chapter will cover main differences between a 32 and a 64bits architecture regarding ELF (`"Executable and Linkable Format"`, UNIX executable binries) files .
+This chapter will cover main differences between a 32 and a 64bits architecture regarding ELF (`"Executable and Linkable Format"`, UNIX executable binaries).
 
 > From now I will be using either `x86-64` or `x64` to refer to a 64bits
 > architecture.
@@ -421,11 +421,11 @@ This change of the maximum possible memory address size will be really important
  
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIwNzcxMzIyOTUsMzc1ODg3MTAsMTQzND
-c0ODYxMyw3MzA0MDE0NTAsMTk0MzgzMTkwMCwtNzI5MDAzNTc1
-LDEwODg5ODk4MzYsLTc1ODgyNDUyNCw3NDk1NDU3MDAsMTAwOT
-MyNTEyMyw5NDI1Mzk2MDIsMTA2MDk1MDQzMywxNDcyNzI0ODYs
-MTM2NDE5NjMwMywtMTUyMjI1NDU5NywtMTE0OTA4MDA4LDExNT
-U3ODQwMTYsMTYzNTUzNjMzNiwtNDM4NzczMzA2LC0yMDY0MTg3
-NTQxXX0=
+eyJoaXN0b3J5IjpbLTg4NDQyOTgwMSwzNzU4ODcxMCwxNDM0Nz
+Q4NjEzLDczMDQwMTQ1MCwxOTQzODMxOTAwLC03MjkwMDM1NzUs
+MTA4ODk4OTgzNiwtNzU4ODI0NTI0LDc0OTU0NTcwMCwxMDA5Mz
+I1MTIzLDk0MjUzOTYwMiwxMDYwOTUwNDMzLDE0NzI3MjQ4Niwx
+MzY0MTk2MzAzLC0xNTIyMjU0NTk3LC0xMTQ5MDgwMDgsMTE1NT
+c4NDAxNiwxNjM1NTM2MzM2LC00Mzg3NzMzMDYsLTIwNjQxODc1
+NDFdfQ==
 -->
