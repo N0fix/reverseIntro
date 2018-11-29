@@ -343,9 +343,10 @@ Le programme reprends donc son cours normal.
 
 ## First things first
 
-The main différences be
+The main differences between x86 and x64 (also known as x86-x64) architectures is that x86 works with 32 bytes addresses and registers, while x64 works with 64 bytes registers and memory.
+This implies a few subtilities
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTU0Nzk3NTc3MiwxNDM0NzQ4NjEzLDczMD
+eyJoaXN0b3J5IjpbMTIwODUyNDIxNywxNDM0NzQ4NjEzLDczMD
 QwMTQ1MCwxOTQzODMxOTAwLC03MjkwMDM1NzUsMTA4ODk4OTgz
 NiwtNzU4ODI0NTI0LDc0OTU0NTcwMCwxMDA5MzI1MTIzLDk0Mj
 UzOTYwMiwxMDYwOTUwNDMzLDE0NzI3MjQ4NiwxMzY0MTk2MzAz
