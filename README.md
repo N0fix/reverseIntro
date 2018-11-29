@@ -360,16 +360,20 @@ All registers keeps the same names depending on their size (`eax` for 32bits, `a
 | EBP | RBP |
 
 ```
-mov EAX, $2  # moves 0x2 in first 32bits of RAX register
-mov RAX, $2  # totaly overwrite RAX register by 0x2
+mov EAX, $2  # moves 0x2 in first 32bits of RAX register. (1)
+mov RAX, $2  # totaly overwrite RAX register with 0x2 value. (2)
 ```
+#### (1)
+If RAX contained a 64bits value, only the first 32bits will be overwritten. That means that if RAX has a value of
 
+#### (2)
+No matter which value RAX contained, it will be fully overwritten by the given value.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEyNDk3NTI5LDE0MzQ3NDg2MTMsNzMwND
-AxNDUwLDE5NDM4MzE5MDAsLTcyOTAwMzU3NSwxMDg4OTg5ODM2
-LC03NTg4MjQ1MjQsNzQ5NTQ1NzAwLDEwMDkzMjUxMjMsOTQyNT
-M5NjAyLDEwNjA5NTA0MzMsMTQ3MjcyNDg2LDEzNjQxOTYzMDMs
-LTE1MjIyNTQ1OTcsLTExNDkwODAwOCwxMTU1Nzg0MDE2LDE2Mz
-U1MzYzMzYsLTQzODc3MzMwNiwtMjA2NDE4NzU0MSwxMDUwNTMw
-MzQyXX0=
+eyJoaXN0b3J5IjpbMTM1NTExNDU0MCwxNDM0NzQ4NjEzLDczMD
+QwMTQ1MCwxOTQzODMxOTAwLC03MjkwMDM1NzUsMTA4ODk4OTgz
+NiwtNzU4ODI0NTI0LDc0OTU0NTcwMCwxMDA5MzI1MTIzLDk0Mj
+UzOTYwMiwxMDYwOTUwNDMzLDE0NzI3MjQ4NiwxMzY0MTk2MzAz
+LC0xNTIyMjU0NTk3LC0xMTQ5MDgwMDgsMTE1NTc4NDAxNiwxNj
+M1NTM2MzM2LC00Mzg3NzMzMDYsLTIwNjQxODc1NDEsMTA1MDUz
+MDM0Ml19
 -->
