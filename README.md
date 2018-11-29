@@ -403,7 +403,12 @@ In 64bits, we assume that we have enough space to store any argument we could ne
 ### Syscalls
 In 32bits, syscall are initiated using the `int 0x80` instruction, which will execute the given syscall depending of parameters you put in your registers (see the [32bits syscall](https://github.com/N0fix/misc/blob/master/syscalls32.md) table above).
 In 64bits, the instruction has been renamed `syscall`, and the instruction `int 0x80` is no longer valid.
-You can also find every system call number in 32bits in `/usr/include/asm/unistd_32.h` f 
+
+> You can also find every system call number in 32bits in
+> `/usr/include/asm/unistd_32.h`, and in `/usr/include/asm/unistd_64.h`
+> for 64bits.
+
+> Those files will always be more reliable then any information you might find on internet, as they rules system calls on your system. Note that on rare cases, those can vary from one computer to another, as 
 
 ## Memory
 
@@ -413,11 +418,11 @@ This change of the maximum possible memory address size will be really important
  
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEyMzkyMjE4ODgsMzc1ODg3MTAsMTQzND
-c0ODYxMyw3MzA0MDE0NTAsMTk0MzgzMTkwMCwtNzI5MDAzNTc1
-LDEwODg5ODk4MzYsLTc1ODgyNDUyNCw3NDk1NDU3MDAsMTAwOT
-MyNTEyMyw5NDI1Mzk2MDIsMTA2MDk1MDQzMywxNDcyNzI0ODYs
-MTM2NDE5NjMwMywtMTUyMjI1NDU5NywtMTE0OTA4MDA4LDExNT
-U3ODQwMTYsMTYzNTUzNjMzNiwtNDM4NzczMzA2LC0yMDY0MTg3
-NTQxXX0=
+eyJoaXN0b3J5IjpbMTA5NDAyOTIxMiwzNzU4ODcxMCwxNDM0Nz
+Q4NjEzLDczMDQwMTQ1MCwxOTQzODMxOTAwLC03MjkwMDM1NzUs
+MTA4ODk4OTgzNiwtNzU4ODI0NTI0LDc0OTU0NTcwMCwxMDA5Mz
+I1MTIzLDk0MjUzOTYwMiwxMDYwOTUwNDMzLDE0NzI3MjQ4Niwx
+MzY0MTk2MzAzLC0xNTIyMjU0NTk3LC0xMTQ5MDgwMDgsMTE1NT
+c4NDAxNiwxNjM1NTM2MzM2LC00Mzg3NzMzMDYsLTIwNjQxODc1
+NDFdfQ==
 -->
