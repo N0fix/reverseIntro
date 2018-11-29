@@ -340,11 +340,14 @@ Le programme reprends donc son cours normal.
 *Passage du français à l'anglais, je traduirais le premier chapitre plus tard*
 
 # MAIN DIFFERENCES BETWEEN x86 AND x64 ARCHITECTURE 
-
-## First things first
+This chapter will cover main differences between a 32 and a 64bits architecture regarding ELF files (= linux executable files).
 
 > From now I will be using either `x86-64` or `x64` to refer to a 64bits
 > architecture.
+
+## First things first
+
+
 
 The main differences between x86 and x64 (also known as x86-x64) architectures is that x86 works with 32 bytes addresses and registers, while x64 works with 64 bytes registers and memory. 
 This implies a few things we have to remember.
@@ -418,11 +421,11 @@ This change of the maximum possible memory address size will be really important
  
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIyNjI3MTk5NSwzNzU4ODcxMCwxNDM0Nz
-Q4NjEzLDczMDQwMTQ1MCwxOTQzODMxOTAwLC03MjkwMDM1NzUs
-MTA4ODk4OTgzNiwtNzU4ODI0NTI0LDc0OTU0NTcwMCwxMDA5Mz
-I1MTIzLDk0MjUzOTYwMiwxMDYwOTUwNDMzLDE0NzI3MjQ4Niwx
-MzY0MTk2MzAzLC0xNTIyMjU0NTk3LC0xMTQ5MDgwMDgsMTE1NT
-c4NDAxNiwxNjM1NTM2MzM2LC00Mzg3NzMzMDYsLTIwNjQxODc1
-NDFdfQ==
+eyJoaXN0b3J5IjpbLTEwODM4MzIwMTUsMzc1ODg3MTAsMTQzND
+c0ODYxMyw3MzA0MDE0NTAsMTk0MzgzMTkwMCwtNzI5MDAzNTc1
+LDEwODg5ODk4MzYsLTc1ODgyNDUyNCw3NDk1NDU3MDAsMTAwOT
+MyNTEyMyw5NDI1Mzk2MDIsMTA2MDk1MDQzMywxNDcyNzI0ODYs
+MTM2NDE5NjMwMywtMTUyMjI1NDU5NywtMTE0OTA4MDA4LDExNT
+U3ODQwMTYsMTYzNTUzNjMzNiwtNDM4NzczMzA2LC0yMDY0MTg3
+NTQxXX0=
 -->
