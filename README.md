@@ -344,13 +344,16 @@ Le programme reprends donc son cours normal.
 ## First things first
 
 The main differences between x86 and x64 (also known as x86-x64) architectures is that x86 works with 32 bytes addresses and registers, while x64 works with 64 bytes registers and memory.
-This implies a few subtilities
+This implies a few things we have to remember.
+
+### Registers
+All registers keeps the same names depending on their size (eax for 32bits, `ax` for 16bits, `al/ah` for 8bits
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTIwODUyNDIxNywxNDM0NzQ4NjEzLDczMD
-QwMTQ1MCwxOTQzODMxOTAwLC03MjkwMDM1NzUsMTA4ODk4OTgz
-NiwtNzU4ODI0NTI0LDc0OTU0NTcwMCwxMDA5MzI1MTIzLDk0Mj
-UzOTYwMiwxMDYwOTUwNDMzLDE0NzI3MjQ4NiwxMzY0MTk2MzAz
-LC0xNTIyMjU0NTk3LC0xMTQ5MDgwMDgsMTE1NTc4NDAxNiwxNj
-M1NTM2MzM2LC00Mzg3NzMzMDYsLTIwNjQxODc1NDEsMTA1MDUz
-MDM0Ml19
+eyJoaXN0b3J5IjpbOTMwMzE2NjM1LDE0MzQ3NDg2MTMsNzMwND
+AxNDUwLDE5NDM4MzE5MDAsLTcyOTAwMzU3NSwxMDg4OTg5ODM2
+LC03NTg4MjQ1MjQsNzQ5NTQ1NzAwLDEwMDkzMjUxMjMsOTQyNT
+M5NjAyLDEwNjA5NTA0MzMsMTQ3MjcyNDg2LDEzNjQxOTYzMDMs
+LTE1MjIyNTQ1OTcsLTExNDkwODAwOCwxMTU1Nzg0MDE2LDE2Mz
+U1MzYzMzYsLTQzODc3MzMwNiwtMjA2NDE4NzU0MSwxMDUwNTMw
+MzQyXX0=
 -->
