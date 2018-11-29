@@ -368,12 +368,16 @@ If RAX contained a 64bits value, only the first 32bits will be overwritten. That
 
 #### (2)
 No matter which value RAX contained, it will be fully overwritten by the given value.
+
+### There is more about registers
+
+We now have access to 8 more registers named `r8` to `r15`. We use their 32bits lower parts using `r8d`, 1
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMzc1ODg3MTAsMTQzNDc0ODYxMyw3MzA0MD
-E0NTAsMTk0MzgzMTkwMCwtNzI5MDAzNTc1LDEwODg5ODk4MzYs
-LTc1ODgyNDUyNCw3NDk1NDU3MDAsMTAwOTMyNTEyMyw5NDI1Mz
-k2MDIsMTA2MDk1MDQzMywxNDcyNzI0ODYsMTM2NDE5NjMwMywt
-MTUyMjI1NDU5NywtMTE0OTA4MDA4LDExNTU3ODQwMTYsMTYzNT
-UzNjMzNiwtNDM4NzczMzA2LC0yMDY0MTg3NTQxLDEwNTA1MzAz
-NDJdfQ==
+eyJoaXN0b3J5IjpbLTQwMzM5NjA3MywzNzU4ODcxMCwxNDM0Nz
+Q4NjEzLDczMDQwMTQ1MCwxOTQzODMxOTAwLC03MjkwMDM1NzUs
+MTA4ODk4OTgzNiwtNzU4ODI0NTI0LDc0OTU0NTcwMCwxMDA5Mz
+I1MTIzLDk0MjUzOTYwMiwxMDYwOTUwNDMzLDE0NzI3MjQ4Niwx
+MzY0MTk2MzAzLC0xNTIyMjU0NTk3LC0xMTQ5MDgwMDgsMTE1NT
+c4NDAxNiwxNjM1NTM2MzM2LC00Mzg3NzMzMDYsLTIwNjQxODc1
+NDFdfQ==
 -->
