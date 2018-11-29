@@ -335,12 +335,21 @@ Tandis que l'instruction `ret`  rend la main à la fonction appelante (dans notr
 
 Le programme lira l'instruction pointée par `eip`, et donc l'instruction qui suivait l'appel de notre fonction. 
 Le programme reprends donc son cours normal.
+
+
+*Passage du français à l'anglais, je traduirais le premier chapitre plus tard*
+
+# MAIN DIFFERENCES BETWEEN x86 AND x64 ARCHITECTURE 
+
+## First things first
+
+The main différences be
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTQzNDc0ODYxMyw3MzA0MDE0NTAsMTk0Mz
-gzMTkwMCwtNzI5MDAzNTc1LDEwODg5ODk4MzYsLTc1ODgyNDUy
-NCw3NDk1NDU3MDAsMTAwOTMyNTEyMyw5NDI1Mzk2MDIsMTA2MD
-k1MDQzMywxNDcyNzI0ODYsMTM2NDE5NjMwMywtMTUyMjI1NDU5
-NywtMTE0OTA4MDA4LDExNTU3ODQwMTYsMTYzNTUzNjMzNiwtND
-M4NzczMzA2LC0yMDY0MTg3NTQxLDEwNTA1MzAzNDIsODA0NTE2
-OTY3XX0=
+eyJoaXN0b3J5IjpbLTU0Nzk3NTc3MiwxNDM0NzQ4NjEzLDczMD
+QwMTQ1MCwxOTQzODMxOTAwLC03MjkwMDM1NzUsMTA4ODk4OTgz
+NiwtNzU4ODI0NTI0LDc0OTU0NTcwMCwxMDA5MzI1MTIzLDk0Mj
+UzOTYwMiwxMDYwOTUwNDMzLDE0NzI3MjQ4NiwxMzY0MTk2MzAz
+LC0xNTIyMjU0NTk3LC0xMTQ5MDgwMDgsMTE1NTc4NDAxNiwxNj
+M1NTM2MzM2LC00Mzg3NzMzMDYsLTIwNjQxODc1NDEsMTA1MDUz
+MDM0Ml19
 -->
