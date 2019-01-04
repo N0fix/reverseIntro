@@ -423,13 +423,16 @@ Indeed, mapped memory goes from `0x00000000 00000000` to `0x00007fff ffffffff`. 
 This change of the maximum possible memory address size will be really important when we'll be coming to pawn binaries.
  
 
-# List of 
+# List of useful tools
+## Reverse tools 
+[IDA pro](https://www.hex-rays.com/products/ida/index.shtml) - For almost everything, from patching binaries to decompilation 
+[Binary Ninja](https://binary.ninja/) - Really 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTM4ODY0NTcxLC0xMDUwODI0NzgzLC04OD
-Q0Mjk4MDEsMzc1ODg3MTAsMTQzNDc0ODYxMyw3MzA0MDE0NTAs
-MTk0MzgzMTkwMCwtNzI5MDAzNTc1LDEwODg5ODk4MzYsLTc1OD
-gyNDUyNCw3NDk1NDU3MDAsMTAwOTMyNTEyMyw5NDI1Mzk2MDIs
-MTA2MDk1MDQzMywxNDcyNzI0ODYsMTM2NDE5NjMwMywtMTUyMj
-I1NDU5NywtMTE0OTA4MDA4LDExNTU3ODQwMTYsMTYzNTUzNjMz
-Nl19
+eyJoaXN0b3J5IjpbLTMyNzgxOTcwMiwtMTA1MDgyNDc4MywtOD
+g0NDI5ODAxLDM3NTg4NzEwLDE0MzQ3NDg2MTMsNzMwNDAxNDUw
+LDE5NDM4MzE5MDAsLTcyOTAwMzU3NSwxMDg4OTg5ODM2LC03NT
+g4MjQ1MjQsNzQ5NTQ1NzAwLDEwMDkzMjUxMjMsOTQyNTM5NjAy
+LDEwNjA5NTA0MzMsMTQ3MjcyNDg2LDEzNjQxOTYzMDMsLTE1Mj
+IyNTQ1OTcsLTExNDkwODAwOCwxMTU1Nzg0MDE2LDE2MzU1MzYz
+MzZdfQ==
 -->
