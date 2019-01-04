@@ -11,13 +11,12 @@ Il est également probable que je démarre une partie sur l'analyse de code malv
 
 
 # Table of Contents
-1. [Example](#reverse)
-2. [Example2](#example2)
-3. [Third Example](#third-example)
+1. [Reverse, bases et introduction](#reverse,)
+2. [Example2](#main)
 
 
 
-# REVERSE
+# REVERSE, BASES ET INTRODUCTION
 
 Dans un premier temps nous allons analyser l'architecture x86, soit l'architecture 32bits d'intel.
 Il existe évidemment de nombreuses autres architectures, dont les plus connues sont : 
@@ -457,7 +456,7 @@ set history expansion on
 ```
 [arm-now](https://github.com/nongiach/arm_now) - A tool which allows you to easily emulate a MIPS or ARM machine on Linux (and a lot more).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjMxMjgxMzM5LDE4MzI5NjI4MzMsLTEwNT
+eyJoaXN0b3J5IjpbMjczODU4NTY4LDE4MzI5NjI4MzMsLTEwNT
 A4MjQ3ODMsLTg4NDQyOTgwMSwzNzU4ODcxMCwxNDM0NzQ4NjEz
 LDczMDQwMTQ1MCwxOTQzODMxOTAwLC03MjkwMDM1NzUsMTA4OD
 k4OTgzNiwtNzU4ODI0NTI0LDc0OTU0NTcwMCwxMDA5MzI1MTIz
