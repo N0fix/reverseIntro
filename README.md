@@ -425,10 +425,14 @@ This change of the maximum possible memory address size will be really important
 
 # List of useful tools
 ## Reverse tools 
+
+### Static reverse
 [IDA pro](https://www.hex-rays.com/products/ida/index.shtml) - For almost everything, from patching binaries to decompilation 
-[Binary Ninja](https://binary.ninja/) - Really 
+[Binary Ninja](https://binary.ninja/) - A reverse tool which allows you to patch binaries a super easy way (free license only allows you to reverse x86 binaries)
+
+### Dynamic reverse 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTMyNzgxOTcwMiwtMTA1MDgyNDc4MywtOD
+eyJoaXN0b3J5IjpbLTM3NzQ0NjgwOSwtMTA1MDgyNDc4MywtOD
 g0NDI5ODAxLDM3NTg4NzEwLDE0MzQ3NDg2MTMsNzMwNDAxNDUw
 LDE5NDM4MzE5MDAsLTcyOTAwMzU3NSwxMDg4OTg5ODM2LC03NT
 g4MjQ1MjQsNzQ5NTQ1NzAwLDEwMDkzMjUxMjMsOTQyNTM5NjAy
