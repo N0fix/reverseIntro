@@ -429,6 +429,7 @@ This change of the maximum possible memory address size will be really important
 ### Static reverse
 [IDA pro](https://www.hex-rays.com/products/ida/index.shtml) - For almost everything, from patching binaries to decompilation 
 [Binary Ninja](https://binary.ninja/) - A reverse tool which allows you to patch binaries a super easy way (free license only allows you to reverse x86 binaries)
+[kcshell](https://github.com/fdiskyou/kcshell) - Python tool to get opcodes from asm instructions
 
 ### Dynamic reverse 
 [PEDA - Python Exploit Development Assistance for GDB](https://github.com/longld/peda) - Pimp your GDB to get a lot of useful features and win a LOT of time.
@@ -448,11 +449,11 @@ set history expansion on
 ```
 [arm-now](https://github.com/nongiach/arm_now) - A tool which allows you to easily emulate a MIPS or ARM machine on Linux (and a lot more).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTgzMjk2MjgzMywtMTA1MDgyNDc4MywtOD
-g0NDI5ODAxLDM3NTg4NzEwLDE0MzQ3NDg2MTMsNzMwNDAxNDUw
-LDE5NDM4MzE5MDAsLTcyOTAwMzU3NSwxMDg4OTg5ODM2LC03NT
-g4MjQ1MjQsNzQ5NTQ1NzAwLDEwMDkzMjUxMjMsOTQyNTM5NjAy
-LDEwNjA5NTA0MzMsMTQ3MjcyNDg2LDEzNjQxOTYzMDMsLTE1Mj
-IyNTQ1OTcsLTExNDkwODAwOCwxMTU1Nzg0MDE2LDE2MzU1MzYz
-MzZdfQ==
+eyJoaXN0b3J5IjpbLTEzNDQ0MDkxMjIsMTgzMjk2MjgzMywtMT
+A1MDgyNDc4MywtODg0NDI5ODAxLDM3NTg4NzEwLDE0MzQ3NDg2
+MTMsNzMwNDAxNDUwLDE5NDM4MzE5MDAsLTcyOTAwMzU3NSwxMD
+g4OTg5ODM2LC03NTg4MjQ1MjQsNzQ5NTQ1NzAwLDEwMDkzMjUx
+MjMsOTQyNTM5NjAyLDEwNjA5NTA0MzMsMTQ3MjcyNDg2LDEzNj
+QxOTYzMDMsLTE1MjIyNTQ1OTcsLTExNDkwODAwOCwxMTU1Nzg0
+MDE2XX0=
 -->
