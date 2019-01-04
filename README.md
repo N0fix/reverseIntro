@@ -441,17 +441,18 @@ set disassembly-flavor intel
 # When inspecting large portions of code the scrollbar works better than 'less'
 set pagination off
 
-set history save on
+set history save on # allows to find commands you already executed at last once with CTRL+R
 set history filename ~/.peda/gdb_history
 set history size 32768
 set history expansion on
 ```
+[arm-now](https://github.com/nongiach/arm_now) - A to
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTg3MTc0NTc3NCwtMTA1MDgyNDc4MywtOD
-g0NDI5ODAxLDM3NTg4NzEwLDE0MzQ3NDg2MTMsNzMwNDAxNDUw
-LDE5NDM4MzE5MDAsLTcyOTAwMzU3NSwxMDg4OTg5ODM2LC03NT
-g4MjQ1MjQsNzQ5NTQ1NzAwLDEwMDkzMjUxMjMsOTQyNTM5NjAy
-LDEwNjA5NTA0MzMsMTQ3MjcyNDg2LDEzNjQxOTYzMDMsLTE1Mj
-IyNTQ1OTcsLTExNDkwODAwOCwxMTU1Nzg0MDE2LDE2MzU1MzYz
-MzZdfQ==
+eyJoaXN0b3J5IjpbLTEzNzIzNjE5NjksLTEwNTA4MjQ3ODMsLT
+g4NDQyOTgwMSwzNzU4ODcxMCwxNDM0NzQ4NjEzLDczMDQwMTQ1
+MCwxOTQzODMxOTAwLC03MjkwMDM1NzUsMTA4ODk4OTgzNiwtNz
+U4ODI0NTI0LDc0OTU0NTcwMCwxMDA5MzI1MTIzLDk0MjUzOTYw
+MiwxMDYwOTUwNDMzLDE0NzI3MjQ4NiwxMzY0MTk2MzAzLC0xNT
+IyMjU0NTk3LC0xMTQ5MDgwMDgsMTE1NTc4NDAxNiwxNjM1NTM2
+MzM2XX0=
 -->
