@@ -431,12 +431,13 @@ This change of the maximum possible memory address size will be really important
 [Binary Ninja](https://binary.ninja/) - A reverse tool which allows you to patch binaries a super easy way (free license only allows you to reverse x86 binaries)
 
 ### Dynamic reverse 
+[PEDA - Python Exploit Development Assistance for GDB](https://github.com/longld/peda) - Pimp your GDB to get a lot of useful features and win a LOT of time 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTM3NzQ0NjgwOSwtMTA1MDgyNDc4MywtOD
-g0NDI5ODAxLDM3NTg4NzEwLDE0MzQ3NDg2MTMsNzMwNDAxNDUw
-LDE5NDM4MzE5MDAsLTcyOTAwMzU3NSwxMDg4OTg5ODM2LC03NT
-g4MjQ1MjQsNzQ5NTQ1NzAwLDEwMDkzMjUxMjMsOTQyNTM5NjAy
-LDEwNjA5NTA0MzMsMTQ3MjcyNDg2LDEzNjQxOTYzMDMsLTE1Mj
-IyNTQ1OTcsLTExNDkwODAwOCwxMTU1Nzg0MDE2LDE2MzU1MzYz
-MzZdfQ==
+eyJoaXN0b3J5IjpbLTk0MTYyNDY5LC0xMDUwODI0NzgzLC04OD
+Q0Mjk4MDEsMzc1ODg3MTAsMTQzNDc0ODYxMyw3MzA0MDE0NTAs
+MTk0MzgzMTkwMCwtNzI5MDAzNTc1LDEwODg5ODk4MzYsLTc1OD
+gyNDUyNCw3NDk1NDU3MDAsMTAwOTMyNTEyMyw5NDI1Mzk2MDIs
+MTA2MDk1MDQzMywxNDcyNzI0ODYsMTM2NDE5NjMwMywtMTUyMj
+I1NDU5NywtMTE0OTA4MDA4LDExNTU3ODQwMTYsMTYzNTUzNjMz
+Nl19
 -->
