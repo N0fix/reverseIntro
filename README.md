@@ -12,6 +12,8 @@ Il est également probable que je démarre une partie sur l'analyse de code malv
 
 # Table of Contents
 1. [Reverse, bases et introduction](#reverse-bases-et-introduction)
+	1. [Composition d'un programme](#composition-dun-programme)
+	2. [La mémoire](#le-heap
 2. [Main differences between x86 and x64 INTEL architecture](#main-differences-between-x86-and-x64-architecture)
 3. [Useful tools for Reverse](#list-of-useful-tools)
 
@@ -457,11 +459,11 @@ set history expansion on
 ```
 [arm-now](https://github.com/nongiach/arm_now) - A tool which allows you to easily emulate a MIPS or ARM machine on Linux (and a lot more).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE5NTAxMzI0NjUsMTgzMjk2MjgzMywtMT
-A1MDgyNDc4MywtODg0NDI5ODAxLDM3NTg4NzEwLDE0MzQ3NDg2
-MTMsNzMwNDAxNDUwLDE5NDM4MzE5MDAsLTcyOTAwMzU3NSwxMD
-g4OTg5ODM2LC03NTg4MjQ1MjQsNzQ5NTQ1NzAwLDEwMDkzMjUx
-MjMsOTQyNTM5NjAyLDEwNjA5NTA0MzMsMTQ3MjcyNDg2LDEzNj
-QxOTYzMDMsLTE1MjIyNTQ1OTcsLTExNDkwODAwOCwxMTU1Nzg0
-MDE2XX0=
+eyJoaXN0b3J5IjpbLTk0NTA5MjUzNywxODMyOTYyODMzLC0xMD
+UwODI0NzgzLC04ODQ0Mjk4MDEsMzc1ODg3MTAsMTQzNDc0ODYx
+Myw3MzA0MDE0NTAsMTk0MzgzMTkwMCwtNzI5MDAzNTc1LDEwOD
+g5ODk4MzYsLTc1ODgyNDUyNCw3NDk1NDU3MDAsMTAwOTMyNTEy
+Myw5NDI1Mzk2MDIsMTA2MDk1MDQzMywxNDcyNzI0ODYsMTM2ND
+E5NjMwMywtMTUyMjI1NDU5NywtMTE0OTA4MDA4LDExNTU3ODQw
+MTZdfQ==
 -->
